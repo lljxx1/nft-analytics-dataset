@@ -66,7 +66,9 @@ async function findTokenAndFetch() {
             fetched: 1,
           });
         }
-    } catch(e) {}
+    } catch(e) {
+        console.log(e)
+    }
     console.log(unfetchedTokens.length);
     setTimeout(findTokenAndFetch, 700);
 }
