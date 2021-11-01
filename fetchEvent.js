@@ -31,7 +31,7 @@ async function findTokenAndFetch() {
         where: {
             fetched: 0
         },
-        limit: 10
+        limit: 15
     });
 
     try {
@@ -68,7 +68,7 @@ async function findTokenAndFetch() {
         }
     } catch(e) {}
     console.log(unfetchedTokens.length);
-    setTimeout(findTokenAndFetch, 10 * 1000);
+    setTimeout(findTokenAndFetch, 700);
 }
 
 findTokenAndFetch();
