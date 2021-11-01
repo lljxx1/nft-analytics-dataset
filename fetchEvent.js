@@ -16,8 +16,13 @@ async function saveEvents(events) {
         from_account: _.from_account ? _.from_account.address : null,
         to_account: _.to_account ? _.to_account.address : null,
         transaction: _.transaction.block_hash,
-        transaction_from_account: _.transaction.from_account.address,
-        transaction_to_account: _.transaction.to_account.address,
+        transaction_from_account:
+          _.transaction &&
+          _.transaction.from_account &&
+          _.transaction.from_account.address,
+        transaction_to_account:
+          _.transaction &&
+          _.transaction.to_account && _.transaction.to_account.address,
       };
     });
     console.log(parsed.length);
