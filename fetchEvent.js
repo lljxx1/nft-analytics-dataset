@@ -36,7 +36,7 @@ async function findTokenAndFetch() {
         where: {
             fetched: 0
         },
-        limit: 28
+        limit: 15
     });
 
     try {
