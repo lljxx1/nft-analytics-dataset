@@ -33,7 +33,7 @@ const Asset = sequelize.define(
   {
     indexes: [
       {
-        fields: ["collection", "token_id", "num_sales"],
+        fields: ["collection", "token_id", "num_sales", "fetched"],
       },
     ],
   }
