@@ -1,0 +1,5 @@
+node_modules
+logs
+data
+secrets.json
+config.json

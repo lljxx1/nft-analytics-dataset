@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "axios": "^0.24.0",
+    "axios-https-proxy-fix": "^0.17.1",
+    "moment": "^2.29.1",
+    "sequelize": "^6.8.0",
+    "sqlite3": "^5.0.2",
+    "web3": "^1.6.0"
+  }
+}
