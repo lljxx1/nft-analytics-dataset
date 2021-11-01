@@ -31,22 +31,40 @@ async function findTokenAndFetch() {
         where: {
             fetched: 0
         },
-        limit: 100
+        limit: 10
     });
 
     try {
+
+        let pendingTasks = []
         for (let index = 0; index < unfetchedTokens.length; index++) {
-            const unfetchedToken = unfetchedTokens[index];
-            const events = await fetchEventsWithRetry({
-                event_type: 'transfer',
-                asset_contract_address: unfetchedToken.asset_contract,
-                token_id: unfetchedToken.token_id,
-                limit: 200,
-            });
-            await saveEvents(events);
-            await unfetchedToken.update({
-                fetched: 1
-            });
+          const unfetchedToken = unfetchedTokens[index];
+
+          pendingTasks.push(fetchEventsWithRetry({
+            event_type: "transfer",
+            asset_contract_address: unfetchedToken.asset_contract,
+            token_id: unfetchedToken.token_id,
+            limit: 200,
+          }))
+        }
+        // const events = await fetchEventsWithRetry({
+        //   event_type: "transfer",
+        //   asset_contract_address: unfetchedToken.asset_contract,
+        //   token_id: unfetchedToken.token_id,
+        //   limit: 200,
+        // });
+        // await saveEvents(events);
+        // await unfetchedToken.update({
+        //   fetched: 1,
+        // });
+        const allResults = await Promise.all(pendingTasks);
+        for (let index = 0; index < allResults.length; index++) {
+          const events = allResults[index];
+          await saveEvents(events);
+          const unfetchedToken = unfetchedTokens[index];
+          await unfetchedToken.update({
+            fetched: 1,
+          });
         }
     } catch(e) {}
     console.log(unfetchedTokens.length);
