@@ -26,7 +26,6 @@ async function saveEvents(events) {
     });
 }
 
-
 async function findTokenAndFetch() {
     const unfetchedTokens = await Asset.findAll({
         where: {
@@ -35,21 +34,23 @@ async function findTokenAndFetch() {
         limit: 100
     });
 
-    for (let index = 0; index < unfetchedTokens.length; index++) {
-      const unfetchedToken = unfetchedTokens[index];
-      const events = await fetchEventsWithRetry({
-        event_type: 'transfer',
-        asset_contract_address: unfetchedToken.asset_contract,
-        token_id: unfetchedToken.token_id,
-        limit: 200,
-      });
-      await saveEvents(events);
-      await unfetchedToken.update({
-          fetched: 1
-      });
-    }
+    try {
+        for (let index = 0; index < unfetchedTokens.length; index++) {
+            const unfetchedToken = unfetchedTokens[index];
+            const events = await fetchEventsWithRetry({
+                event_type: 'transfer',
+                asset_contract_address: unfetchedToken.asset_contract,
+                token_id: unfetchedToken.token_id,
+                limit: 200,
+            });
+            await saveEvents(events);
+            await unfetchedToken.update({
+                fetched: 1
+            });
+        }
+    } catch(e) {}
     console.log(unfetchedTokens.length);
+    setTimeout(findTokenAndFetch, 10 * 1000);
 }
-
 
 findTokenAndFetch();
