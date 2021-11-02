@@ -109,6 +109,10 @@ async function fetchCollection(collection) {
 (async () => {
     for (let index = 0; index < topCollections.length; index++) {
       const topCollection = topCollections[index];
+      if (topCollection.slug.indexOf('decentraland') > -1) {
+        continue;
+      }
+
       const collectionCount = await Asset.count({
         where: {
           collection: topCollection.slug
