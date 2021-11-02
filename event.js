@@ -100,7 +100,7 @@ async function fetchCollection(collection) {
         console.log('skip')
         continue;
       }
-      if (['decentraland-wearables', 'cryptokitties', 'decentraland'].indexOf(topCollection.slug) > -1) {
+      if (['decentraland-wearables', 'cryptokitties', 'decentraland', 'parallelalpha'].indexOf(topCollection.slug) > -1) {
         continue;
       }
       await fetchCollection(topCollection);
