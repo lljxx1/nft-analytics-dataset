@@ -38,7 +38,7 @@ async function parseAndSave(collection, eventType, events) {
   const results = await Event.bulkCreate(parsed, {
     ignoreDuplicates: true,
   });
-  console.log('parseAndSave', collection, eventType, results.length);
+  // console.log('parseAndSave', collection, eventType, results.length);
 }
 
 async function fetchCollectionAllEvents(collection_slug, eventType = 'transfer') {
@@ -54,7 +54,7 @@ async function fetchCollectionAllEvents(collection_slug, eventType = 'transfer')
     if (timeBefore) {
       queryFilter.occurred_before = timeBefore;
     }
-    console.log(queryFilter);
+    // console.log(queryFilter);
     const events = await fetchEventsWithRetry(queryFilter);
     if (events.length == 0) {
       console.log('no more')
@@ -65,7 +65,7 @@ async function fetchCollectionAllEvents(collection_slug, eventType = 'transfer')
     let lastEvent = events[events.length - 1]
     await parseAndSave(collection_slug, eventType, events);
     timeBefore = moment(lastEvent.created_date).unix();
-    // console.log(timeBefore, events.length, totalEvents)
+    console.log(timeBefore, eventType, totalEvents)
   }
 }
 
