@@ -62,7 +62,7 @@ async function fetchCollectionAllEvents(collection_slug, eventType = 'transfer')
       break;
     }
 
-    if (lastEvent.id == events[events.length - 1]) {
+    if (lastEvent && lastEvent.id == events[events.length - 1]) {
       console.log('no more')
       break;
     }
