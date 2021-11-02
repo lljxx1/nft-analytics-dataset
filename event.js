@@ -12,8 +12,10 @@ async function setValue(key, value) {
 
 async function parseAndSave(collection, eventType, events) {
   const parsed = events.map((_) => {
+    console.log(_)
     return {
       id: _.id,
+      token_id: _.asset && _.asset.token_id,
       collection_slug: _.collection_slug,
       timestamp: _.transaction && _.transaction.timestamp,
       event_type: _.event_type,
@@ -42,14 +44,16 @@ async function parseAndSave(collection, eventType, events) {
   // console.log('parseAndSave', collection, eventType, results.length);
 }
 
-async function fetchCollectionAllEvents(collection_slug, eventType = 'transfer') {
+async function fetchCollectionAllEvents(slug, eventType = 'transfer') {
   let timeBefore = null;
   let totalEvents = 0;
   let lastEvent = null;
   for (let index = 0; index < Infinity; index++) {
     const queryFilter = {
+      offset: 0,
       event_type: eventType,
-      collection_slug: collection_slug,
+      "only_opensea" : "false",
+      collection_slug: slug,
       limit: 300,
     }
 
@@ -59,20 +63,20 @@ async function fetchCollectionAllEvents(collection_slug, eventType = 'transfer')
     // console.log(queryFilter);
     const events = await fetchEventsWithRetry(queryFilter);
     if (events.length == 0) {
-      console.log('no more')
+      console.log('no more', events.length)
       break;
     }
 
     if (lastEvent && lastEvent.id == events[events.length - 1].id) {
-      console.log('no more')
+      console.log('no more', 'is same')
       break;
     }
 
     totalEvents += events.length;
     lastEvent = events[events.length - 1]
-    await parseAndSave(collection_slug, eventType, events);
+    await parseAndSave(slug, eventType, events);
     timeBefore = moment(lastEvent.created_date).unix();
-    console.log(collection_slug, timeBefore, eventType, totalEvents)
+    console.log(slug, timeBefore, eventType, totalEvents)
   }
 }
 
@@ -90,6 +94,12 @@ async function fetchCollection(collection) {
   console.log('all done', slug)
   await setValue(collectionKey, 1);
 }
+
+
+// fetchCollectionAllEvents({
+//   slug: 'mekaverse',
+//   asset_contract_address: '0x9a534628b4062e123ce7ee2222ec20b86e16ca8f'
+// });
 
 
 (async () => {
