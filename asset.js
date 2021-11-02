@@ -114,8 +114,10 @@ async function fetchCollection(collection) {
           collection: topCollection.slug
         }
       });
-      
+
       console.log({
+        name: topCollection.name,
+        slug: topCollection.slug,
         collectionCount,
         totalSupply: topCollection.stats.totalSupply
       })
