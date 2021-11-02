@@ -83,9 +83,11 @@ async function findTokenAndFetch() {
           const events = allResults[index];
           await saveEvents(events);
           const unfetchedToken = unfetchedTokens[index];
-          await unfetchedToken.update({
-            fetched: 1,
-          });
+          if (unfetchedToken) {
+            await unfetchedToken.update({
+              fetched: 1,
+            });
+          }
         }
     } catch(e) {
         console.log(e)
