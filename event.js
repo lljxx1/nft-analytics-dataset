@@ -96,6 +96,10 @@ async function fetchCollection(collection) {
     let proccesed = 0;
     for (let index = 0; index < topCollections.length; index++) {
       const topCollection = topCollections[index];
+      if (topCollection.stats.totalSupply > 30000) {
+        console.log('skip')
+        continue;
+      }
       if (['decentraland-wearables', 'cryptokitties', 'decentraland'].indexOf(topCollection.slug) > -1) {
         continue;
       }
