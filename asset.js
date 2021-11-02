@@ -48,6 +48,7 @@ async function getCollectionAllTokens(contract, pageNo = 1) {
   // let pageNo = 1;
   console.log('getCollectionAllTokens', {
     contract,
+    contract,
     pageNo
   })
   let allAssets = [];
