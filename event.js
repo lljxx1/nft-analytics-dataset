@@ -44,6 +44,7 @@ async function parseAndSave(collection, eventType, events) {
 async function fetchCollectionAllEvents(collection_slug, eventType = 'transfer') {
   let timeBefore = null;
   let totalEvents = 0;
+  let lastEvent = null;
   for (let index = 0; index < Infinity; index++) {
     const queryFilter = {
       event_type: eventType,
@@ -61,11 +62,16 @@ async function fetchCollectionAllEvents(collection_slug, eventType = 'transfer')
       break;
     }
 
+    if (lastEvent.id == events[events.length - 1]) {
+      console.log('no more')
+      break;
+    }
+
     totalEvents += events.length;
-    let lastEvent = events[events.length - 1]
+    lastEvent = events[events.length - 1]
     await parseAndSave(collection_slug, eventType, events);
     timeBefore = moment(lastEvent.created_date).unix();
-    console.log(timeBefore, eventType, totalEvents)
+    console.log(collection_slug, timeBefore, eventType, totalEvents)
   }
 }
 
