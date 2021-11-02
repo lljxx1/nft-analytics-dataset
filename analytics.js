@@ -24,11 +24,11 @@ async function doAna(collection) {
     },
     raw: true
   })
-  console.log(allEvents);
+  console.log(allEvents.length);
 }
 
 doAna({
-  slug: 'spacepoggers'
+  slug: 'mekaverse'
 })
 // (async () => {
 
