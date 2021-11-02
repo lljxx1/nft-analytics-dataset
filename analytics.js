@@ -28,7 +28,7 @@ async function doAna(collection) {
     raw: true
   });
 
-  const mintEvents = allTokens.filter(_ => _.from_account &&  _.from_account == MINT_ADDRESS)
+  const mintEvents = allEvents.filter(_ => _.from_account &&  _.from_account == MINT_ADDRESS)
   console.log(allEvents.length,  mintEvents.length, allEvents[0], allTokens.length);
 }
 
