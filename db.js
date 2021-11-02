@@ -69,6 +69,7 @@ const Event = eventSequelize.define(
     transaction_to_account: Sequelize.STRING,
     payment_token: Sequelize.STRING,
     seller: Sequelize.STRING,
+    owner: Sequelize.STRING,
     winner_account: Sequelize.STRING,
     price: Sequelize.STRING,
   },

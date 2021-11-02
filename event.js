@@ -20,6 +20,7 @@ async function parseAndSave(collection, eventType, events) {
       from_account: _.from_account ? _.from_account.address : null,
       to_account: _.to_account ? _.to_account.address : null,
       transaction: _.transaction && _.transaction.block_hash,
+      owner: _.asset && _.asset.owner.address,
       transaction_from_account:
         _.transaction &&
         _.transaction.from_account &&
