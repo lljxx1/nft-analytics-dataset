@@ -24,7 +24,7 @@ async function doAna(collection) {
     },
     raw: true
   })
-  console.log(allEvents.length);
+  console.log(allEvents.length, allTokens.length);
 }
 
 doAna({
