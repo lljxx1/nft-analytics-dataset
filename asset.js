@@ -5,8 +5,8 @@ const status = require("./status.json");
 const fs = require('fs');
 
 async function setValue(key, value) {
-    status[key] = value;
-    fs.writeFileSync("./status.json", JSON.stringify(status, null, 2));
+    // status[key] = value;
+    // fs.writeFileSync("./status.json", JSON.stringify(status, null, 2));
 }
 
 async function savePageResult(contract, pageResults) {
@@ -36,7 +36,7 @@ async function savePageResult(contract, pageResults) {
         ignoreDuplicates: true,
       });
 
-      await setValue(pageKey, 1);
+      // await setValue(pageKey, 1);
       // console.log(results);
     } catch (e) {
       console.log(e);
