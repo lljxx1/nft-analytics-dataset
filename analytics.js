@@ -3,6 +3,9 @@ const topCollections = require("./topCollection200.json");
 const { getTokenWithRarity } = require('./rarity');
 // const kstest = require( '@stdlib/stats-kstest' );
 
+
+const MINT_ADDRESS = '0x0000000000000000000000000000000000000000';
+
 async function doAna(collection) {
   let allTokens = await Asset.findAll({
     where: {
@@ -23,8 +26,10 @@ async function doAna(collection) {
       collection_slug: collection.slug
     },
     raw: true
-  })
-  console.log(allEvents.length, allTokens.length);
+  });
+
+  const mintEvents = allTokens.filter(_ => _.from_account &&  _.from_account == MINT_ADDRESS)
+  console.log(allEvents.length,  mintEvents.length, allTokens.length);
 }
 
 doAna({
