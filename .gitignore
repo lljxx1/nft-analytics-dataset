@@ -3,3 +3,5 @@ logs
 data
 secrets.json
 config.json
+eventStatus.json
+status.json
