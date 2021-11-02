@@ -34,10 +34,13 @@ async function saveEvents(events) {
 
 async function findTokenAndFetch() {
     const unfetchedTokens = await Asset.findAll({
-        where: {
-            fetched: 0
-        },
-        limit: 15
+      where: {
+        fetched: 0,
+      },
+      order: [
+        ["id", "DESC"],
+      ],
+      limit: 15,
     });
 
     try {
