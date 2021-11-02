@@ -1,7 +1,7 @@
 const { Asset, Event } = require('./db');
 const topCollections = require("./topCollection200.json");
 const { getTokenWithRarity } = require('./rarity');
-const kstest = require( '@stdlib/stats-kstest' );
+// const kstest = require( '@stdlib/stats-kstest' );
 
 async function doAna(collection) {
   let allTokens = await Asset.findAll({
