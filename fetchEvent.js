@@ -6,7 +6,6 @@ const fs = require("fs");
 
 async function saveEvents(events) {
   const parsed = events.map((_) => {
-    console.log(_)
     return {
       id: _.id,
       token_id: _.asset && _.asset.token_id,
