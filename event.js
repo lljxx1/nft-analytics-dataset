@@ -1,13 +1,13 @@
 const { fetchEventsWithRetry } = require("./lib/opensea");
 const topCollections = require("./topCollection200.json");
 const { Event } = require('./db');
-const status = require("./statu.json");
+const status = require("./status.json");
 const fs = require('fs');
 const moment = require('moment');
 
 async function setValue(key, value) {
   status[key] = value;
-  fs.writeFileSync("./eventStatus.json", JSON.stringify(status, null, 2));
+  fs.writeFileSync("./status.json", JSON.stringify(status, null, 2));
 }
 
 async function parseAndSave(collection, eventType, events) {
