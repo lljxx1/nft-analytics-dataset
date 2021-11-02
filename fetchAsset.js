@@ -44,26 +44,39 @@ async function savePageResult(contract, pageResults) {
   }
 }
 
-async function getCollectionAllTokens(contract) {
-  let pageNo = 1;
+async function getCollectionAllTokens(contract, pageNo = 1) {
+  // let pageNo = 1;
   let allAssets = [];
   let batchLimit = 2;
   let batchTasks = [];
   let startTime = Date.now();
+  let maxPageLast = null;
+  let timeToStop = false;
 
   async function flush() {
     let hasZero = false;
     const results = await Promise.all(batchTasks);
     let pageResults = []
-    results.forEach((page) => {
-      hasZero = page.assets.length == 0;
-      pageResults.push(page);
+    results.forEach((pageResult) => {
+      const pageNumber = pageResult.page;
+      const assets = pageResult.assets;
+      hasZero = pageResult.assets.length == 0;
+      pageResults.push(pageResult);
+      if (pageNumber == 200) {
+        maxPageLast = assets[assets.length - 1].id;
+      } else {
+        if (maxPageLast) {
+          const reachMaxPage = assets.find(_ => _.id == maxPageLast);
+          if (reachMaxPage) {
+            console.log('timeToStop')
+            timeToStop = true;
+          }
+        }
+      }
     });
     try {
-        await savePageResult(contract, pageResults);
-    } catch (e) {
-
-    }
+      await savePageResult(contract, pageResults);
+    } catch (e) {}
     batchTasks = [];
     // console.log(allAssets.length, results.length)
     return hasZero;
@@ -83,11 +96,15 @@ async function getCollectionAllTokens(contract) {
       }
     }
 
-    if (hasZero) {
+    if (hasZero ) {
       console.log("no more page");
       break;
     }
 
+    if (timeToStop)  {
+      console.log("no more page");
+      break;
+    }
     pageNo++;
   }
 
@@ -107,6 +124,7 @@ async function fetchCollection(collection) {
 }
 
 (async () => {
+   return;
     for (let index = 0; index < topCollections.length; index++) {
       const topCollection = topCollections[index];
       const collectionKey = [topCollection.slug, 'collection'].join('-');
