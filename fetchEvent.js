@@ -44,7 +44,7 @@ async function findTokenAndFetch() {
       order: [
         ["id", "DESC"],
       ],
-      limit: 7,
+      limit: 10,
     });
 
     try {
