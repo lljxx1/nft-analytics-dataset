@@ -29,7 +29,7 @@ async function doAna(collection) {
   });
 
   const mintEvents = allTokens.filter(_ => _.from_account &&  _.from_account == MINT_ADDRESS)
-  console.log(allEvents.length,  mintEvents.length, allTokens.length);
+  console.log(allEvents.length,  mintEvents.length, mintEvents[0], allTokens.length);
 }
 
 doAna({
