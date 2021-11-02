@@ -88,8 +88,8 @@ async function getCollectionAllTokens(contract, pageNo = 1) {
 
   for (let index = 0; index < 1000; index++) {
     let hasZero = false;
-    let pageKey = [contract, "page", pageNo].join('-');
-    if (status[pageKey]) continue;
+    // let pageKey = [contract, "page", pageNo].join('-');
+    // if (status[pageKey]) continue;
     batchTasks.push(fetchCollectionTokens(contract, pageNo));
     if (batchTasks.length > batchLimit) {
       try {
