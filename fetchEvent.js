@@ -5,27 +5,32 @@ const status = require("./status.json");
 const fs = require("fs");
 
 async function saveEvents(events) {
-    const parsed = events.map((_) => {
-    //  console.log(_)
-      return {
-        id: _.id,
-        contract_address: _.contract_address,
-        collection_slug: _.collection_slug,
-        created_date: _.created_date,
-        event_type: _.event_type,
-        from_account: _.from_account ? _.from_account.address : null,
-        to_account: _.to_account ? _.to_account.address : null,
-        transaction: _.transaction && _.transaction.block_hash,
-        transaction_from_account:
-          _.transaction &&
-          _.transaction.from_account &&
-          _.transaction.from_account.address,
-        transaction_to_account:
-          _.transaction &&
-          _.transaction.to_account &&
-          _.transaction.to_account.address,
-      };
-    });
+  const parsed = events.map((_) => {
+    console.log(_)
+    return {
+      id: _.id,
+      token_id: _.asset && _.asset.token_id,
+      collection_slug: _.collection_slug,
+      timestamp: _.transaction && _.transaction.timestamp,
+      event_type: _.event_type,
+      from_account: _.from_account ? _.from_account.address : null,
+      to_account: _.to_account ? _.to_account.address : null,
+      transaction: _.transaction && _.transaction.block_hash,
+      owner: _.asset && _.asset.owner.address,
+      transaction_from_account:
+        _.transaction &&
+        _.transaction.from_account &&
+        _.transaction.from_account.address,
+      transaction_to_account:
+        _.transaction &&
+        _.transaction.to_account &&
+        _.transaction.to_account.address,
+      payment_token: _.payment_token && _.payment_token.symbol,
+      seller: _.seller && _.seller.address,
+      winner_account: _.winner_account && _.winner_account.address,
+      price: _.total_price
+    };
+  });
     console.log(parsed.length);
     const results = await Event.bulkCreate(parsed, {
       ignoreDuplicates: true,
@@ -40,7 +45,7 @@ async function findTokenAndFetch() {
       order: [
         ["id", "DESC"],
       ],
-      limit: 15,
+      limit: 10,
     });
 
     try {
@@ -51,6 +56,13 @@ async function findTokenAndFetch() {
 
           pendingTasks.push(fetchEventsWithRetry({
             event_type: "transfer",
+            asset_contract_address: unfetchedToken.asset_contract,
+            token_id: unfetchedToken.token_id,
+            limit: 200,
+          }))
+
+          pendingTasks.push(fetchEventsWithRetry({
+            event_type: "successful",
             asset_contract_address: unfetchedToken.asset_contract,
             token_id: unfetchedToken.token_id,
             limit: 200,
