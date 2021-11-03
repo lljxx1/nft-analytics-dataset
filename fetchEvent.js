@@ -30,69 +30,92 @@ async function saveEvents(events) {
       price: _.total_price
     };
   });
-    console.log(parsed.length);
-    const results = await Event.bulkCreate(parsed, {
-      ignoreDuplicates: true,
-    });
+  console.log(parsed.length);
+  const results = await Event.bulkCreate(parsed, {
+    ignoreDuplicates: true,
+  });
 }
 
-async function findTokenAndFetch() {
-    const unfetchedTokens = await Asset.findAll({
-      where: {
-        fetched: 0,
-      },
-      order: [
-        ["id", "DESC"],
-      ],
-      limit: 10,
-    });
+async function findTokenAndFetch(collection) {
+  const unfetchedTokens = await Asset.findAll({
+    where: {
+      collection: collection.slug,
+      fetched: 0,
+    },
+    order: [
+      ["id", "DESC"],
+    ],
+    limit: 12,
+  });
 
-    try {
+  if (unfetchedTokens.length == 0) {
+    console.log('all fetched')
+    return;
+  }
 
-        let pendingTasks = []
-        for (let index = 0; index < unfetchedTokens.length; index++) {
-          const unfetchedToken = unfetchedTokens[index];
+  try {
+    let pendingTasks = []
+    for (let index = 0; index < unfetchedTokens.length; index++) {
+      const unfetchedToken = unfetchedTokens[index];
 
-          pendingTasks.push(fetchEventsWithRetry({
-            event_type: "transfer",
-            asset_contract_address: unfetchedToken.asset_contract,
-            token_id: unfetchedToken.token_id,
-            limit: 200,
-          }))
+      pendingTasks.push(fetchEventsWithRetry({
+        event_type: "transfer",
+        asset_contract_address: unfetchedToken.asset_contract,
+        token_id: unfetchedToken.token_id,
+        limit: 200,
+      }))
 
-          pendingTasks.push(fetchEventsWithRetry({
-            event_type: "successful",
-            asset_contract_address: unfetchedToken.asset_contract,
-            token_id: unfetchedToken.token_id,
-            limit: 200,
-          }))
-        }
-        // const events = await fetchEventsWithRetry({
-        //   event_type: "transfer",
-        //   asset_contract_address: unfetchedToken.asset_contract,
-        //   token_id: unfetchedToken.token_id,
-        //   limit: 200,
-        // });
-        // await saveEvents(events);
-        // await unfetchedToken.update({
-        //   fetched: 1,
-        // });
-        const allResults = await Promise.all(pendingTasks);
-        for (let index = 0; index < allResults.length; index++) {
-          const events = allResults[index];
-          await saveEvents(events);
-          const unfetchedToken = unfetchedTokens[index];
-          if (unfetchedToken) {
-            await unfetchedToken.update({
-              fetched: 1,
-            });
-          }
-        }
-    } catch(e) {
-        console.log(e)
+      pendingTasks.push(fetchEventsWithRetry({
+        event_type: "successful",
+        asset_contract_address: unfetchedToken.asset_contract,
+        token_id: unfetchedToken.token_id,
+        limit: 200,
+      }))
     }
-    console.log(unfetchedTokens.length);
-    setTimeout(findTokenAndFetch, 700);
+    // const events = await fetchEventsWithRetry({
+    //   event_type: "transfer",
+    //   asset_contract_address: unfetchedToken.asset_contract,
+    //   token_id: unfetchedToken.token_id,
+    //   limit: 200,
+    // });
+    // await saveEvents(events);
+    // await unfetchedToken.update({
+    //   fetched: 1,
+    // });
+    const allResults = await Promise.all(pendingTasks);
+    for (let index = 0; index < allResults.length; index++) {
+      const events = allResults[index];
+      await saveEvents(events);
+      const unfetchedToken = unfetchedTokens[index];
+      if (unfetchedToken) {
+        await unfetchedToken.update({
+          fetched: 1,
+        });
+      }
+    }
+  } catch (e) {
+    console.log(e)
+  }
+  console.log(unfetchedTokens.length);
+  // setTimeout(findTokenAndFetch, 700);
+  return await findTokenAndFetch(collection);
 }
 
-findTokenAndFetch();
+// findTokenAndFetch();
+
+; (async () => {
+
+  for (let index = 0; index < topCollections.length; index++) {
+    const topCollection = topCollections[index];
+    if (topCollection.stats.totalSupply > 20000 && ['lostpoets', 'adam-bomb-squad', 'emblem-vault'].indexOf(topCollection.slug) == -1) {
+      console.log('skip')
+      continue;
+    }
+    if (['decentraland-wearables', 'cryptokitties', 'decentraland', 'parallelalpha'].indexOf(topCollection.slug) > -1) {
+      continue;
+    }
+
+    await findTokenAndFetch(topCollection);
+
+  }
+})();
