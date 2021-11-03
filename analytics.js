@@ -28,31 +28,37 @@ async function doAna(collection) {
     raw: true
   });
 
+  const fetchedTokens = allTokens.filter(_ => _.fetched == 1)
   const mintEvents = allEvents.filter(_ => _.from_account &&  _.from_account == MINT_ADDRESS)
-  console.log(allEvents.length,  mintEvents.length, allEvents[0], allTokens.length);
+  console.log({
+    fetchedTokens : fetchedTokens.length,
+    allEvents: allEvents.length,  
+    mintEvents: mintEvents.length, 
+    allTokens: allTokens.length
+  });
 }
 
-doAna({
-  slug: 'mekaverse'
-})
-// (async () => {
+// doAna({
+//   slug: 'mekaverse'
+// })
 
-//   for (let index = 0; index < topCollections.length; index++) {
-//     const topCollection = topCollections[index];
-//     if (topCollection.stats.totalSupply > 20000 && ['lostpoets','adam-bomb-squad', 'emblem-vault'].indexOf(topCollection.slug) == -1) {
-//       console.log('skip')
-//       continue;
-//     }
-//     if (['decentraland-wearables', 'cryptokitties', 'decentraland', 'parallelalpha'].indexOf(topCollection.slug) > -1) {
-//       continue;
-//     }
+;(async () => {
 
-//     const token
+  for (let index = 0; index < topCollections.length; index++) {
+    const topCollection = topCollections[index];
+    if (topCollection.stats.totalSupply > 20000 && ['lostpoets','adam-bomb-squad', 'emblem-vault'].indexOf(topCollection.slug) == -1) {
+      console.log('skip')
+      continue;
+    }
+    if (['decentraland-wearables', 'cryptokitties', 'decentraland', 'parallelalpha'].indexOf(topCollection.slug) > -1) {
+      continue;
+    }
+
+    await doAna(topCollection);
   
-//   }
+  }
 
-//   Asset
-// })();
+})();
 
 // console.log(out = kstest(
 //   [ 2.0, 1.0, 5.0, -5.0, 3.0, 0.5, 6.0 ]
