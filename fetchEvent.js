@@ -96,7 +96,7 @@ async function findTokenAndFetch(collection) {
   } catch (e) {
     console.log(e)
   }
-  console.log(unfetchedTokens.length);
+  console.log(collection.slug, unfetchedTokens.length);
   // setTimeout(findTokenAndFetch, 700);
   return await findTokenAndFetch(collection);
 }
@@ -116,6 +116,5 @@ async function findTokenAndFetch(collection) {
     }
 
     await findTokenAndFetch(topCollection);
-
   }
 })();
