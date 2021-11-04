@@ -78,6 +78,7 @@ def find_anomalies(data, threshold = 2,num_replicates = 1):
     vc = data.to_account.value_counts()
 
     num_datapoints = len(data)
+    accountList = []
     for account in vc[vc > threshold].index:
         lowest_list=[]
 
@@ -99,6 +100,13 @@ def find_anomalies(data, threshold = 2,num_replicates = 1):
                 p_values.append(ks[1])
                 
         if num_anomalies >= num_replicates * 0.8: #arbitrary threshold
+
+            accountResult = dict()
+            accountResult['account'] = account
+            accountResult['score'] = str(cal_average(p_values))
+            accountResult['num_transactions'] = str(len(data[data['to_account']==account]['txid'].unique()))
+            accountResult['num_minted'] = str(len(data[data['to_account']==account]))
+
             print(account + ',' + str(cal_average(p_values)))
             print('num_transactions: '+ str(len(data[data['to_account']==account]['txid'].unique())))
             print('num_minted:' + str(len(data[data['to_account']==account])))
@@ -112,8 +120,11 @@ def find_anomalies(data, threshold = 2,num_replicates = 1):
             print(lowest_list)
             print('\n')
             print('\n')
+
+            accountResult['lowest_list'] = lowest_list
+            accountList.append(accountResult)
         
-    return
+    return accountList
 """
 Generate Report
 """
@@ -131,4 +142,7 @@ for COLLECTION in topCollections:
         print(COLLECTION['name'])
         print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
         print('Lucky Buyer,p')
-        find_anomalies(data_to_analyze)
+        testResult = find_anomalies(data_to_analyze)
+        COLLECTION['ks_test_result'] = testResult
+
+json.dump(topCollections, open('../topCollection200-withtest.json'))
