@@ -62,6 +62,7 @@ async function doAna(collection) {
       total.push(row);
       uniqueMintSet.add(item.token_id);
     }
+    return total;
   }, []);
 
   console.log(mintingRows)
