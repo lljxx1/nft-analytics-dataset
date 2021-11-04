@@ -49,7 +49,7 @@ async function findTokenAndFetch(collection) {
   });
 
   if (unfetchedTokens.length == 0) {
-    console.log('all fetched')
+    console.log('all fetched', collection.slug)
     return;
   }
 
