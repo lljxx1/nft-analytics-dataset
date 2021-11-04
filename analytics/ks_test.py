@@ -108,6 +108,7 @@ def find_anomalies(data, threshold = 2,num_replicates = 1):
             print('{rank, token_id}')
             print(lowest_list)
             print('\n')
+            print('\n')
         
     return
 """
