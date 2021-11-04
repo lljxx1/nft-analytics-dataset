@@ -3,6 +3,7 @@
     "@stdlib/stats-kstest": "^0.0.6",
     "axios": "^0.24.0",
     "axios-https-proxy-fix": "^0.17.1",
+    "csv-writer": "^1.6.0",
     "moment": "^2.29.1",
     "sequelize": "^6.8.0",
     "sqlite3": "^5.0.2",

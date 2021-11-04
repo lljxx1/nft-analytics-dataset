@@ -3,7 +3,7 @@ const topCollections = require("./topCollection200.json");
 const { getTokenWithRarity } = require('./rarity');
 // const kstest = require( '@stdlib/stats-kstest' );
 const fs = require('fs');
-
+const { createObjectCsvWriter: createCsvWriter } = require('csv-writer');
 
 const MINT_ADDRESS = '0x0000000000000000000000000000000000000000';
 
@@ -65,8 +65,26 @@ async function doAna(collection) {
     return total;
   }, []);
 
-  console.log(mintingRows[0])
 
+
+  const firstRow = mintingRows[0];
+  const dataFile = `${datasetbaseDir}/minting.csv`
+  const header = Object.keys(firstRow).map(_ => {
+    return {
+      id: _,
+      title: _
+    }
+  }).filter(_ => _.id != 'TOKEN_ID');
+  header.unshift({
+    id: 'TOKEN_ID',
+    title: 'TOKEN_ID'
+  })
+  const csvWriter = createCsvWriter({
+    path: dataFile,
+    header: header
+  });
+  console.log('rows', mintingRows.length)
+  await csvWriter.writeRecords(mintingRows)
 }
 
 // doAna({
