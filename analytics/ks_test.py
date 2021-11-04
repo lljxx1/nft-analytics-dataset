@@ -4,10 +4,13 @@ KS test on table that has minting accounts and rarity data
 @author: nbax1
 """
 
+import collections
 from scipy import stats
 import random
 import numpy as np
 import pandas as pd
+import json
+import os.path
 
 """
 Update Parameters Here
@@ -116,11 +119,15 @@ Generate Report
 """
 
 
-COLLECTIONS = ["boredapeyachtclub", "meebits", "lootproject", "cool-cats-nft", "veefriends"]
+# COLLECTIONS = ["boredapeyachtclub", "meebits", "lootproject", "cool-cats-nft", "veefriends"]
+collection = open('../topCollection200.json')
+topCollections = json.load(collection)
 
-for COLLECTION in COLLECTIONS:
-    data_to_analyze = pd.read_csv('../dataset/{}/minting.csv'.format(COLLECTION))
-    print(COLLECTION)
-    print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
-    print('Lucky Buyer,p')
-    find_anomalies(data_to_analyze)
+for COLLECTION in topCollections:
+    datasetfile = '../dataset/{}/minting.csv'.format(COLLECTION)
+    if os.path.isfile(datasetfile) :
+        data_to_analyze = pd.read_csv(datasetfile)
+        print(COLLECTION)
+        print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
+        print('Lucky Buyer,p')
+        find_anomalies(data_to_analyze)
