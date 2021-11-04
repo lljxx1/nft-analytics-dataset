@@ -114,7 +114,7 @@ def find_anomalies(data, threshold = 2,num_replicates = 1):
             for transaction in data[data['to_account'] == account]['txid'].unique():
                 lowest_rank = min(data[data['txid']==transaction]['rank'])
                 token_id = data.loc[data['rank'] == lowest_rank, 'TOKEN_ID'].values[0]
-                lowest_list.append([lowest_rank, token_id])
+                lowest_list.append([str(lowest_rank), str(token_id)])
                     
             print('{rank, token_id}')
             print(lowest_list)
