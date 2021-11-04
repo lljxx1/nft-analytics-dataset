@@ -78,22 +78,24 @@ async function doAna(collection) {
   }
 
   const uniqueMintSet = new Set();
-  const mintingRows = mintEvents.reduce((total, item)=> {
-    const rarity = tokensWithRarity.find(_ => _.token_id == item.token_id);
-    const row = {
-      txid: item.transaction,
-      to_account: item.to_account,
-      TOKEN_ID: item.token_id,
-      current_owner: item.owner,
-      rank: rarity.rarity_rank,
-      time: item.timestamp
-    }
-    if (!uniqueMintSet.has(item.token_id)) {
-      total.push(row);
-      uniqueMintSet.add(item.token_id);
-    }
-    return total;
-  }, []);
+  const mintingRows = mintEvents
+    .reduce((total, item) => {
+      const rarity = tokensWithRarity.find((_) => _.token_id == item.token_id);
+      const row = {
+        txid: item.transaction,
+        to_account: item.to_account,
+        TOKEN_ID: item.token_id,
+        current_owner: item.owner,
+        rank: rarity ? rarity.rarity_rank : null,
+        time: item.timestamp,
+      };
+      if (!uniqueMintSet.has(item.token_id)) {
+        total.push(row);
+        uniqueMintSet.add(item.token_id);
+      }
+      return total;
+    }, [])
+    .filter((_) => _.rank);
 
 
   if (mintingRows.length) {
@@ -127,13 +129,13 @@ async function doAna(collection) {
         winner_account: item.winner_account,
         TOKEN_ID: item.token_id,
         current_owner: item.owner,
-        rank: rarity.rarity_rank,
+        rank: rarity ? rarity.rarity_rank : null,
         time: item.timestamp,
         payment_token: item.payment_token,
-        price: item.price
-      }
+        price: item.price,
+      };
       return row
-    })
+    }).filter(_ => _.rank)
 
     await saveFile(saleWithRarity, `${datasetbaseDir}/sales.csv`)
   }
