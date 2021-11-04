@@ -7,6 +7,29 @@ const { createObjectCsvWriter: createCsvWriter } = require('csv-writer');
 
 const MINT_ADDRESS = '0x0000000000000000000000000000000000000000';
 
+
+async function saveFile(dataRows, dataFile) {
+  const firstRow = dataRows[0];
+  // const dataFile = `${datasetbaseDir}/minting.csv`
+  const header = Object.keys(firstRow).map(_ => {
+    return {
+      id: _,
+      title: _
+    }
+  }).filter(_ => _.id != 'TOKEN_ID');
+  header.unshift({
+    id: 'TOKEN_ID',
+    title: 'TOKEN_ID'
+  })
+  const csvWriter = createCsvWriter({
+    path: dataFile,
+    header: header
+  });
+  console.log('rows', dataRows.length)
+  await csvWriter.writeRecords(dataRows)
+
+}
+
 async function doAna(collection) {
   let allTokens = await Asset.findAll({
     where: {
@@ -29,6 +52,14 @@ async function doAna(collection) {
     raw: true
   });
 
+  const allSaleEvents = await Event.findAll({
+    where: {
+      event_type: 'successful',
+      collection_slug: collection.slug
+    },
+    raw: true
+  });
+
   const fetchedTokens = allTokens.filter(_ => _.fetched == 1)
   const mintEvents = allEvents.filter(_ => _.from_account &&  _.from_account == MINT_ADDRESS)
 
@@ -37,14 +68,14 @@ async function doAna(collection) {
     fetchedTokens : fetchedTokens.length,
     allEvents: allEvents.length,  
     mintEvents: mintEvents.length, 
-    allTokens: allTokens.length
+    allTokens: allTokens.length,
+    allSaleEvents: allSaleEvents.length
   });
 
   const datasetbaseDir = `./dataset/${collection.slug}`;
   if (!fs.existsSync(datasetbaseDir)) {
     fs.mkdirSync(datasetbaseDir);
   }
-
 
   const uniqueMintSet = new Set();
   const mintingRows = mintEvents.reduce((total, item)=> {
@@ -57,7 +88,6 @@ async function doAna(collection) {
       rank: rarity.rarity_rank,
       time: item.timestamp
     }
-
     if (!uniqueMintSet.has(item.token_id)) {
       total.push(row);
       uniqueMintSet.add(item.token_id);
@@ -67,25 +97,45 @@ async function doAna(collection) {
 
 
   if (mintingRows.length) {
-    const firstRow = mintingRows[0];
-    
+    // const firstRow = mintingRows[0];
     const dataFile = `${datasetbaseDir}/minting.csv`
-    const header = Object.keys(firstRow).map(_ => {
-      return {
-        id: _,
-        title: _
+    await saveFile(mintingRows, dataFile)
+    // const header = Object.keys(firstRow).map(_ => {
+    //   return {
+    //     id: _,
+    //     title: _
+    //   }
+    // }).filter(_ => _.id != 'TOKEN_ID');
+    // header.unshift({
+    //   id: 'TOKEN_ID',
+    //   title: 'TOKEN_ID'
+    // })
+    // const csvWriter = createCsvWriter({
+    //   path: dataFile,
+    //   header: header
+    // });
+    // console.log('rows', mintingRows.length)
+    // await csvWriter.writeRecords(mintingRows)
+  }
+
+  if (allSaleEvents.length) {
+    const saleWithRarity = allSaleEvents.map(_ => {
+      const rarity = tokensWithRarity.find(_ => _.token_id == item.token_id);
+      const row = {
+        txid: item.transaction,
+        seller: item.seller,
+        winner_account: item.winner_account,
+        TOKEN_ID: item.token_id,
+        current_owner: item.owner,
+        rank: rarity.rarity_rank,
+        time: item.timestamp,
+        payment_token: item.payment_token,
+        price: item.price
       }
-    }).filter(_ => _.id != 'TOKEN_ID');
-    header.unshift({
-      id: 'TOKEN_ID',
-      title: 'TOKEN_ID'
+      return row
     })
-    const csvWriter = createCsvWriter({
-      path: dataFile,
-      header: header
-    });
-    console.log('rows', mintingRows.length)
-    await csvWriter.writeRecords(mintingRows)
+
+    await saveFile(saleWithRarity, `${datasetbaseDir}/sales.csv`)
   }
 }
 
