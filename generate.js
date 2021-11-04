@@ -2,6 +2,7 @@ const { Asset, Event } = require('./db');
 const topCollections = require("./topCollection200.json");
 const { getTokenWithRarity } = require('./rarity');
 // const kstest = require( '@stdlib/stats-kstest' );
+const fs = require('fs');
 
 
 const MINT_ADDRESS = '0x0000000000000000000000000000000000000000';
@@ -30,7 +31,7 @@ async function doAna(collection) {
 
   const fetchedTokens = allTokens.filter(_ => _.fetched == 1)
   const mintEvents = allEvents.filter(_ => _.from_account &&  _.from_account == MINT_ADDRESS)
-  
+
   console.log({
     slug: collection.slug,
     fetchedTokens : fetchedTokens.length,
@@ -38,6 +39,33 @@ async function doAna(collection) {
     mintEvents: mintEvents.length, 
     allTokens: allTokens.length
   });
+
+  const datasetbaseDir = `./dataset/${collection.slug}`;
+  if (!fs.existsSync(datasetbaseDir)) {
+    fs.mkdirSync(datasetbaseDir);
+  }
+
+
+  const uniqueMintSet = new Set();
+  const mintingRows = mintEvents.reduce((all, item)=> {
+    const rarity = tokensWithRarity.find(_ => _.token_id == item.token_id);
+    const row = {
+      txid: item.transaction,
+      to_account: item.to_account,
+      TOKEN_ID: item.token_id,
+      current_owner: item.owner,
+      rank: rarity.rarity_rank,
+      time: item.timestamp
+    }
+
+    if (!uniqueMintSet.has(item.token_id)) {
+      all.push(row);
+      uniqueMintSet.add(item.token_id);
+    }
+  }, []);
+
+  console.log(mintingRows)
+
 }
 
 // doAna({
