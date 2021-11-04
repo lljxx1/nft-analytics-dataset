@@ -66,25 +66,27 @@ async function doAna(collection) {
   }, []);
 
 
-
-  const firstRow = mintingRows[0];
-  const dataFile = `${datasetbaseDir}/minting.csv`
-  const header = Object.keys(firstRow).map(_ => {
-    return {
-      id: _,
-      title: _
-    }
-  }).filter(_ => _.id != 'TOKEN_ID');
-  header.unshift({
-    id: 'TOKEN_ID',
-    title: 'TOKEN_ID'
-  })
-  const csvWriter = createCsvWriter({
-    path: dataFile,
-    header: header
-  });
-  console.log('rows', mintingRows.length)
-  await csvWriter.writeRecords(mintingRows)
+  if (mintingRows.length) {
+    const firstRow = mintingRows[0];
+    
+    const dataFile = `${datasetbaseDir}/minting.csv`
+    const header = Object.keys(firstRow).map(_ => {
+      return {
+        id: _,
+        title: _
+      }
+    }).filter(_ => _.id != 'TOKEN_ID');
+    header.unshift({
+      id: 'TOKEN_ID',
+      title: 'TOKEN_ID'
+    })
+    const csvWriter = createCsvWriter({
+      path: dataFile,
+      header: header
+    });
+    console.log('rows', mintingRows.length)
+    await csvWriter.writeRecords(mintingRows)
+  }
 }
 
 // doAna({
