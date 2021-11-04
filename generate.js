@@ -30,6 +30,7 @@ async function doAna(collection) {
 
   const fetchedTokens = allTokens.filter(_ => _.fetched == 1)
   const mintEvents = allEvents.filter(_ => _.from_account &&  _.from_account == MINT_ADDRESS)
+  
   console.log({
     slug: collection.slug,
     fetchedTokens : fetchedTokens.length,
