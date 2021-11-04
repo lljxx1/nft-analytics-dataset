@@ -119,7 +119,7 @@ async function doAna(collection) {
   }
 
   if (allSaleEvents.length) {
-    const saleWithRarity = allSaleEvents.map(_ => {
+    const saleWithRarity = allSaleEvents.map(item => {
       const rarity = tokensWithRarity.find(_ => _.token_id == item.token_id);
       const row = {
         txid: item.transaction,
