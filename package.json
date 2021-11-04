@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@stdlib/stats-kstest": "^0.0.6",
     "axios": "^0.24.0",
     "axios-https-proxy-fix": "^0.17.1",
     "csv-writer": "^1.6.0",
