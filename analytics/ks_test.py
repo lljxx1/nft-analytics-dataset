@@ -122,5 +122,4 @@ for COLLECTION in COLLECTIONS:
     print(COLLECTION)
     print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
     print('Lucky Buyer,p')
-    print('\n')
     find_anomalies(data_to_analyze)
