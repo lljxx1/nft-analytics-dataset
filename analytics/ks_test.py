@@ -133,6 +133,7 @@ Generate Report
 # COLLECTIONS = ["boredapeyachtclub", "meebits", "lootproject", "cool-cats-nft", "veefriends"]
 collection = open('../topCollection200.json')
 topCollections = json.load(collection)
+newCollections = []
 
 for COLLECTION in topCollections:
     datasetfile = '../dataset/{}/minting.csv'.format(COLLECTION['slug'])
@@ -144,4 +145,5 @@ for COLLECTION in topCollections:
         print('Lucky Buyer,p')
         testResult = find_anomalies(data_to_analyze)
         COLLECTION['ks_test_result'] = testResult
-        json.dump(topCollections, open('../topCollection200-withtest.json', 'w'))
+        newCollections.append(COLLECTION)
+        json.dump(newCollections, open('../topCollection200-withtest.json', 'w'))
