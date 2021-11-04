@@ -124,7 +124,7 @@ collection = open('../topCollection200.json')
 topCollections = json.load(collection)
 
 for COLLECTION in topCollections:
-    datasetfile = '../dataset/{}/minting.csv'.format(COLLECTION)
+    datasetfile = '../dataset/{}/minting.csv'.format(COLLECTION['slug'])
     if os.path.isfile(datasetfile) :
         data_to_analyze = pd.read_csv(datasetfile)
         print(COLLECTION)
