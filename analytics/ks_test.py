@@ -144,5 +144,4 @@ for COLLECTION in topCollections:
         print('Lucky Buyer,p')
         testResult = find_anomalies(data_to_analyze)
         COLLECTION['ks_test_result'] = testResult
-
-json.dump(topCollections, open('../topCollection200-withtest.json'))
+        json.dump(topCollections, open('../topCollection200-withtest.json'))
