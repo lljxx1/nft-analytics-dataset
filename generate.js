@@ -65,7 +65,7 @@ async function doAna(collection) {
     return total;
   }, []);
 
-  console.log(mintingRows)
+  console.log(mintingRows[0])
 
 }
 
