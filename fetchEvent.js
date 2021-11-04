@@ -105,8 +105,9 @@ async function findTokenAndFetch(collection) {
 
 ; (async () => {
 
-  for (let index = 0; index < topCollections.length; index++) {
-    const topCollection = topCollections[index];
+  const needCollections = topCollections.filter(_ => new Date(_.createdDate).getTime() > new Date('2021-01-01 00:00').getTime())
+  for (let index = 0; index < needCollections.length; index++) {
+    const topCollection = needCollections[index];
     if (topCollection.stats.totalSupply > 20000 && ['lostpoets', 'adam-bomb-squad', 'emblem-vault'].indexOf(topCollection.slug) == -1) {
       console.log('skip')
       continue;
