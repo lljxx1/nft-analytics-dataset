@@ -38,10 +38,17 @@ async function doAna(collection) {
     raw: true
   });
 
-  allTokens = allTokens.map(_ => {
-    _.traits = JSON.parse(_.traits)
-    return _;
-  });
+  allTokens = allTokens
+    .map((_) => {
+      _.traits = JSON.parse(_.traits);
+      return _;
+    })
+    .filter((_) => _.traits.length);
+
+  if (allTokens.length == 0) {
+    console.log('traits is empty')
+    return
+  }
 
   const tokensWithRarity = getTokenWithRarity(allTokens);
   const allEvents = await Event.findAll({
