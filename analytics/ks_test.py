@@ -12,7 +12,7 @@ import pandas as pd
 """
 Update Parameters Here
 """
-COLLECTION = "quaks"
+
 P_VAL = 0.001
 
 """
@@ -114,7 +114,9 @@ def find_anomalies(data, threshold = 2,num_replicates = 1):
 Generate Report
 """
 
-data_to_analyze = pd.read_csv('../minting_data/{}_minting.csv'.format(COLLECTION))
+
+COLLECTION = "mekaverse"
+data_to_analyze = pd.read_csv('../dataset/{}/minting.csv'.format(COLLECTION))
 print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
 print('Lucky Buyer,p')
 print('\n')
