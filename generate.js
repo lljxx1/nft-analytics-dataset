@@ -47,7 +47,7 @@ async function doAna(collection) {
 
 
   const uniqueMintSet = new Set();
-  const mintingRows = mintEvents.reduce((all, item)=> {
+  const mintingRows = mintEvents.reduce((total, item)=> {
     const rarity = tokensWithRarity.find(_ => _.token_id == item.token_id);
     const row = {
       txid: item.transaction,
@@ -59,7 +59,7 @@ async function doAna(collection) {
     }
 
     if (!uniqueMintSet.has(item.token_id)) {
-      all.push(row);
+      total.push(row);
       uniqueMintSet.add(item.token_id);
     }
   }, []);
