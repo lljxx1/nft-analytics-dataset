@@ -115,9 +115,11 @@ Generate Report
 """
 
 
-COLLECTION = "mekaverse"
-data_to_analyze = pd.read_csv('../dataset/{}/minting.csv'.format(COLLECTION))
-print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
-print('Lucky Buyer,p')
-print('\n')
-find_anomalies(data_to_analyze)
+COLLECTIONS = ["boredapeyachtclub", "meebits", "lootproject", "cool-cats-nft", "veefriends"]
+
+for COLLECTION in COLLECTIONS:
+    data_to_analyze = pd.read_csv('../dataset/{}/minting.csv'.format(COLLECTION))
+    print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
+    print('Lucky Buyer,p')
+    print('\n')
+    find_anomalies(data_to_analyze)
