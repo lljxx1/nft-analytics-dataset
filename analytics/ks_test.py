@@ -119,6 +119,7 @@ COLLECTIONS = ["boredapeyachtclub", "meebits", "lootproject", "cool-cats-nft", "
 
 for COLLECTION in COLLECTIONS:
     data_to_analyze = pd.read_csv('../dataset/{}/minting.csv'.format(COLLECTION))
+    print(COLLECTION)
     print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
     print('Lucky Buyer,p')
     print('\n')
