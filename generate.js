@@ -10,6 +10,7 @@ const MINT_ADDRESS = '0x0000000000000000000000000000000000000000';
 
 async function saveFile(dataRows, dataFile) {
   const firstRow = dataRows[0];
+  const dataFile = `${datasetbaseDir}/minting.csv`
   // const dataFile = `${datasetbaseDir}/minting.csv`
   const header = Object.keys(firstRow).map(_ => {
     return {
@@ -30,6 +31,8 @@ async function saveFile(dataRows, dataFile) {
 }
 
 async function doAna(collection) {
+
+  const datasetbaseDir = `./dataset/${collection.slug}`;
   let allTokens = await Asset.findAll({
     where: {
       collection: collection.slug
@@ -46,6 +49,7 @@ async function doAna(collection) {
 
   if (allTokens.length == 0) {
     console.log('traits is empty')
+    fs.unlinkSync(dataFile);
     return
   }
 
@@ -87,7 +91,7 @@ async function doAna(collection) {
     allSaleEvents: allSaleEvents.length
   });
 
-  const datasetbaseDir = `./dataset/${collection.slug}`;
+
   if (!fs.existsSync(datasetbaseDir)) {
     fs.mkdirSync(datasetbaseDir);
   }
@@ -115,7 +119,7 @@ async function doAna(collection) {
 
   if (mintingRows.length) {
     // const firstRow = mintingRows[0];
-    const dataFile = `${datasetbaseDir}/minting.csv`
+   
     await saveFile(mintingRows, dataFile)
     // const header = Object.keys(firstRow).map(_ => {
     //   return {
