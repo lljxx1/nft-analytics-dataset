@@ -1,12 +1,18 @@
 const { fetchCollectionTokens } = require("./lib/opensea");
-const topCollections = require("./topCollection200.json");
+const { findTokenAndFetch } = require("./fetchEvent");
+
 const { Asset } = require('./db');
-const status = require("./status.json");
 const fs = require('fs');
+
+const args = process.argv.slice(2);
+const collecion = args[0] ? args[0] : "";
+
+const statusFile = collecion ? `./status${collecion}.json` : `./status.json`;
+const status = require(statusFile);
 
 async function setValue(key, value) {
     status[key] = value;
-    fs.writeFileSync("./status.json", JSON.stringify(status, null, 2));
+    fs.writeFileSync(statusFile, JSON.stringify(status, null, 2));
 }
 
 async function savePageResult(contract, pageResults) {
@@ -123,13 +129,17 @@ async function fetchCollection(collection) {
     console.log(allTokens);
 }
 
-(async () => {
-   return;
-    for (let index = 0; index < topCollections.length; index++) {
-      const topCollection = topCollections[index];
-      const collectionKey = [topCollection.slug, 'collection'].join('-');
-      if (status[collectionKey]) continue;
-      await fetchCollection(topCollection);
-      setValue(collectionKey, 1);
-    }
-})();
+async function main() {
+  const needFetchCollections = collecion ? require(`./${collecion}.json`) : require('./topCollection200.json');
+  for (let index = 0; index < needFetchCollections.length; index++) {
+    const topCollection = needFetchCollections[index];
+    const collectionKey = [topCollection.slug, "collection"].join("-");
+    if (status[collectionKey]) continue;
+    await fetchCollection(topCollection);
+    setValue(collectionKey, 1);
+    await findTokenAndFetch(topCollection);
+  }
+}
+
+
+main().catch(e => console.log(e))

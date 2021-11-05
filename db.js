@@ -1,8 +1,10 @@
 const Sequelize = require("sequelize");
 const path = require("path");
 
-const mergedDatabse = path.resolve("./data/", "dataset.db");
-const eventsDatabse = path.resolve("./data/", "events.db");
+const args = process.argv.slice(2);
+const collecion = args[0] ? "-" + args[0] : "";
+const mergedDatabse = path.resolve("./data/", `dataset${collecion}.db`);
+const eventsDatabse = path.resolve("./data/", `events${collecion}.db`);
 console.log({
   mergedDatabse,
   eventsDatabse

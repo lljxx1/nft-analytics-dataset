@@ -30,7 +30,7 @@ async function saveFile(dataRows, dataFile) {
   console.log('rows', dataRows.length, firstRow)
 }
 
-async function doAna(collection) {
+async function generateTokenData(collection) {
 
   const datasetbaseDir = `./dataset/${collection.slug}`;
   const dataFile = `${datasetbaseDir}/minting.csv`
@@ -162,26 +162,48 @@ async function doAna(collection) {
   }
 }
 
+
+async function main() {
+    for (let index = 0; index < topCollections.length; index++) {
+      const topCollection = topCollections[index];
+      if (topCollection.stats.totalSupply > 20000 && ['lostpoets','adam-bomb-squad', 'emblem-vault'].indexOf(topCollection.slug) == -1) {
+        console.log('skip')
+        continue;
+      }
+      if (['decentraland-wearables', 'cryptokitties', 'decentraland', 'parallelalpha'].indexOf(topCollection.slug) > -1) {
+        continue;
+      }
+      await doAna(topCollection);
+    }
+}
+
+
+
+module.exports = {
+  main,
+  generateTokenData,
+};
+
 // doAna({
 //   slug: 'mekaverse'
 // })
 
-;(async () => {
+// ;(async () => {
 
-  for (let index = 0; index < topCollections.length; index++) {
-    const topCollection = topCollections[index];
-    if (topCollection.stats.totalSupply > 20000 && ['lostpoets','adam-bomb-squad', 'emblem-vault'].indexOf(topCollection.slug) == -1) {
-      console.log('skip')
-      continue;
-    }
-    if (['decentraland-wearables', 'cryptokitties', 'decentraland', 'parallelalpha'].indexOf(topCollection.slug) > -1) {
-      continue;
-    }
+//   for (let index = 0; index < topCollections.length; index++) {
+//     const topCollection = topCollections[index];
+//     if (topCollection.stats.totalSupply > 20000 && ['lostpoets','adam-bomb-squad', 'emblem-vault'].indexOf(topCollection.slug) == -1) {
+//       console.log('skip')
+//       continue;
+//     }
+//     if (['decentraland-wearables', 'cryptokitties', 'decentraland', 'parallelalpha'].indexOf(topCollection.slug) > -1) {
+//       continue;
+//     }
 
-    await doAna(topCollection);
-  }
+//     await doAna(topCollection);
+//   }
 
-})();
+// })();
 
 // console.log(out = kstest(
 //   [ 2.0, 1.0, 5.0, -5.0, 3.0, 0.5, 6.0 ]

@@ -1,5 +1,5 @@
 const { fetchEventsWithRetry } = require("./lib/opensea");
-const topCollections = require("./topCollection200.json");
+// const topCollections = require("./topCollection200.json");
 const { Asset, Event } = require("./db");
 const status = require("./status.json");
 const fs = require("fs");
@@ -102,20 +102,23 @@ async function findTokenAndFetch(collection) {
 }
 
 // findTokenAndFetch();
+// ; (async () => {
+//   const needCollections = topCollections.filter((a, index) => index > 172).filter(_ => new Date(_.createdDate).getTime() > new Date('2021-01-01 00:00').getTime())
+//   for (let index = 0; index < needCollections.length; index++) {
+//     const topCollection = needCollections[index];
+//     if (topCollection.stats.totalSupply > 20000 && ['lostpoets', 'adam-bomb-squad', 'emblem-vault'].indexOf(topCollection.slug) == -1) {
+//       console.log('skip')
+//       continue;
+//     }
+//     if (['decentraland-wearables', 'cryptokitties', 'decentraland', 'parallelalpha'].indexOf(topCollection.slug) > -1) {
+//       continue;
+//     }
 
-; (async () => {
+//     await findTokenAndFetch(topCollection);
+//   }
+// })();
 
-  const needCollections = topCollections.filter((a, index) => index > 172).filter(_ => new Date(_.createdDate).getTime() > new Date('2021-01-01 00:00').getTime())
-  for (let index = 0; index < needCollections.length; index++) {
-    const topCollection = needCollections[index];
-    if (topCollection.stats.totalSupply > 20000 && ['lostpoets', 'adam-bomb-squad', 'emblem-vault'].indexOf(topCollection.slug) == -1) {
-      console.log('skip')
-      continue;
-    }
-    if (['decentraland-wearables', 'cryptokitties', 'decentraland', 'parallelalpha'].indexOf(topCollection.slug) > -1) {
-      continue;
-    }
 
-    await findTokenAndFetch(topCollection);
-  }
-})();
+module.exports = {
+  findTokenAndFetch,
+};
