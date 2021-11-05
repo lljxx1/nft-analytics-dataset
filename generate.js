@@ -50,7 +50,16 @@ async function doAna(collection) {
     return
   }
 
+  const tokenRarityMap = {};
+
   const tokensWithRarity = getTokenWithRarity(allTokens);
+  tokensWithRarity.forEach((_) => {
+    tokenRarityMap[_.token_id] = {
+      rarity_rank: _.rarity_rank,
+      rarity_score: _.rarity_score
+    }
+  })
+
   const allEvents = await Event.findAll({
     where: {
       event_type: 'transfer',
@@ -87,7 +96,7 @@ async function doAna(collection) {
   const uniqueMintSet = new Set();
   const mintingRows = mintEvents
     .reduce((total, item) => {
-      const rarity = tokensWithRarity.find((_) => _.token_id == item.token_id);
+      const rarity = tokenRarityMap[item.token_id];
       const row = {
         txid: item.transaction,
         to_account: item.to_account,
@@ -129,7 +138,7 @@ async function doAna(collection) {
 
   if (allSaleEvents.length) {
     const saleWithRarity = allSaleEvents.map(item => {
-      const rarity = tokensWithRarity.find(_ => _.token_id == item.token_id);
+      const rarity = tokenRarityMap[item.token_id];
       const row = {
         txid: item.transaction,
         seller: item.seller,
