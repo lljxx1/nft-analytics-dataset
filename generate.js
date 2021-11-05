@@ -25,9 +25,8 @@ async function saveFile(dataRows, dataFile) {
     path: dataFile,
     header: header
   });
-  console.log('rows', dataRows.length)
   await csvWriter.writeRecords(dataRows)
-
+  console.log('rows', dataRows.length)
 }
 
 async function doAna(collection) {
