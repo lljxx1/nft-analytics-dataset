@@ -138,6 +138,7 @@ async function main() {
     await fetchCollection(topCollection);
     setValue(collectionKey, 1);
     await findTokenAndFetch(topCollection);
+    await generateTokenData(topCollection);
   }
 }
 

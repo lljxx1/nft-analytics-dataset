@@ -173,7 +173,7 @@ async function main() {
       if (['decentraland-wearables', 'cryptokitties', 'decentraland', 'parallelalpha'].indexOf(topCollection.slug) > -1) {
         continue;
       }
-      await doAna(topCollection);
+      await generateTokenData(topCollection);
     }
 }
 
