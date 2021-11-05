@@ -137,7 +137,7 @@ async function main() {
     if (status[collectionKey]) continue;
     console.log(topCollection.slug);
     await fetchCollection(topCollection);
-    setValue(collectionKey, 1);
+    await setValue(collectionKey, 1);
     await findTokenAndFetch(topCollection);
     await generateTokenData(topCollection);
   }
