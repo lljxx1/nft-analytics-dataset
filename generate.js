@@ -55,8 +55,6 @@ async function doAna(collection) {
     return
   }
 
-  return;
-
   const tokenRarityMap = {};
 
   const tokensWithRarity = getTokenWithRarity(allTokens);
@@ -181,7 +179,6 @@ async function doAna(collection) {
     }
 
     await doAna(topCollection);
-  
   }
 
 })();
