@@ -135,6 +135,7 @@ async function main() {
     const topCollection = needFetchCollections[index];
     const collectionKey = [topCollection.slug, "collection"].join("-");
     if (status[collectionKey]) continue;
+    console.log(topCollection.slug);
     await fetchCollection(topCollection);
     setValue(collectionKey, 1);
     await findTokenAndFetch(topCollection);
