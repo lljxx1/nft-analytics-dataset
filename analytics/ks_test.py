@@ -4,16 +4,18 @@ KS test on table that has minting accounts and rarity data
 @author: nbax1
 """
 
+import collections
 from scipy import stats
 import random
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+import json
+import os.path
 
 """
 Update Parameters Here
 """
-COLLECTION = "quaks"
+
 P_VAL = 0.001
 
 """
@@ -76,6 +78,7 @@ def find_anomalies(data, threshold = 2,num_replicates = 1):
     vc = data.to_account.value_counts()
 
     num_datapoints = len(data)
+    accountList = []
     for account in vc[vc > threshold].index:
         lowest_list=[]
 
@@ -97,6 +100,13 @@ def find_anomalies(data, threshold = 2,num_replicates = 1):
                 p_values.append(ks[1])
                 
         if num_anomalies >= num_replicates * 0.8: #arbitrary threshold
+
+            accountResult = dict()
+            accountResult['account'] = account
+            accountResult['score'] = str(cal_average(p_values))
+            accountResult['num_transactions'] = str(len(data[data['to_account']==account]['txid'].unique()))
+            accountResult['num_minted'] = str(len(data[data['to_account']==account]))
+
             print(account + ',' + str(cal_average(p_values)))
             print('num_transactions: '+ str(len(data[data['to_account']==account]['txid'].unique())))
             print('num_minted:' + str(len(data[data['to_account']==account])))
@@ -104,19 +114,36 @@ def find_anomalies(data, threshold = 2,num_replicates = 1):
             for transaction in data[data['to_account'] == account]['txid'].unique():
                 lowest_rank = min(data[data['txid']==transaction]['rank'])
                 token_id = data.loc[data['rank'] == lowest_rank, 'TOKEN_ID'].values[0]
-                lowest_list.append([lowest_rank, token_id])
+                lowest_list.append([str(lowest_rank), str(token_id)])
                     
             print('{rank, token_id}')
             print(lowest_list)
             print('\n')
+            print('\n')
+
+            accountResult['lowest_list'] = lowest_list
+            accountList.append(accountResult)
         
-    return
+    return accountList
 """
 Generate Report
 """
 
-data_to_analyze = pd.read_csv('../minting_data/{}_minting.csv'.format(COLLECTION))
-print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
-print('Lucky Buyer,p')
-print('\n')
-find_anomalies(data_to_analyze)
+
+# COLLECTIONS = ["boredapeyachtclub", "meebits", "lootproject", "cool-cats-nft", "veefriends"]
+collection = open('../topCollection200.json')
+topCollections = json.load(collection)
+newCollections = []
+
+for COLLECTION in topCollections:
+    datasetfile = '../dataset/{}/minting.csv'.format(COLLECTION['slug'])
+    if os.path.isfile(datasetfile) :
+        data_to_analyze = pd.read_csv(datasetfile)
+        print("\n")
+        print(COLLECTION['name'])
+        print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
+        print('Lucky Buyer,p')
+        testResult = find_anomalies(data_to_analyze)
+        COLLECTION['ks_test_result'] = testResult
+        newCollections.append(COLLECTION)
+        json.dump(newCollections, open('../topCollection200-withtest.json', 'w'))
