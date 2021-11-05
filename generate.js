@@ -34,7 +34,7 @@ async function doAna(collection) {
 
   const datasetbaseDir = `./dataset/${collection.slug}`;
   const dataFile = `${datasetbaseDir}/minting.csv`
-  
+
   let allTokens = await Asset.findAll({
     where: {
       collection: collection.slug
@@ -51,7 +51,7 @@ async function doAna(collection) {
 
   if (allTokens.length == 0) {
     console.log('traits is empty')
-    fs.unlinkSync(dataFile);
+    if (fs.existsSync(dataFile)) fs.unlinkSync(dataFile);
     return
   }
 
