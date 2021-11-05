@@ -45,7 +45,7 @@ async function findTokenAndFetch(collection) {
     order: [
       ["id", "DESC"],
     ],
-    limit: 13,
+    limit: 12,
   });
 
   if (unfetchedTokens.length == 0) {
