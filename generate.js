@@ -10,7 +10,7 @@ const MINT_ADDRESS = '0x0000000000000000000000000000000000000000';
 
 async function saveFile(dataRows, dataFile) {
   const firstRow = dataRows[0];
-  const dataFile = `${datasetbaseDir}/minting.csv`
+
   // const dataFile = `${datasetbaseDir}/minting.csv`
   const header = Object.keys(firstRow).map(_ => {
     return {
@@ -33,6 +33,8 @@ async function saveFile(dataRows, dataFile) {
 async function doAna(collection) {
 
   const datasetbaseDir = `./dataset/${collection.slug}`;
+  const dataFile = `${datasetbaseDir}/minting.csv`
+  
   let allTokens = await Asset.findAll({
     where: {
       collection: collection.slug
