@@ -116,6 +116,7 @@ async function findTokenAndFetch(collection) {
       continue;
     }
 
+    if (index < 172) continue;
     await findTokenAndFetch(topCollection);
   }
 })();
