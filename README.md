@@ -1,7 +1,3 @@
-
-## Sample 
-[topCollection200](reports/topCollection200.md)
-
 ## Usage
 
 ``` shell
@@ -21,6 +17,9 @@ python3 ks_test.py custom
 # generate markdon report
 node genReport.js custom
 ```
+
+## Sample 
+- [topCollection200](reports/topCollection200.md)
 
 ## config.json
 ``` json
