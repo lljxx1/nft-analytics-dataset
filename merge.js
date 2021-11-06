@@ -35,20 +35,24 @@ for (let index = 0; index < allTypes.length; index++) {
 
   task.forEach(_ => {
     const hasReport = testReport.find(c => _.slug == c.slug)
-    overview.push({
-      name: _.name,
-      logo: _.logo,
-      slug: _.slug,
-      createdDate: _.createdDate,
-      opensea: `https://opensea.io/collection/${_.slug}`,
-      floorPrice: _.floorPrice,
-      totalVolume: _.stats.totalVolume.toFixed(0),
-      totalSupply: _.stats.totalSupply,
-      numOwners: _.stats.numOwners,
-      marketCap: _.stats.marketCap,
-      hasReport: hasReport != null,
-      testResult: `${allType}.md#${_.name.toLowerCase().split(' ', '-')}`,
-    });
+    if (hasReport)
+      overview.push({
+        name: _.name,
+        logo: _.logo,
+        slug: _.slug,
+        createdDate: _.createdDate,
+        opensea: `https://opensea.io/collection/${_.slug}`,
+        floorPrice: _.floorPrice,
+        totalVolume: _.stats.totalVolume.toFixed(0),
+        totalSupply: _.stats.totalSupply,
+        numOwners: _.stats.numOwners,
+        marketCap: _.stats.marketCap,
+        hasReport: hasReport != null,
+        testResult: `${allType}.md#${_.name
+          .toLowerCase()
+          .split(" ")
+          .join("-")}`,
+      });
   })
 }
 
