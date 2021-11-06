@@ -17,7 +17,7 @@ const detailBlock = testReport
         _.min = _.min ? parseInt(_.min) : null;
         return _;
       })
-      .filter((_) => _.min && _.min > 15);
+      .filter((_) => _.min && _.min > 10);
     return _;
   })
   .filter((_) => _.above.length)
