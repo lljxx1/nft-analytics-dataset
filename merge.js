@@ -53,17 +53,18 @@ for (let index = 0; index < allTypes.length; index++) {
 
 const md = [];
 
-md.push(`|\t${['Name', 'totalVolume', 'totalSupply', 'numOwners', 'Detail'].join("|\t")}\t|`)
+md.push(`|\t${['Logo', 'Name', 'totalVolume', 'totalSupply', 'numOwners', 'Detail'].join("|\t")}\t|`)
 
 
 md.push(
-  `|--------------|-------|-----------------------------------|---------------|-----------|`
+  `|--------------|--------------|-------|-----------------------------------|---------------|-----------|`
 );
 
 overview.forEach((row) => {
     md.push(
       `|\t${[
-        `![](${row.logo}) ${row.name}`,
+        `![](${row.logo}) `,
+        `${row.name}`,
         row.totalVolume,
         row.totalSupply,
         row.numOwners,
