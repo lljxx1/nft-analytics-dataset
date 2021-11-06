@@ -47,7 +47,7 @@ for (let index = 0; index < allTypes.length; index++) {
       numOwners: _.stats.numOwners,
       marketCap: _.stats.marketCap,
       hasReport: hasReport != null,
-      testResult: `${allType}.md#${_.name}`,
+      testResult: `${allType}.md#${_.name.toLowerCase().split(' ', '-')}`,
     });
   })
 }
@@ -69,7 +69,7 @@ overview.forEach((row) => {
         row.totalVolume,
         row.totalSupply,
         row.numOwners,
-        `[Opensea](${row.opensea})<br>[Ks-test](${row.testResult})<br>[Dataset](https://fhirchina.com/dataset.tar.gz)`,
+        `[Opensea](${row.opensea})${row.hasReport ? `<br>[Ks-test](${row.testResult})` : ''}<br>[Dataset](https://fhirchina.com/dataset.tar.gz)`,
       ].join("|\t")}\t|`
     );
 })
