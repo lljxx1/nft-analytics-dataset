@@ -2,8 +2,86 @@
 # collections24
 - collections: 49
 
+## Chubbies
+[opensea](https://opensea.io/collection/chubbies)
+### 0x65a831d9fb2cc87a7956eb8e4720956f6bfc6eea
+- [opensea](https://opensea.io/0x65a831d9fb2cc87a7956eb8e4720956f6bfc6eea)
+- score: 0.000299507486255727
+- num_minted: 3
+- num_transactions: 1
+``` json
+[["67","6838"]]
+```
+
+
+## Crazy Lizard Army
+[opensea](https://opensea.io/collection/crazy-lizard-army)
+### 0x92da3212be03a1a8a475ccfd63648012a1f9fca5
+- [opensea](https://opensea.io/0x92da3212be03a1a8a475ccfd63648012a1f9fca5)
+- score: 0.0003417959016269118
+- num_minted: 3
+- num_transactions: 1
+``` json
+[["432","4968"]]
+```
+
+
+## Mars Cats Voyage
+[opensea](https://opensea.io/collection/marscatsvoyage)
+### 0x6b7e6143744174d84b67f0bb7a741f0cc2ad0fb0
+- [opensea](https://opensea.io/0x6b7e6143744174d84b67f0bb7a741f0cc2ad0fb0)
+- score: 0.0007656653564856947
+- num_minted: 12
+- num_transactions: 2
+``` json
+[["1036","6157"],["110","6939"]]
+```
+
+
+## 0xVampire Project
+[opensea](https://opensea.io/collection/0xvampire-project)
+### 0xc95031ef03856c82736448e2d0eeb3c88f36291b
+- [opensea](https://opensea.io/0xc95031ef03856c82736448e2d0eeb3c88f36291b)
+- score: 0.0007934138176926643
+- num_minted: 5
+- num_transactions: 1
+``` json
+[["230","4218"]]
+```
+
+
+### 0x67120951f249a54fee4fc8ac0d7e4fa97a2bdfc0
+- [opensea](https://opensea.io/0x67120951f249a54fee4fc8ac0d7e4fa97a2bdfc0)
+- score: 0.0006845027905522135
+- num_minted: 5
+- num_transactions: 1
+``` json
+[["958","9350"]]
+```
+
+
+### 0x56ff93114c7ab8489ccd4f33f4d0f7a4ff917263
+- [opensea](https://opensea.io/0x56ff93114c7ab8489ccd4f33f4d0f7a4ff917263)
+- score: 0.000628903090216932
+- num_minted: 3
+- num_transactions: 1
+``` json
+[["569","8304"]]
+```
+
+
 ## HeavenComputer
 [opensea](https://opensea.io/collection/heavencomputer)
+### 0x5338035c008ea8c4b850052bc8dad6a33dc2206c
+- [opensea](https://opensea.io/0x5338035c008ea8c4b850052bc8dad6a33dc2206c)
+- score: 0.00011748844478248974
+- num_minted: 45
+- num_transactions: 33
+``` json
+[["258","1008"],["4130","1015"],["330","1124"],["580","1137"],["81","1154"],["2482","1221"],["576","1260"],["1218","1336"],["1944","1420"],["647","1527"],["771","1604"],["871","1633"],["414","1880"],["400","2016"],["241","2623"],["52","2740"],["379","2750"],["253","2781"],["42","2885"],["82","3009"],["210","3234"],["265","3835"],["180","4005"],["384","4106"],["229","4137"],["24","4386"],["71","4516"],["143","4693"],["406","4749"],["12","4929"],["219","5178"],["135","5244"],["670","5278"]]
+```
+
+
 ### 0x720d330816afd75a72e012f8d669a19918483375
 - [opensea](https://opensea.io/0x720d330816afd75a72e012f8d669a19918483375)
 - score: 4.0877971878305216e-08
@@ -34,6 +112,66 @@
 ```
 
 
+### 0x2fd0f49dcd457818dd38de54dcb4cc26ebfe4b43
+- [opensea](https://opensea.io/0x2fd0f49dcd457818dd38de54dcb4cc26ebfe4b43)
+- score: 0.0009757989511837433
+- num_minted: 14
+- num_transactions: 13
+``` json
+[["136","1803"],["1009","1901"],["68","2481"],["241","2623"],["253","2781"],["202","4301"],["143","4693"],["12","4929"],["19","7052"],["1221","7227"],["565","7341"],["57","7596"],["199","7775"]]
+```
+
+
+### 0xe68a78881fa1dc0cb9c2124e16fba82158a4f606
+- [opensea](https://opensea.io/0xe68a78881fa1dc0cb9c2124e16fba82158a4f606)
+- score: 0.0008888592841802883
+- num_minted: 12
+- num_transactions: 8
+``` json
+[["97","3864"],["47","4210"],["107","4217"],["3","4242"],["87","4656"],["17","4866"],["115","5761"],["30","5810"]]
+```
+
+
+### 0x910b48c25afc5b2a998458b62d467d482eca74af
+- [opensea](https://opensea.io/0x910b48c25afc5b2a998458b62d467d482eca74af)
+- score: 0.0005464837568029577
+- num_minted: 10
+- num_transactions: 10
+``` json
+[["2618","898"],["1177","918"],["1981","963"],["281","1018"],["174","1046"],["995","1074"],["656","1100"],["2699","1115"],["240","1203"],["70","1291"]]
+```
+
+
+### 0xd6b78fc05ca640ac3dd776558bafd9d3cf8210cd
+- [opensea](https://opensea.io/0xd6b78fc05ca640ac3dd776558bafd9d3cf8210cd)
+- score: 0.00047939723818883216
+- num_minted: 9
+- num_transactions: 6
+``` json
+[["2388","44"],["478","52"],["655","92"],["912","112"],["847","143"],["173","251"]]
+```
+
+
+### 0x683231e17f6db6b4208206164c08e19826bc068a
+- [opensea](https://opensea.io/0x683231e17f6db6b4208206164c08e19826bc068a)
+- score: 0.0007222244977248295
+- num_minted: 7
+- num_transactions: 7
+``` json
+[["62","81"],["317","97"],["327","123"],["3","4242"],["202","4301"],["588","7553"],["217","7720"]]
+```
+
+
+### 0x4041e9d98f794ee7d952d266c1a10707a0af5332
+- [opensea](https://opensea.io/0x4041e9d98f794ee7d952d266c1a10707a0af5332)
+- score: 0.0004797428216435137
+- num_minted: 7
+- num_transactions: 7
+``` json
+[["1338","528"],["1986","542"],["256","7396"],["53","7494"],["588","7553"],["63","7691"],["413","7748"]]
+```
+
+
 ### 0x63f0a3660170a5c9cd4ca7b28b82f0011ffb37c4
 - [opensea](https://opensea.io/0x63f0a3660170a5c9cd4ca7b28b82f0011ffb37c4)
 - score: 4.0823929219682786e-05
@@ -41,6 +179,38 @@
 - num_transactions: 3
 ``` json
 [["15","76"],["215","131"],["103","3964"]]
+```
+
+
+### 0x85086315be5c6efc6b9014c4203656f0434f605a
+- [opensea](https://opensea.io/0x85086315be5c6efc6b9014c4203656f0434f605a)
+- score: 0.00031005397595519326
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["513","2950"],["318","5736"],["444","7457"]]
+```
+
+
+### 0x951b928f2a8ba7ce14cc418cfebfee30a57294c3
+- [opensea](https://opensea.io/0x951b928f2a8ba7ce14cc418cfebfee30a57294c3)
+- score: 0.0001367327756513968
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["390","684"],["198","687"],["360","2667"]]
+```
+
+
+## Chill Frogs NFT
+[opensea](https://opensea.io/collection/chill-frogs)
+### 0x0bd9c0c963a2c34af773c0adceb31a9181d73218
+- [opensea](https://opensea.io/0x0bd9c0c963a2c34af773c0adceb31a9181d73218)
+- score: 0.0008972090746013935
+- num_minted: 6
+- num_transactions: 4
+``` json
+[["129","2143"],["461","2846"],["92","3219"],["51","3859"]]
 ```
 
 
@@ -73,6 +243,16 @@
 - num_transactions: 61
 ``` json
 [["474","6151"],["377","4246"],["18","5751"],["709","6542"],["592","6903"],["269","6534"],["748","6952"],["622","6708"],["693","6928"],["628","6658"],["695","6940"],["508","6513"],["845","7002"],["445","6660"],["661","6939"],["470","6949"],["318","6958"],["1091","7033"],["564","6902"],["298","6964"],["435","6150"],["666","6936"],["476","6304"],["571","7039"],["422","6514"],["814","7028"],["788","6541"],["928","7034"],["588","6947"],["417","5961"],["420","6309"],["740","7029"],["707","6927"],["29","4594"],["7","4803"],["372","5229"],["376","6186"],["382","5972"],["371","6306"],["109","6397"],["80","6399"],["373","6706"],["391","6807"],["4","6620"],["224","6619"],["205","6618"],["378","7037"],["556","6540"],["40","6610"],["108","6611"],["384","5742"],["330","4210"],["243","5745"],["557","6307"],["527","5971"],["258","6942"],["284","6149"],["257","4253"],["590","4247"],["452","5962"],["552","5741"]]
+```
+
+
+### 0x3fbcf47f3deb35879653ea68093c61eba61668f2
+- [opensea](https://opensea.io/0x3fbcf47f3deb35879653ea68093c61eba61668f2)
+- score: 0.00013517965426529383
+- num_minted: 68
+- num_transactions: 64
+``` json
+[["2082","8573"],["43","3448"],["1254","9122"],["1343","7866"],["37","7146"],["1394","9121"],["103","736"],["1477","8575"],["2169","6362"],["2451","8716"],["67","9123"],["1634","1845"],["1654","8581"],["2276","8488"],["1657","3387"],["2430","7916"],["1385","8780"],["2638","7895"],["2681","7853"],["2624","6370"],["1425","7880"],["1814","8490"],["2024","7861"],["1600","7874"],["1636","5499"],["2006","1292"],["2087","7879"],["1603","3359"],["1364","7884"],["1731","8636"],["2387","7914"],["2381","8717"],["2011","2193"],["1913","7882"],["2160","3386"],["1713","6553"],["2148","8718"],["230","7850"],["1674","7894"],["1542","4192"],["1938","3384"],["2121","6133"],["471","7883"],["381","6557"],["492","7885"],["95","2194"],["74","101"],["553","8580"],["153","1271"],["124","1293"],["226","993"],["562","2775"],["178","3385"],["22","3650"],["491","7877"],["170","183"],["465","6558"],["8","6727"],["301","3201"],["166","1301"],["374","8574"],["261","87"],["339","7858"],["344","4187"]]
 ```
 
 
@@ -186,6 +366,16 @@
 ```
 
 
+### 0xa3c1a3baa50e3e3c3d464110edd60d411e4358c1
+- [opensea](https://opensea.io/0xa3c1a3baa50e3e3c3d464110edd60d411e4358c1)
+- score: 0.00021397042686424074
+- num_minted: 12
+- num_transactions: 11
+``` json
+[["3023","3031"],["1012","4055"],["1047","4052"],["1036","3020"],["1117","4053"],["694","3030"],["787","3028"],["1135","3022"],["807","3029"],["985","3023"],["1158","3021"]]
+```
+
+
 ### 0x9f6bdf4c17b969dfe10741b6da597df9eae10bee
 - [opensea](https://opensea.io/0x9f6bdf4c17b969dfe10741b6da597df9eae10bee)
 - score: 1.2127397725574864e-05
@@ -246,6 +436,36 @@
 ```
 
 
+### 0x969b02b397e592e1f277ee6d5f149fc6a0df0fb9
+- [opensea](https://opensea.io/0x969b02b397e592e1f277ee6d5f149fc6a0df0fb9)
+- score: 0.00024454588733511075
+- num_minted: 8
+- num_transactions: 7
+``` json
+[["932","647"],["902","628"],["674","630"],["1085","645"],["1049","629"],["942","644"],["1002","646"]]
+```
+
+
+### 0x6d3c108d0b52c70ca074d330f58f983e38d55fee
+- [opensea](https://opensea.io/0x6d3c108d0b52c70ca074d330f58f983e38d55fee)
+- score: 0.0006135810377352796
+- num_minted: 8
+- num_transactions: 5
+``` json
+[["993","1494"],["712","1495"],["1183","1833"],["940","1834"],["1197","1836"]]
+```
+
+
+### 0x51ec5e1b8b3c4c6bae49619e657f94c4ad577b45
+- [opensea](https://opensea.io/0x51ec5e1b8b3c4c6bae49619e657f94c4ad577b45)
+- score: 0.00012401871396526692
+- num_minted: 8
+- num_transactions: 8
+``` json
+[["886","5815"],["1008","5813"],["825","5814"],["743","4708"],["967","5816"],["776","4705"],["997","4706"],["757","4707"]]
+```
+
+
 ### 0xb1c45f12548efe0213165ca2d0198a3c8ec499f0
 - [opensea](https://opensea.io/0xb1c45f12548efe0213165ca2d0198a3c8ec499f0)
 - score: 1.9402881223907398e-05
@@ -266,6 +486,36 @@
 ```
 
 
+### 0x331ceea5443c597aea9f3c4844827e939f9a694e
+- [opensea](https://opensea.io/0x331ceea5443c597aea9f3c4844827e939f9a694e)
+- score: 0.0004620427831123833
+- num_minted: 6
+- num_transactions: 6
+``` json
+[["536","3089"],["504","3088"],["887","3140"],["883","3141"],["750","3142"],["769","3143"]]
+```
+
+
+### 0x5952efbde29dc92512e55585fde1c73418c0f2cf
+- [opensea](https://opensea.io/0x5952efbde29dc92512e55585fde1c73418c0f2cf)
+- score: 0.00010618393481731507
+- num_minted: 5
+- num_transactions: 5
+``` json
+[["487","9117"],["324","4324"],["366","9109"],["522","9119"],["482","9110"]]
+```
+
+
+### 0xb846511cb85fb3b49ee640bf98614b041e82053e
+- [opensea](https://opensea.io/0xb846511cb85fb3b49ee640bf98614b041e82053e)
+- score: 0.0009498134670090774
+- num_minted: 4
+- num_transactions: 4
+``` json
+[["436","26"],["572","1188"],["454","27"],["413","1187"]]
+```
+
+
 ## VOID - Visitors of Imma Degen
 [opensea](https://opensea.io/collection/visitors-of-imma-degen)
 ### 0x844d919bb4fbfbbf4b0918bef3bbe858dcfc2cd2
@@ -275,6 +525,38 @@
 - num_transactions: 21
 ``` json
 [["749","3082"],["3431","3330"],["5","3472"],["59","4045"],["9990","4445"],["9972","4598"],["277","4599"],["106","4694"],["1","4932"],["838","5064"],["1004","5296"],["5060","5377"],["77","5410"],["38","5432"],["9015","5586"],["1042","5832"],["528","5858"],["109","5943"],["52","6446"],["1007","7537"],["508","7543"]]
+```
+
+
+### 0xce1b719bcdaff881c4b7a3579f591868403bcf9e
+- [opensea](https://opensea.io/0xce1b719bcdaff881c4b7a3579f591868403bcf9e)
+- score: 0.0008818958365063596
+- num_minted: 5
+- num_transactions: 3
+``` json
+[["2439","3155"],["645","5583"],["1127","5640"]]
+```
+
+
+## JunkYardDogs
+[opensea](https://opensea.io/collection/junkyarddogs)
+### 0xc34816b7ff2f24d263ef5a6bf0f4115379644e28
+- [opensea](https://opensea.io/0xc34816b7ff2f24d263ef5a6bf0f4115379644e28)
+- score: 0.0008156437391038572
+- num_minted: 4
+- num_transactions: 1
+``` json
+[["80","6629"]]
+```
+
+
+### 0xfb0ac449c839a24def18badcffc0c8663887bb49
+- [opensea](https://opensea.io/0xfb0ac449c839a24def18badcffc0c8663887bb49)
+- score: 0.0003438655317962022
+- num_minted: 3
+- num_transactions: 2
+``` json
+[["2","696"],["10","1081"]]
 ```
 
 
@@ -340,6 +622,16 @@
 ```
 
 
+### 0x7eb125425cc9c600e89ccef92260c41b68063be2
+- [opensea](https://opensea.io/0x7eb125425cc9c600e89ccef92260c41b68063be2)
+- score: 0.00010219347473038864
+- num_minted: 13
+- num_transactions: 13
+``` json
+[["1548","6713"],["968","6716"],["431","6722"],["222","6735"],["1122","6749"],["122","6769"],["190","6774"],["173","6788"],["119","6875"],["87","7272"],["2491","7556"],["6290","7558"],["5891","7559"]]
+```
+
+
 ### 0x8feabc6f13f68d361bf06f5cf1007f8421bf9ad5
 - [opensea](https://opensea.io/0x8feabc6f13f68d361bf06f5cf1007f8421bf9ad5)
 - score: 1.8896126352227344e-07
@@ -370,6 +662,16 @@
 ```
 
 
+### 0xc999ec22706fc362480b9615835d4f774119a28a
+- [opensea](https://opensea.io/0xc999ec22706fc362480b9615835d4f774119a28a)
+- score: 0.00011418451751001041
+- num_minted: 7
+- num_transactions: 6
+``` json
+[["517","6723"],["132","6751"],["2004","6761"],["713","7023"],["534","7028"],["1040","7029"]]
+```
+
+
 ### 0xfb07526e0abd31eeb12d75709e96df72bfd8f33e
 - [opensea](https://opensea.io/0xfb07526e0abd31eeb12d75709e96df72bfd8f33e)
 - score: 4.286711865046124e-08
@@ -390,6 +692,36 @@
 ```
 
 
+### 0xdc019a2ad85b3412cc3555fd6592dcb34c9526c6
+- [opensea](https://opensea.io/0xdc019a2ad85b3412cc3555fd6592dcb34c9526c6)
+- score: 0.00024528168988384967
+- num_minted: 5
+- num_transactions: 5
+``` json
+[["1425","4509"],["1057","5120"],["1422","5476"],["987","6934"],["571","7568"]]
+```
+
+
+### 0x68ef448c9e651e68c5add96852b9462a7652c5a4
+- [opensea](https://opensea.io/0x68ef448c9e651e68c5add96852b9462a7652c5a4)
+- score: 0.00027402388387899487
+- num_minted: 5
+- num_transactions: 5
+``` json
+[["673","5081"],["1457","7025"],["780","7026"],["514","7415"],["743","7422"]]
+```
+
+
+### 0xdcdca57d63cdf1c0c5fc3efc23d9e9aeaa3b8ace
+- [opensea](https://opensea.io/0xdcdca57d63cdf1c0c5fc3efc23d9e9aeaa3b8ace)
+- score: 0.0006186844090785844
+- num_minted: 4
+- num_transactions: 4
+``` json
+[["523","7290"],["1185","7327"],["374","7539"],["234","7543"]]
+```
+
+
 ### 0x697e1aa0c32fc747a26464710100d84bb95bf279
 - [opensea](https://opensea.io/0x697e1aa0c32fc747a26464710100d84bb95bf279)
 - score: 8.920894737523693e-06
@@ -400,6 +732,46 @@
 ```
 
 
+### 0x1d6ca1f326a348b726ce1333f7723a9b0d5a1e1f
+- [opensea](https://opensea.io/0x1d6ca1f326a348b726ce1333f7723a9b0d5a1e1f)
+- score: 0.0007632348478503933
+- num_minted: 4
+- num_transactions: 4
+``` json
+[["848","6892"],["1249","6900"],["474","7181"],["308","7413"]]
+```
+
+
+### 0x00d0c65e7a92172f747dd81ea17cc2fe0db7617f
+- [opensea](https://opensea.io/0x00d0c65e7a92172f747dd81ea17cc2fe0db7617f)
+- score: 0.0005900204384322625
+- num_minted: 4
+- num_transactions: 4
+``` json
+[["1171","7383"],["625","7390"],["761","7392"],["185","7394"]]
+```
+
+
+### 0x605b2d5810ad080d89b3f4ec426f13790a3366e1
+- [opensea](https://opensea.io/0x605b2d5810ad080d89b3f4ec426f13790a3366e1)
+- score: 0.0009633051206512947
+- num_minted: 4
+- num_transactions: 4
+``` json
+[["1324","4928"],["685","5660"],["352","6973"],["115","7509"]]
+```
+
+
+### 0x79f28b5c4852a7d13cc7219625addb32e2489e3e
+- [opensea](https://opensea.io/0x79f28b5c4852a7d13cc7219625addb32e2489e3e)
+- score: 0.0005914775479549226
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["630","6895"],["279","7050"],["170","7059"]]
+```
+
+
 ### 0x4be2bc13e5b3c98e2492fa81ad00eccfea7007da
 - [opensea](https://opensea.io/0x4be2bc13e5b3c98e2492fa81ad00eccfea7007da)
 - score: 3.749582379941026e-05
@@ -407,6 +779,18 @@
 - num_transactions: 3
 ``` json
 [["250","6886"],["243","6906"],["125","7030"]]
+```
+
+
+## KingFrogs
+[opensea](https://opensea.io/collection/kingfrogs)
+### 0x4ad082ad952d2ee9fdb4eaf0eb722907fb434ae4
+- [opensea](https://opensea.io/0x4ad082ad952d2ee9fdb4eaf0eb722907fb434ae4)
+- score: 0.0004287518896791286
+- num_minted: 8
+- num_transactions: 1
+``` json
+[["248","19637"]]
 ```
 
 
@@ -422,6 +806,16 @@
 ```
 
 
+### 0xb819bf611d4051959bfffb75b8f81e19127c3660
+- [opensea](https://opensea.io/0xb819bf611d4051959bfffb75b8f81e19127c3660)
+- score: 0.0001213184480865206
+- num_minted: 35
+- num_transactions: 4
+``` json
+[["5043","847"],["4820","920"],["3999","1075"],["4502","1561"]]
+```
+
+
 ### 0xa25243821277b10dff17a3276a51a772fd68c9de
 - [opensea](https://opensea.io/0xa25243821277b10dff17a3276a51a772fd68c9de)
 - score: 2.662757362757095e-05
@@ -432,6 +826,66 @@
 ```
 
 
+### 0x459ad34f4712e60b72b5e6981fb3625abb8a40cb
+- [opensea](https://opensea.io/0x459ad34f4712e60b72b5e6981fb3625abb8a40cb)
+- score: 0.00012813633188498384
+- num_minted: 26
+- num_transactions: 3
+``` json
+[["4876","2639"],["5011","2708"],["4040","7246"]]
+```
+
+
+### 0x50701f4f523766bfb5c195f93333107d1cb8cd90
+- [opensea](https://opensea.io/0x50701f4f523766bfb5c195f93333107d1cb8cd90)
+- score: 0.00017599049855564965
+- num_minted: 25
+- num_transactions: 6
+``` json
+[["1352","456"],["2158","3135"],["3285","4024"],["3469","4056"],["6274","6967"],["3511","9802"]]
+```
+
+
+### 0xe0f5afbfa874cef79e67deb4f9bdbf96f36c9083
+- [opensea](https://opensea.io/0xe0f5afbfa874cef79e67deb4f9bdbf96f36c9083)
+- score: 0.000770445826446738
+- num_minted: 23
+- num_transactions: 4
+``` json
+[["622","1222"],["2772","1270"],["4427","1331"],["4733","1509"]]
+```
+
+
+### 0x46914c794a7e0f5776405ef11c66ec1b197414d5
+- [opensea](https://opensea.io/0x46914c794a7e0f5776405ef11c66ec1b197414d5)
+- score: 0.0002607492445564349
+- num_minted: 23
+- num_transactions: 3
+``` json
+[["3355","2447"],["5212","3264"],["4892","3380"]]
+```
+
+
+### 0x73e4a2b60cf48e8baf2b777e175a5b1e4d0c2d8f
+- [opensea](https://opensea.io/0x73e4a2b60cf48e8baf2b777e175a5b1e4d0c2d8f)
+- score: 0.00045688860096231205
+- num_minted: 22
+- num_transactions: 3
+``` json
+[["2001","3569"],["4909","6143"],["4997","7825"]]
+```
+
+
+### 0xecba5f51925e6ccec26da38dcd7d5305f6bdfbcb
+- [opensea](https://opensea.io/0xecba5f51925e6ccec26da38dcd7d5305f6bdfbcb)
+- score: 0.0006560348849857142
+- num_minted: 21
+- num_transactions: 3
+``` json
+[["3344","4368"],["5091","4412"],["5159","4597"]]
+```
+
+
 ### 0x63244b5f1ebcb999ea012da652dffee6653bf8f5
 - [opensea](https://opensea.io/0x63244b5f1ebcb999ea012da652dffee6653bf8f5)
 - score: 3.4022654405655842e-06
@@ -439,6 +893,16 @@
 - num_transactions: 4
 ``` json
 [["3396","3091"],["4440","6788"],["3338","7190"],["3298","7243"]]
+```
+
+
+### 0x94a465183ff9a939295d3c8cc09b5ca27a63fb9c
+- [opensea](https://opensea.io/0x94a465183ff9a939295d3c8cc09b5ca27a63fb9c)
+- score: 0.00016613163886078903
+- num_minted: 17
+- num_transactions: 6
+``` json
+[["2767","505"],["2024","529"],["80","551"],["3507","4424"],["3378","4934"],["5447","9623"]]
 ```
 
 
@@ -472,6 +936,46 @@
 ```
 
 
+### 0xaae654404a9370a2cce99af14e6f9e4b206e0f36
+- [opensea](https://opensea.io/0xaae654404a9370a2cce99af14e6f9e4b206e0f36)
+- score: 0.0001617767790596455
+- num_minted: 14
+- num_transactions: 4
+``` json
+[["1765","550"],["4486","688"],["1241","873"],["2009","1621"]]
+```
+
+
+### 0x5fd2c02689d138547b7b1b9e7d9a309d5a03edcd
+- [opensea](https://opensea.io/0x5fd2c02689d138547b7b1b9e7d9a309d5a03edcd)
+- score: 0.000806195955982774
+- num_minted: 14
+- num_transactions: 3
+``` json
+[["3553","2689"],["2764","3551"],["4980","9174"]]
+```
+
+
+### 0x4ea1577b6c155a588a6c18767e6faaef51091ac2
+- [opensea](https://opensea.io/0x4ea1577b6c155a588a6c18767e6faaef51091ac2)
+- score: 0.0006331943980723947
+- num_minted: 13
+- num_transactions: 4
+``` json
+[["644","351"],["2768","2479"],["4767","4999"],["4758","8517"]]
+```
+
+
+### 0x09a4d3be4fb596e26fbcf2e9379460349b111131
+- [opensea](https://opensea.io/0x09a4d3be4fb596e26fbcf2e9379460349b111131)
+- score: 0.00039136208719507925
+- num_minted: 13
+- num_transactions: 13
+``` json
+[["1594","1640"],["867","1709"],["660","1721"],["918","1963"],["415","2155"],["966","5373"],["134","6553"],["4526","8418"],["7271","9284"],["7860","9359"],["7106","9600"],["1018","9736"],["1194","9807"]]
+```
+
+
 ### 0xac94e0b83367ccb1fe64dc333757f48b07577b1f
 - [opensea](https://opensea.io/0xac94e0b83367ccb1fe64dc333757f48b07577b1f)
 - score: 4.976900996438114e-05
@@ -492,6 +996,26 @@
 ```
 
 
+### 0xe760d893b1b9c007372ecdc931aad10d08cf5aeb
+- [opensea](https://opensea.io/0xe760d893b1b9c007372ecdc931aad10d08cf5aeb)
+- score: 0.00011483010140613202
+- num_minted: 11
+- num_transactions: 3
+``` json
+[["2811","1547"],["3381","1582"],["3152","1681"]]
+```
+
+
+### 0x607123d3b88ff194153391c45e53a61137e4861d
+- [opensea](https://opensea.io/0x607123d3b88ff194153391c45e53a61137e4861d)
+- score: 0.0004566120596104096
+- num_minted: 11
+- num_transactions: 4
+``` json
+[["1890","85"],["79","466"],["4006","2258"],["2082","2364"]]
+```
+
+
 ### 0x51047ac8977d0dd35f3e1f35d75ddf81b8989f3d
 - [opensea](https://opensea.io/0x51047ac8977d0dd35f3e1f35d75ddf81b8989f3d)
 - score: 7.379679636291244e-07
@@ -499,6 +1023,26 @@
 - num_transactions: 9
 ``` json
 [["1177","1221"],["1026","1330"],["2555","1340"],["255","1956"],["170","1962"],["468","3907"],["863","5101"],["969","6042"],["2381","7004"]]
+```
+
+
+### 0x6e753fdd7079c56a9e49e85624e94518c5959f8d
+- [opensea](https://opensea.io/0x6e753fdd7079c56a9e49e85624e94518c5959f8d)
+- score: 0.0008868400189320297
+- num_minted: 10
+- num_transactions: 2
+``` json
+[["2901","1833"],["3972","7260"]]
+```
+
+
+### 0x787551ae0ab07de8eb91d1535dbd37f379b0111d
+- [opensea](https://opensea.io/0x787551ae0ab07de8eb91d1535dbd37f379b0111d)
+- score: 0.00026927733429619083
+- num_minted: 10
+- num_transactions: 2
+``` json
+[["3264","538"],["3536","3693"]]
 ```
 
 
@@ -532,6 +1076,36 @@
 ```
 
 
+### 0x55416db82266580188eb2e5e67fd817fa8123246
+- [opensea](https://opensea.io/0x55416db82266580188eb2e5e67fd817fa8123246)
+- score: 0.0007404667039669582
+- num_minted: 10
+- num_transactions: 2
+``` json
+[["2756","2469"],["4086","2760"]]
+```
+
+
+### 0xdf36e5163c17eab79d87c395d80fb5895986fbbf
+- [opensea](https://opensea.io/0xdf36e5163c17eab79d87c395d80fb5895986fbbf)
+- score: 0.0001892696042418367
+- num_minted: 10
+- num_transactions: 5
+``` json
+[["713","103"],["1657","1450"],["2048","3467"],["2989","7662"],["3252","8442"]]
+```
+
+
+### 0x50af68c8fe5c0c5a9cb11bc0edad3cd678b71293
+- [opensea](https://opensea.io/0x50af68c8fe5c0c5a9cb11bc0edad3cd678b71293)
+- score: 0.0007384586771418228
+- num_minted: 10
+- num_transactions: 2
+``` json
+[["2812","937"],["3062","2845"]]
+```
+
+
 ### 0x387cba805a719a1613488e489a8e7f0de63aed14
 - [opensea](https://opensea.io/0x387cba805a719a1613488e489a8e7f0de63aed14)
 - score: 6.403265234366775e-08
@@ -539,6 +1113,16 @@
 - num_transactions: 10
 ``` json
 [["113","257"],["1454","352"],["952","493"],["450","1093"],["502","1351"],["1894","2211"],["582","3760"],["950","5169"],["363","6233"],["444","6340"]]
+```
+
+
+### 0x8b1609b905de267e21698a78c8af0f8816a2ae5c
+- [opensea](https://opensea.io/0x8b1609b905de267e21698a78c8af0f8816a2ae5c)
+- score: 0.0005994494324142371
+- num_minted: 9
+- num_transactions: 5
+``` json
+[["825","4808"],["229","4809"],["24","4819"],["3516","4983"],["272","5579"]]
 ```
 
 
@@ -552,6 +1136,46 @@
 ```
 
 
+### 0xd15e7ab216addb92bd95d96cb5d0f3f43719c679
+- [opensea](https://opensea.io/0xd15e7ab216addb92bd95d96cb5d0f3f43719c679)
+- score: 0.00014630156055477818
+- num_minted: 9
+- num_transactions: 6
+``` json
+[["795","4394"],["2035","4396"],["822","4880"],["432","5016"],["2634","8275"],["3262","9709"]]
+```
+
+
+### 0x357931791284f40765b462aa7ad217ebf82920cb
+- [opensea](https://opensea.io/0x357931791284f40765b462aa7ad217ebf82920cb)
+- score: 0.0004283811529699589
+- num_minted: 9
+- num_transactions: 4
+``` json
+[["458","3740"],["763","3747"],["3392","3750"],["1349","4698"]]
+```
+
+
+### 0x9d1a1d3ba33ffc81346f7c608d82073a3e640fa5
+- [opensea](https://opensea.io/0x9d1a1d3ba33ffc81346f7c608d82073a3e640fa5)
+- score: 0.0002223251731761913
+- num_minted: 9
+- num_transactions: 4
+``` json
+[["1411","63"],["2077","3073"],["2201","4495"],["4530","9897"]]
+```
+
+
+### 0x88255fb08bed22342580223cdaddd2175f6c60cf
+- [opensea](https://opensea.io/0x88255fb08bed22342580223cdaddd2175f6c60cf)
+- score: 0.00043790536708432647
+- num_minted: 9
+- num_transactions: 2
+``` json
+[["2801","5707"],["3418","6805"]]
+```
+
+
 ### 0x58dc53f7175fdd30c70ab5717c6e91edd8aed017
 - [opensea](https://opensea.io/0x58dc53f7175fdd30c70ab5717c6e91edd8aed017)
 - score: 3.8889473118460426e-07
@@ -559,6 +1183,16 @@
 - num_transactions: 6
 ``` json
 [["1495","2034"],["1112","2035"],["420","2078"],["1480","2137"],["1249","2182"],["333","5354"]]
+```
+
+
+### 0x0dcf57635f6562897cba35168b232fb302de0748
+- [opensea](https://opensea.io/0x0dcf57635f6562897cba35168b232fb302de0748)
+- score: 0.00047795856249404375
+- num_minted: 9
+- num_transactions: 4
+``` json
+[["1004","354"],["1042","1209"],["1237","1629"],["3413","2384"]]
 ```
 
 
@@ -572,6 +1206,36 @@
 ```
 
 
+### 0x42fe258c554c13746b7c6fb81a184aeb44c64169
+- [opensea](https://opensea.io/0x42fe258c554c13746b7c6fb81a184aeb44c64169)
+- score: 0.0001403581922091018
+- num_minted: 8
+- num_transactions: 3
+``` json
+[["1153","757"],["1055","1167"],["2762","4037"]]
+```
+
+
+### 0x362c73a2a17b6e1d94056bf050b8bb37bb0cb0e5
+- [opensea](https://opensea.io/0x362c73a2a17b6e1d94056bf050b8bb37bb0cb0e5)
+- score: 0.00018929624041624186
+- num_minted: 8
+- num_transactions: 2
+``` json
+[["2755","2974"],["2983","2982"]]
+```
+
+
+### 0xdef769bcf57df5a2400ab5f9dd3aad5981079689
+- [opensea](https://opensea.io/0xdef769bcf57df5a2400ab5f9dd3aad5981079689)
+- score: 0.0001920271818262771
+- num_minted: 8
+- num_transactions: 6
+``` json
+[["1279","399"],["35","519"],["2775","1251"],["746","1399"],["2788","1814"],["30","5062"]]
+```
+
+
 ### 0x2d7fdca2a80343dc46ad0129856e8b82ead945cb
 - [opensea](https://opensea.io/0x2d7fdca2a80343dc46ad0129856e8b82ead945cb)
 - score: 2.6239189444910995e-05
@@ -579,6 +1243,16 @@
 - num_transactions: 5
 ``` json
 [["550","7"],["337","253"],["2189","279"],["1232","413"],["2017","7687"]]
+```
+
+
+### 0x1344018bdd1314865490c7325148caf425fda7f9
+- [opensea](https://opensea.io/0x1344018bdd1314865490c7325148caf425fda7f9)
+- score: 0.000160573141942812
+- num_minted: 8
+- num_transactions: 2
+``` json
+[["2798","1403"],["2871","2958"]]
 ```
 
 
@@ -592,6 +1266,26 @@
 ```
 
 
+### 0x1238d545fe712ac792213604b0ab169257706417
+- [opensea](https://opensea.io/0x1238d545fe712ac792213604b0ab169257706417)
+- score: 0.00019257766868528353
+- num_minted: 8
+- num_transactions: 2
+``` json
+[["2856","2825"],["2896","3150"]]
+```
+
+
+### 0x202299e30be73ada07071eab447a6d7a7aaa509a
+- [opensea](https://opensea.io/0x202299e30be73ada07071eab447a6d7a7aaa509a)
+- score: 0.0007596090848470758
+- num_minted: 7
+- num_transactions: 3
+``` json
+[["571","1141"],["566","1700"],["3273","4028"]]
+```
+
+
 ### 0x06807d7e07290be6adbacd6f209c4ced6f183d74
 - [opensea](https://opensea.io/0x06807d7e07290be6adbacd6f209c4ced6f183d74)
 - score: 6.113849005743869e-05
@@ -599,6 +1293,26 @@
 - num_transactions: 4
 ``` json
 [["2306","3578"],["1676","3641"],["1395","5060"],["53","7299"]]
+```
+
+
+### 0x836ef81a58e5565b8d1d555ec8e9a5c2792511c6
+- [opensea](https://opensea.io/0x836ef81a58e5565b8d1d555ec8e9a5c2792511c6)
+- score: 0.00044865965277910845
+- num_minted: 7
+- num_transactions: 3
+``` json
+[["2094","1023"],["1133","4936"],["3044","9337"]]
+```
+
+
+### 0x904d0b350ab9563c1b6b0bf53071689d060dca74
+- [opensea](https://opensea.io/0x904d0b350ab9563c1b6b0bf53071689d060dca74)
+- score: 0.000550029886679135
+- num_minted: 7
+- num_transactions: 2
+``` json
+[["2972","4552"],["2116","5299"]]
 ```
 
 
@@ -622,6 +1336,156 @@
 ```
 
 
+### 0x8729250ad053ee455b55d862fccf1030c2eb4e0c
+- [opensea](https://opensea.io/0x8729250ad053ee455b55d862fccf1030c2eb4e0c)
+- score: 0.000597480523973736
+- num_minted: 7
+- num_transactions: 6
+``` json
+[["3303","933"],["554","981"],["1136","1006"],["1278","1133"],["1347","2852"],["1600","5041"]]
+```
+
+
+### 0xeead78aa6255cc79cd3a953542db0ed6546d9b92
+- [opensea](https://opensea.io/0xeead78aa6255cc79cd3a953542db0ed6546d9b92)
+- score: 0.0006479127356405023
+- num_minted: 7
+- num_transactions: 7
+``` json
+[["1477","683"],["1371","730"],["533","759"],["1625","762"],["536","879"],["159","1348"],["5674","5546"]]
+```
+
+
+### 0x7f648e94a093f4426ebacf6ff8799d57f4bcd22e
+- [opensea](https://opensea.io/0x7f648e94a093f4426ebacf6ff8799d57f4bcd22e)
+- score: 0.0001270913192471833
+- num_minted: 6
+- num_transactions: 3
+``` json
+[["1388","2705"],["1275","3623"],["2002","8827"]]
+```
+
+
+### 0x3972352d41ebe283dba719d65db5c846e408dd02
+- [opensea](https://opensea.io/0x3972352d41ebe283dba719d65db5c846e408dd02)
+- score: 0.00045581146566827925
+- num_minted: 6
+- num_transactions: 3
+``` json
+[["2550","1064"],["1149","3723"],["920","6242"]]
+```
+
+
+### 0x58c0a8a8889fa899f15bb5dae790745ac04ce7a0
+- [opensea](https://opensea.io/0x58c0a8a8889fa899f15bb5dae790745ac04ce7a0)
+- score: 0.0003771123375421616
+- num_minted: 6
+- num_transactions: 4
+``` json
+[["160","753"],["2027","818"],["1157","2954"],["1353","4230"]]
+```
+
+
+### 0xd8cadfd2fbb21916be26bf24c05e41a826c53849
+- [opensea](https://opensea.io/0xd8cadfd2fbb21916be26bf24c05e41a826c53849)
+- score: 0.0004685184415755028
+- num_minted: 6
+- num_transactions: 2
+``` json
+[["2414","1787"],["2620","4921"]]
+```
+
+
+### 0xd7c6ca1486f1f898a69ea29b87fa239699cd24f4
+- [opensea](https://opensea.io/0xd7c6ca1486f1f898a69ea29b87fa239699cd24f4)
+- score: 0.00013518379968865035
+- num_minted: 6
+- num_transactions: 3
+``` json
+[["1168","178"],["11","202"],["2108","3025"]]
+```
+
+
+### 0x25dbcb2550abe56e15fec436f56fb7664dd11a07
+- [opensea](https://opensea.io/0x25dbcb2550abe56e15fec436f56fb7664dd11a07)
+- score: 0.000718878125042415
+- num_minted: 5
+- num_transactions: 2
+``` json
+[["1233","181"],["2118","418"]]
+```
+
+
+### 0xd48ab39e30a9546fb0729abb215cbce336ac5354
+- [opensea](https://opensea.io/0xd48ab39e30a9546fb0729abb215cbce336ac5354)
+- score: 0.0007063182165917129
+- num_minted: 5
+- num_transactions: 3
+``` json
+[["1405","61"],["1477","683"],["2305","944"]]
+```
+
+
+### 0x5684dfb90d3839c8fe6b852d19c653bca145274d
+- [opensea](https://opensea.io/0x5684dfb90d3839c8fe6b852d19c653bca145274d)
+- score: 0.0005337302650671797
+- num_minted: 5
+- num_transactions: 2
+``` json
+[["1198","1986"],["2117","2279"]]
+```
+
+
+### 0xc0d5445b157bdccca8a3ffe6761925cf9fc97df7
+- [opensea](https://opensea.io/0xc0d5445b157bdccca8a3ffe6761925cf9fc97df7)
+- score: 0.00025606908055385915
+- num_minted: 5
+- num_transactions: 3
+``` json
+[["1427","5035"],["1081","5066"],["187","5131"]]
+```
+
+
+### 0x9edb4bf34266684e42a17a5db8099965218d4d7d
+- [opensea](https://opensea.io/0x9edb4bf34266684e42a17a5db8099965218d4d7d)
+- score: 0.00023786965731444981
+- num_minted: 5
+- num_transactions: 3
+``` json
+[["1121","208"],["534","2967"],["1216","4614"]]
+```
+
+
+### 0x14d87e292aa0e251ca50bf980b8ca54d4f2f2623
+- [opensea](https://opensea.io/0x14d87e292aa0e251ca50bf980b8ca54d4f2f2623)
+- score: 0.0005870583404447835
+- num_minted: 5
+- num_transactions: 4
+``` json
+[["507","321"],["2049","339"],["1485","349"],["878","8151"]]
+```
+
+
+### 0x491892ccdfbe0bb2ca35ffe442bade74b6bd31ad
+- [opensea](https://opensea.io/0x491892ccdfbe0bb2ca35ffe442bade74b6bd31ad)
+- score: 0.00026214960892183037
+- num_minted: 5
+- num_transactions: 3
+``` json
+[["1788","3316"],["1267","3377"],["1103","8052"]]
+```
+
+
+### 0xdb54c320a0b1e994d2bf7dd2ec939f6c25918011
+- [opensea](https://opensea.io/0xdb54c320a0b1e994d2bf7dd2ec939f6c25918011)
+- score: 0.0006676005108775648
+- num_minted: 4
+- num_transactions: 3
+``` json
+[["85","2321"],["1229","4489"],["1499","7291"]]
+```
+
+
 ### 0x71649d768128dfc64734cb58713e972e045421dc
 - [opensea](https://opensea.io/0x71649d768128dfc64734cb58713e972e045421dc)
 - score: 9.240647779269105e-05
@@ -629,6 +1493,56 @@
 - num_transactions: 4
 ``` json
 [["730","11"],["977","12"],["978","20"],["74","21"]]
+```
+
+
+### 0xcec60e481c957d3ec2c73afdf1f4f4a80f460b86
+- [opensea](https://opensea.io/0xcec60e481c957d3ec2c73afdf1f4f4a80f460b86)
+- score: 0.0008679366283194383
+- num_minted: 4
+- num_transactions: 2
+``` json
+[["1166","2901"],["1537","6261"]]
+```
+
+
+### 0x7a139127ea61a1e4ea83affc32b79aa25e681f3a
+- [opensea](https://opensea.io/0x7a139127ea61a1e4ea83affc32b79aa25e681f3a)
+- score: 0.0008088316824494446
+- num_minted: 4
+- num_transactions: 3
+``` json
+[["551","104"],["1208","1504"],["1478","1883"]]
+```
+
+
+### 0x55594059b44f73c0038699b42132b639262f186b
+- [opensea](https://opensea.io/0x55594059b44f73c0038699b42132b639262f186b)
+- score: 0.0004662201212428851
+- num_minted: 4
+- num_transactions: 3
+``` json
+[["1110","2079"],["927","2451"],["576","2773"]]
+```
+
+
+### 0xca11d10ceb098f597a0cab28117fc3465991a63c
+- [opensea](https://opensea.io/0xca11d10ceb098f597a0cab28117fc3465991a63c)
+- score: 0.0008883398010849577
+- num_minted: 4
+- num_transactions: 2
+``` json
+[["1384","3655"],["1206","3659"]]
+```
+
+
+### 0xfc9dd877930e9799beb663523bd31eefe3c99597
+- [opensea](https://opensea.io/0xfc9dd877930e9799beb663523bd31eefe3c99597)
+- score: 0.000882181486866206
+- num_minted: 4
+- num_transactions: 2
+``` json
+[["1256","1135"],["995","9781"]]
 ```
 
 
@@ -642,6 +1556,56 @@
 ```
 
 
+### 0x6ceca7911c1a4dd84451716b698995324609ad48
+- [opensea](https://opensea.io/0x6ceca7911c1a4dd84451716b698995324609ad48)
+- score: 0.0008223440973536149
+- num_minted: 4
+- num_transactions: 2
+``` json
+[["1058","4376"],["1266","5185"]]
+```
+
+
+### 0x88f5c652b0ee44579ec2958be0d1a36640006041
+- [opensea](https://opensea.io/0x88f5c652b0ee44579ec2958be0d1a36640006041)
+- score: 0.0002468367481312349
+- num_minted: 4
+- num_transactions: 2
+``` json
+[["1089","2465"],["1003","2474"]]
+```
+
+
+### 0x0bb3fbb50bf64ade95e3b008415ca3c8836a144b
+- [opensea](https://opensea.io/0x0bb3fbb50bf64ade95e3b008415ca3c8836a144b)
+- score: 0.0004764557966085892
+- num_minted: 4
+- num_transactions: 2
+``` json
+[["1461","59"],["1379","1771"]]
+```
+
+
+### 0xa5f3ff87805137e7788e72c8723c16533f851cb9
+- [opensea](https://opensea.io/0xa5f3ff87805137e7788e72c8723c16533f851cb9)
+- score: 0.0007954864783567844
+- num_minted: 4
+- num_transactions: 2
+``` json
+[["1217","1957"],["1173","1966"]]
+```
+
+
+### 0xeafe55274a58796773134514456758f60e3a8b17
+- [opensea](https://opensea.io/0xeafe55274a58796773134514456758f60e3a8b17)
+- score: 0.00015150309270879218
+- num_minted: 4
+- num_transactions: 4
+``` json
+[["1107","3934"],["193","4320"],["388","4365"],["222","5443"]]
+```
+
+
 ### 0x9499054d02a725316d61fa896c29d58550ee4a5b
 - [opensea](https://opensea.io/0x9499054d02a725316d61fa896c29d58550ee4a5b)
 - score: 9.468918898528421e-05
@@ -652,6 +1616,26 @@
 ```
 
 
+### 0xd2e148e703f79af5e6105a81d07c5d6e58d3dbee
+- [opensea](https://opensea.io/0xd2e148e703f79af5e6105a81d07c5d6e58d3dbee)
+- score: 0.00025000255229246706
+- num_minted: 4
+- num_transactions: 3
+``` json
+[["949","234"],["305","235"],["1182","3927"]]
+```
+
+
+### 0x8c9726ab7b9be66cbdb0f2caa85b46e51b0a3d77
+- [opensea](https://opensea.io/0x8c9726ab7b9be66cbdb0f2caa85b46e51b0a3d77)
+- score: 0.0009958035206958876
+- num_minted: 4
+- num_transactions: 2
+``` json
+[["1105","3374"],["1111","3812"]]
+```
+
+
 ### 0xd197d72af51969dcb6bbf59622bea6a6ff6c9b3b
 - [opensea](https://opensea.io/0xd197d72af51969dcb6bbf59622bea6a6ff6c9b3b)
 - score: 7.46180407461804e-05
@@ -659,6 +1643,96 @@
 - num_transactions: 3
 ``` json
 [["94","1868"],["419","1959"],["198","4701"]]
+```
+
+
+### 0xc7382780c13d05fa6ed857fda3fef3d1b9e0e00d
+- [opensea](https://opensea.io/0xc7382780c13d05fa6ed857fda3fef3d1b9e0e00d)
+- score: 0.0008819731288197313
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["957","3495"],["387","3535"],["414","3627"]]
+```
+
+
+### 0x6b6ab8481028dd95c2eee64d5dd599a1f6656f21
+- [opensea](https://opensea.io/0x6b6ab8481028dd95c2eee64d5dd599a1f6656f21)
+- score: 0.00020537841205378412
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["173","3412"],["588","4374"],["535","6809"]]
+```
+
+
+### 0x6723ac44751c1d5f25c1e1b05aec6374e8f14ead
+- [opensea](https://opensea.io/0x6723ac44751c1d5f25c1e1b05aec6374e8f14ead)
+- score: 0.00018519243185192432
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["381","5365"],["490","5444"],["568","6217"]]
+```
+
+
+### 0x2f706da53423e42daa9fc6dc19f5d083db3a23b1
+- [opensea](https://opensea.io/0x2f706da53423e42daa9fc6dc19f5d083db3a23b1)
+- score: 0.0007635510376355104
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["912","2678"],["209","2795"],["907","5159"]]
+```
+
+
+### 0x700643004ba7cb17b824c6808a4196a06eb25e4b
+- [opensea](https://opensea.io/0x700643004ba7cb17b824c6808a4196a06eb25e4b)
+- score: 0.00040358268403582683
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["606","1243"],["737","1356"],["211","7430"]]
+```
+
+
+### 0x2b01e4d89051257381b00889b16bedc8d9813944
+- [opensea](https://opensea.io/0x2b01e4d89051257381b00889b16bedc8d9813944)
+- score: 0.00032141844321418445
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["683","2242"],["275","2247"],["136","2250"]]
+```
+
+
+### 0x43decad5db1faa9df795ff24dd4fd548749a1ac2
+- [opensea](https://opensea.io/0x43decad5db1faa9df795ff24dd4fd548749a1ac2)
+- score: 0.0005493524454935245
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["124","754"],["624","824"],["817","4826"]]
+```
+
+
+### 0xe00f5f98ce064484c30e45002618c46f31272bdc
+- [opensea](https://opensea.io/0xe00f5f98ce064484c30e45002618c46f31272bdc)
+- score: 0.00016277079162770793
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["70","4647"],["376","4648"],["544","5449"]]
+```
+
+
+### 0xd298440a9a02434fa9d7a8af85ac5d8d1d9db304
+- [opensea](https://opensea.io/0xd298440a9a02434fa9d7a8af85ac5d8d1d9db304)
+- score: 0.0006033502860335029
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["643","324"],["595","359"],["843","3046"]]
 ```
 
 
@@ -684,6 +1758,16 @@
 ```
 
 
+### 0x0000000484f2217f1a64eb6d24b5cee446faeae5
+- [opensea](https://opensea.io/0x0000000484f2217f1a64eb6d24b5cee446faeae5)
+- score: 0.00045757829809953186
+- num_minted: 20
+- num_transactions: 2
+``` json
+[["435","3309"],["995","4397"]]
+```
+
+
 ### 0x34558f1219a6c45971c23cae650b2ec3f6a49558
 - [opensea](https://opensea.io/0x34558f1219a6c45971c23cae650b2ec3f6a49558)
 - score: 8.864703118443009e-07
@@ -701,6 +1785,16 @@
 - num_transactions: 2
 ``` json
 [["398","1161"],["65","4588"]]
+```
+
+
+### 0xc33d98e88682c883fe32b8f6620660692092d39f
+- [opensea](https://opensea.io/0xc33d98e88682c883fe32b8f6620660692092d39f)
+- score: 0.0006265401211866001
+- num_minted: 13
+- num_transactions: 2
+``` json
+[["2646","2745"],["801","5421"]]
 ```
 
 
@@ -754,6 +1848,16 @@
 ```
 
 
+### 0xd8f60276b7d90956921ce9f2cdf73b92c8e58464
+- [opensea](https://opensea.io/0xd8f60276b7d90956921ce9f2cdf73b92c8e58464)
+- score: 0.0006906074447502265
+- num_minted: 10
+- num_transactions: 5
+``` json
+[["894","4130"],["9","6775"],["939","7525"],["3095","8970"],["816","9735"]]
+```
+
+
 ### 0x7cc8a4fc9855efe89315fa49596c062d53cf8843
 - [opensea](https://opensea.io/0x7cc8a4fc9855efe89315fa49596c062d53cf8843)
 - score: 5.606910772435451e-05
@@ -801,6 +1905,26 @@
 - num_transactions: 1
 ``` json
 [["908","6571"]]
+```
+
+
+### 0xb5828b6b8108ec68c9f2be45412d630f01afd341
+- [opensea](https://opensea.io/0xb5828b6b8108ec68c9f2be45412d630f01afd341)
+- score: 0.00028826512655144603
+- num_minted: 10
+- num_transactions: 9
+``` json
+[["360","877"],["156","988"],["24","1102"],["5328","1347"],["4418","3535"],["801","5421"],["173","5735"],["202","6656"],["328","7780"]]
+```
+
+
+### 0x9de610c71050a5cdc9a6c4ac87b42631b0150b73
+- [opensea](https://opensea.io/0x9de610c71050a5cdc9a6c4ac87b42631b0150b73)
+- score: 0.00010648849603833634
+- num_minted: 10
+- num_transactions: 1
+``` json
+[["995","4397"]]
 ```
 
 
@@ -854,6 +1978,16 @@
 ```
 
 
+### 0xb02160d146901e838f9e9e796296ece30c129e0a
+- [opensea](https://opensea.io/0xb02160d146901e838f9e9e796296ece30c129e0a)
+- score: 0.00032860762970960983
+- num_minted: 10
+- num_transactions: 1
+``` json
+[["331","5046"]]
+```
+
+
 ### 0xb104371d5a2680fb0d47ea9a3aa2348392454186
 - [opensea](https://opensea.io/0xb104371d5a2680fb0d47ea9a3aa2348392454186)
 - score: 4.35245575537114e-08
@@ -861,6 +1995,36 @@
 - num_transactions: 1
 ``` json
 [["410","7875"]]
+```
+
+
+### 0xd56383e785eb008b876402f50107682602a98465
+- [opensea](https://opensea.io/0xd56383e785eb008b876402f50107682602a98465)
+- score: 0.0006418960920350029
+- num_minted: 10
+- num_transactions: 1
+``` json
+[["361","4845"]]
+```
+
+
+### 0x9db9baaaca45dd854d8952cdc5d1161e37783f80
+- [opensea](https://opensea.io/0x9db9baaaca45dd854d8952cdc5d1161e37783f80)
+- score: 0.0005605845327130474
+- num_minted: 10
+- num_transactions: 1
+``` json
+[["1663","8611"]]
+```
+
+
+### 0x33e7fea4801fef3e39eef5e3fad20812c0c53296
+- [opensea](https://opensea.io/0x33e7fea4801fef3e39eef5e3fad20812c0c53296)
+- score: 0.00018901929072032397
+- num_minted: 10
+- num_transactions: 1
+``` json
+[["244","9433"]]
 ```
 
 
@@ -914,6 +2078,78 @@
 ```
 
 
+### 0xbcea18e790ca57c5f3bcfbd7235de6c607776a6b
+- [opensea](https://opensea.io/0xbcea18e790ca57c5f3bcfbd7235de6c607776a6b)
+- score: 0.00040348986070447214
+- num_minted: 6
+- num_transactions: 1
+``` json
+[["100","9033"]]
+```
+
+
+### 0x069ad338a8b41087c89c4c4c5fbfb28c1d39f78a
+- [opensea](https://opensea.io/0x069ad338a8b41087c89c4c4c5fbfb28c1d39f78a)
+- score: 0.000730158170533035
+- num_minted: 6
+- num_transactions: 2
+``` json
+[["65","4588"],["1181","4813"]]
+```
+
+
+### 0x4e7ea23a608949f52820bf9d2c01f6d914d98203
+- [opensea](https://opensea.io/0x4e7ea23a608949f52820bf9d2c01f6d914d98203)
+- score: 0.00032479991792122977
+- num_minted: 6
+- num_transactions: 2
+``` json
+[["1888","2722"],["801","5421"]]
+```
+
+
+### 0x792e4e3aefbee84faf3904dcd8e4304572bd8a8a
+- [opensea](https://opensea.io/0x792e4e3aefbee84faf3904dcd8e4304572bd8a8a)
+- score: 0.0007256008453082504
+- num_minted: 4
+- num_transactions: 1
+``` json
+[["463","541"]]
+```
+
+
+## Crypto Pills by Micha Klein
+[opensea](https://opensea.io/collection/crypto-pills-by-micha-klein)
+### 0xb41f146670ce3dedac51d79956cd5e292be26ec4
+- [opensea](https://opensea.io/0xb41f146670ce3dedac51d79956cd5e292be26ec4)
+- score: 0.00020573147430948954
+- num_minted: 325
+- num_transactions: 13
+``` json
+[["14","22"],["3","31"],["29","68"],["1210","85"],["809","124"],["1350","142"],["478","169"],["890","188"],["1181","215"],["77","241"],["176","1465"],["273","1527"],["47","4780"]]
+```
+
+
+### 0xb25a5657838004321b3cf7676a34954979415dd6
+- [opensea](https://opensea.io/0xb25a5657838004321b3cf7676a34954979415dd6)
+- score: 0.00046402700581256055
+- num_minted: 10
+- num_transactions: 1
+``` json
+[["34","7002"]]
+```
+
+
+### 0xbaaabce9d8b6e0e7b26e107f33ddfc7bd582e301
+- [opensea](https://opensea.io/0xbaaabce9d8b6e0e7b26e107f33ddfc7bd582e301)
+- score: 0.0008127752385804673
+- num_minted: 5
+- num_transactions: 2
+``` json
+[["21","6429"],["106","7958"]]
+```
+
+
 ## MegaCryptoPolis
 [opensea](https://opensea.io/collection/megacryptopolis)
 ### 0xa6fa96567abc0ea45e6683a0b29ca575fdf8af85
@@ -963,6 +2199,16 @@
 - num_transactions: 50
 ``` json
 [["3091","4538"],["3115","4965"],["4299","4966"],["3377","4978"],["2492","4980"],["3638","4983"],["4303","4984"],["4304","4985"],["3219","4986"],["3383","5008"],["19403","1079"],["4306","5009"],["3384","5011"],["4038","5012"],["2845","5014"],["4039","5016"],["5004","5018"],["3642","5019"],["3221","5024"],["2846","5027"],["3013","5028"],["2923","5029"],["3645","5031"],["3222","5033"],["15227","5035"],["3223","5037"],["3117","5038"],["2655","5040"],["4044","5041"],["3647","5042"],["4045","5044"],["2405","5048"],["2925","5066"],["2495","5069"],["2926","5072"],["4546","5074"],["4048","5075"],["2848","5080"],["19","22066"],["1557","23603"],["10231","5990"],["3508","23320"],["1758","23756"],["1641","23757"],["12089","32666"],["11929","32667"],["7931","33035"],["7216","24126"],["9500","24127"],["5991","24168"]]
+```
+
+
+### 0xf0bb13051be712970c9bb50233bfac25a654afd6
+- [opensea](https://opensea.io/0xf0bb13051be712970c9bb50233bfac25a654afd6)
+- score: 0.0005592050070408395
+- num_minted: 95
+- num_transactions: 52
+``` json
+[["1720","22014"],["4805","22015"],["4806","22016"],["878","22017"],["393","22037"],["16217","23504"],["16218","23505"],["16219","23506"],["16220","23507"],["18","22064"],["1515","23527"],["2192","23528"],["680","22071"],["1030","22072"],["1338","22102"],["6180","28809"],["35","22176"],["685","22179"],["4440","28987"],["1730","22321"],["4831","22322"],["900","22323"],["992","22401"],["4434","29297"],["431","22502"],["100","22503"],["6581","29628"],["453","22685"],["4455","29944"],["2308","22944"],["2246","22954"],["4864","22965"],["478","23030"],["593","23032"],["594","23033"],["6219","30641"],["772","23054"],["489","23138"],["1942","23780"],["6311","32464"],["3886","33430"],["4591","33723"],["8173","34035"],["16449","24093"],["1504","24133"],["1487","24134"],["5563","24135"],["1700","24136"],["16467","24176"],["16468","24177"],["16469","24178"],["16470","24179"]]
 ```
 
 
@@ -1026,6 +2272,16 @@
 ```
 
 
+### 0x3792e276d93e4fadf87d3f2f6ede028f0371c54a
+- [opensea](https://opensea.io/0x3792e276d93e4fadf87d3f2f6ede028f0371c54a)
+- score: 0.0008781768232166747
+- num_minted: 12
+- num_transactions: 12
+``` json
+[["11284","28488"],["389","21986"],["11252","29158"],["567","22344"],["66","22347"],["689","22350"],["4832","22351"],["10629","29756"],["7448","29939"],["149","22735"],["584","22768"],["158","22769"]]
+```
+
+
 ### 0x7e302bf3bba64919d8cfc47d2dd4988237cb5472
 - [opensea](https://opensea.io/0x7e302bf3bba64919d8cfc47d2dd4988237cb5472)
 - score: 1.285101408351286e-07
@@ -1033,6 +2289,16 @@
 - num_transactions: 9
 ``` json
 [["986","22065"],["696","22438"],["121","22597"],["575","22616"],["148","22732"],["911","22736"],["188","22913"],["492","23190"],["244","23192"]]
+```
+
+
+### 0x7555c0af89bc7cbb2d80ed07d57f5f6ac4e97487
+- [opensea](https://opensea.io/0x7555c0af89bc7cbb2d80ed07d57f5f6ac4e97487)
+- score: 0.00043721911868450784
+- num_minted: 9
+- num_transactions: 8
+``` json
+[["802","23508"],["1731","22376"],["116","22582"],["14492","22715"],["466","22892"],["223","23104"],["1398","23227"],["4891","23257"]]
 ```
 
 
@@ -1076,6 +2342,26 @@
 ```
 
 
+### 0x07cac66771056554bdcdfb99e212f455dd042012
+- [opensea](https://opensea.io/0x07cac66771056554bdcdfb99e212f455dd042012)
+- score: 0.00027884147183032654
+- num_minted: 8
+- num_transactions: 8
+``` json
+[["2221","22251"],["12083","29414"],["2238","22592"],["2244","22813"],["1177","22989"],["1178","23149"],["1179","23180"],["1180","23208"]]
+```
+
+
+### 0x3f8583df692e98bc74de5194f1006cdaea2af6f3
+- [opensea](https://opensea.io/0x3f8583df692e98bc74de5194f1006cdaea2af6f3)
+- score: 0.0007550202879790647
+- num_minted: 7
+- num_transactions: 7
+``` json
+[["7362","28497"],["2591","23184"],["257","23233"],["258","23234"],["259","23235"],["260","23236"],["261","23237"]]
+```
+
+
 ### 0x8bd8003edcb2023f3ea93b1d79404cd5f18de7f6
 - [opensea](https://opensea.io/0x8bd8003edcb2023f3ea93b1d79404cd5f18de7f6)
 - score: 1.293052643645013e-06
@@ -1106,8 +2392,38 @@
 ```
 
 
+### 0xab88432dcca57d5ff22e9cc6b932b1221001284b
+- [opensea](https://opensea.io/0xab88432dcca57d5ff22e9cc6b932b1221001284b)
+- score: 0.0002451677887070782
+- num_minted: 4
+- num_transactions: 4
+``` json
+[["75","22409"],["150","22737"],["225","23108"],["265","23255"]]
+```
+
+
+### 0x83038f7e5c3381987959571cd200f2653c7feb2f
+- [opensea](https://opensea.io/0x83038f7e5c3381987959571cd200f2653c7feb2f)
+- score: 0.0003732411887299295
+- num_minted: 4
+- num_transactions: 4
+``` json
+[["195","22957"],["196","22958"],["589","22959"],["590","22960"]]
+```
+
+
 ## Brave Frontier Heroes
 [opensea](https://opensea.io/collection/brave-frontier-heroes)
+### 0xc410e2c1460d7eeac6252f05f1ff8aa87e798c3e
+- [opensea](https://opensea.io/0xc410e2c1460d7eeac6252f05f1ff8aa87e798c3e)
+- score: 0.0001763154947614426
+- num_minted: 258
+- num_transactions: 140
+``` json
+[["628","30330015"],["895","10330109"],["5648","30010101"],["10548","20010103"],["4068","40010010"],["6330","40050062"],["6681","40040078"],["11627","30170021"],["9964","50190019"],["10210","10230027"],["3410","30060099"],["11648","30300103"],["4605","40030060"],["6683","40020111"],["9585","20230019"],["9587","20230068"],["5771","30170070"],["10980","40230063"],["10140","30230006"],["1076","40080108"],["11175","30230207"],["9744","40190108"],["9728","40190088"],["3049","50080026"],["12431","30300013"],["2240","20040313"],["3837","40100043"],["682","40130192"],["1489","40130182"],["1745","30120177"],["3299","30130187"],["7017","30110181"],["2274","10190392"],["11819","40300183"],["8301","30120197"],["9426","30110083"],["4557","40150177"],["6408","20060173"],["11350","40300237"],["8712","20050058"],["8577","20060059"],["10523","50350018"],["12769","40230052"],["4016","40170046"],["11693","50350026"],["9651","50380002"],["1951","40160056"],["4354","30160210"],["5780","20090279"],["10782","40350006"],["8568","30090056"],["4491","40180156"],["5233","30180127"],["2202","50010030"],["1306","30330107"],["2216","40380104"],["9764","40380102"],["4171","50060022"],["4701","30100092"],["8469","30020156"],["5436","30080116"],["6341","40230023"],["9847","40190036"],["4150","20110186"],["4626","40210072"],["10354","50370049"],["3942","50040026"],["448","50020030"],["10730","50380053"],["9756","40120138"],["1038","50080004"],["10656","40380153"],["8461","40370118"],["8323","50210048"],["1448","40090065"],["717","40310005"],["1574","40100052"],["1303","40160060"],["869","40030163"],["1538","50050013"],["7117","40350108"],["2617","3020047"],["2454","1030007"],["2460","1030023"],["2328","2030010"],["2187","4030010"],["7115","40350033"],["4745","40110169"],["5501","20020184"],["9722","50270013"],["3522","40150109"],["6084","30380411"],["11171","30350291"],["12078","20330305"],["602","51010076"],["302","51090007"],["4295","40410066"],["4240","50180020"],["1673","30200148"],["4157","40250058"],["5611","40200064"],["3796","40470109"],["5547","30070094"],["1238","40440091"],["1356","40450050"],["3362","30140122"],["4035","30180023"],["7318","40420077"],["4430","50540004"],["1691","30240043"],["8818","40210008"],["2625","30250001"],["613","30290002"],["873","40230106"],["1757","40240021"],["2071","40260037"],["800","40160085"],["324","51150096"],["8925","40400180"],["4192","40300002"],["8373","50450053"],["152","51110003"],["2099","40330098"],["56","51060026"],["5262","40490003"],["295","51050030"],["159","51140009"],["9656","40270062"],["470","51150005"],["216","51010093"],["9021","40440145"],["5396","40500017"],["2503","5030002"],["1840","40410030"],["513","51160001"],["572","40540036"],["598","50010001"],["510","40550012"],["817","40320038"],["233","51180010"]]
+```
+
+
 ### 0x1aec0ac31c541144035a09f0a2a37db33a2ca9b3
 - [opensea](https://opensea.io/0x1aec0ac31c541144035a09f0a2a37db33a2ca9b3)
 - score: 6.237968705043804e-10
@@ -1168,6 +2484,76 @@
 ```
 
 
+### 0x665642ae82d89e60784873d7ece28afe9fd71f20
+- [opensea](https://opensea.io/0x665642ae82d89e60784873d7ece28afe9fd71f20)
+- score: 0.00029690079819917744
+- num_minted: 28
+- num_transactions: 16
+``` json
+[["1394","50040001"],["2057","50610038"],["5534","50090008"],["7702","50580002"],["1040","50590023"],["3530","50560003"],["1917","50020004"],["127","51170022"],["134","51210006"],["218","51160013"],["5851","50550027"],["2230","30090166"],["1726","50540035"],["1072","50180023"],["2519","5030031"],["130","51250010"]]
+```
+
+
+### 0xdf61d4a158a0f6563d3621c71080c95288e3ed01
+- [opensea](https://opensea.io/0xdf61d4a158a0f6563d3621c71080c95288e3ed01)
+- score: 0.0008807448197768812
+- num_minted: 24
+- num_transactions: 16
+``` json
+[["4387","50020027"],["2137","50030035"],["4931","40140138"],["2818","50060062"],["1306","30330107"],["4218","50080006"],["3290","50010081"],["602","51010076"],["2614","3020032"],["3936","50550006"],["58","51210022"],["2463","1030028"],["2327","2030007"],["2429","3030009"],["219","51140006"],["13","51170008"]]
+```
+
+
+### 0xc680b6ac05e833395b4d96c59666f87a933a0951
+- [opensea](https://opensea.io/0xc680b6ac05e833395b4d96c59666f87a933a0951)
+- score: 0.000580912201016489
+- num_minted: 21
+- num_transactions: 17
+``` json
+[["1287","10330069"],["1044","20330100"],["1372","20330121"],["186","51060059"],["4013","40150166"],["5610","40190015"],["3570","50520015"],["3252","50530011"],["398","51040084"],["8552","50270062"],["845","40230129"],["1320","40310029"],["3749","30090019"],["3825","50180014"],["8708","40190008"],["1499","50470069"],["577","40320044"]]
+```
+
+
+### 0x307f5890c83a829a10fa968fff869668ae7cd27b
+- [opensea](https://opensea.io/0x307f5890c83a829a10fa968fff869668ae7cd27b)
+- score: 0.0006552953632540346
+- num_minted: 21
+- num_transactions: 14
+``` json
+[["4388","40490015"],["8648","40480052"],["1119","40480119"],["3034","50530022"],["382","40310016"],["5558","40470158"],["49","51140017"],["4796","50480026"],["14","51140012"],["555","51150044"],["4697","40100035"],["1989","40080069"],["6416","40190171"],["6525","40110191"]]
+```
+
+
+### 0x407740a2422342933195dd723d5929f15bd9b36c
+- [opensea](https://opensea.io/0x407740a2422342933195dd723d5929f15bd9b36c)
+- score: 0.00010835241537475587
+- num_minted: 20
+- num_transactions: 10
+``` json
+[["3913","30170146"],["722","20030254"],["6844","20090013"],["3670","20200049"],["2203","30310063"],["2039","30240074"],["1229","30160009"],["3297","30120215"],["938","20190089"],["2000","50560059"]]
+```
+
+
+### 0x6e8223014125c980962e718f1b531f5bedef0ce7
+- [opensea](https://opensea.io/0x6e8223014125c980962e718f1b531f5bedef0ce7)
+- score: 0.0008018157883167685
+- num_minted: 18
+- num_transactions: 7
+``` json
+[["4508","50020080"],["11006","30210056"],["12390","30210020"],["27","51010086"],["1215","50520075"],["2148","50090020"],["103","51190024"]]
+```
+
+
+### 0x2e469a1cdc451a5035f37b29debfe435289631e6
+- [opensea](https://opensea.io/0x2e469a1cdc451a5035f37b29debfe435289631e6)
+- score: 0.00013759642299976816
+- num_minted: 17
+- num_transactions: 14
+``` json
+[["628","30330015"],["1044","20330100"],["3389","10330334"],["3130","20390245"],["5642","20300570"],["3686","20300569"],["1607","20170215"],["51","51120010"],["89","51150087"],["2469","1020009"],["1931","50370080"],["5061","50420011"],["5866","50330023"],["2824","40150124"]]
+```
+
+
 ### 0xc92f65ad3d5f7cd43b9d6939c22dedbd01e43186
 - [opensea](https://opensea.io/0xc92f65ad3d5f7cd43b9d6939c22dedbd01e43186)
 - score: 1.0678426375329559e-05
@@ -1188,6 +2574,56 @@
 ```
 
 
+### 0x6d166e44080e7ba8bc458fbf6d3fa76b6628ef52
+- [opensea](https://opensea.io/0x6d166e44080e7ba8bc458fbf6d3fa76b6628ef52)
+- score: 0.0004809448553837293
+- num_minted: 13
+- num_transactions: 10
+``` json
+[["3854","20110228"],["2314","30230155"],["4366","30180099"],["1986","20040026"],["7523","30030129"],["1201","40180142"],["2207","40420073"],["2810","6010090"],["1932","40290134"],["62","51190027"]]
+```
+
+
+### 0xe030b6d1ee2ff0e17a804d8b038157efb0232343
+- [opensea](https://opensea.io/0xe030b6d1ee2ff0e17a804d8b038157efb0232343)
+- score: 0.0004173666828278473
+- num_minted: 13
+- num_transactions: 9
+``` json
+[["3971","20010207"],["1749","40020192"],["5688","50040081"],["3794","50040083"],["2890","50030072"],["1911","50010068"],["2292","50020056"],["4110","40020189"],["2221","40060156"]]
+```
+
+
+### 0x3197f35c4bb8915a2e45807d242ad9f932391472
+- [opensea](https://opensea.io/0x3197f35c4bb8915a2e45807d242ad9f932391472)
+- score: 0.0003603471006041425
+- num_minted: 12
+- num_transactions: 5
+``` json
+[["1093","40230096"],["2490","20060316"],["622","10470031"],["797","10460230"],["1412","10420920"]]
+```
+
+
+### 0x2c70eec1c62f651a655eb3379385e33e0440414a
+- [opensea](https://opensea.io/0x2c70eec1c62f651a655eb3379385e33e0440414a)
+- score: 0.0003750988189591909
+- num_minted: 10
+- num_transactions: 9
+``` json
+[["4368","20130376"],["1051","30390015"],["5122","30280101"],["1392","30400028"],["848","40350013"],["961","40480129"],["634","40490199"],["538","30490139"],["2270","30510071"]]
+```
+
+
+### 0x80e37860f8b1c8ac233c03c07984dc1f6a944d4b
+- [opensea](https://opensea.io/0x80e37860f8b1c8ac233c03c07984dc1f6a944d4b)
+- score: 0.00025049600804950085
+- num_minted: 8
+- num_transactions: 5
+``` json
+[["693","10440122"],["2869","20170443"],["3030","20270246"],["2712","20140215"],["484","20450009"]]
+```
+
+
 ### 0xf3fe44ac74eb3899e5c650c0736f04fed80947d9
 - [opensea](https://opensea.io/0xf3fe44ac74eb3899e5c650c0736f04fed80947d9)
 - score: 1.7739346523398965e-05
@@ -1198,8 +2634,58 @@
 ```
 
 
+### 0xdfc07a31a601da2ba3196f97e36fbde4a6475ce6
+- [opensea](https://opensea.io/0xdfc07a31a601da2ba3196f97e36fbde4a6475ce6)
+- score: 0.00013372060827421527
+- num_minted: 5
+- num_transactions: 4
+``` json
+[["951","30150120"],["818","30140102"],["1077","20050219"],["431","20070210"]]
+```
+
+
+### 0x20f8a107100cffc73f42b5e4ebcc0d3326176537
+- [opensea](https://opensea.io/0x20f8a107100cffc73f42b5e4ebcc0d3326176537)
+- score: 0.00021313553944596737
+- num_minted: 4
+- num_transactions: 4
+``` json
+[["81","51220005"],["168","51240011"],["4","51240014"],["55","51240017"]]
+```
+
+
+### 0x75108ae471992223fda14192fc9369fb0d040a99
+- [opensea](https://opensea.io/0x75108ae471992223fda14192fc9369fb0d040a99)
+- score: 0.000360033361300349
+- num_minted: 4
+- num_transactions: 2
+``` json
+[["196","51070029"],["530","40450010"]]
+```
+
+
+### 0xe977ddab9cc7e76afc073554436bf32a6b311d6b
+- [opensea](https://opensea.io/0xe977ddab9cc7e76afc073554436bf32a6b311d6b)
+- score: 0.0006766160593495009
+- num_minted: 4
+- num_transactions: 4
+``` json
+[["905","10550544"],["1128","10550587"],["1019","10550601"],["705","10610069"]]
+```
+
+
 ## uwucrew
 [opensea](https://opensea.io/collection/uwucrew)
+### 0x223772fbad6fcd3bbb503ff36b1e262c6a373bce
+- [opensea](https://opensea.io/0x223772fbad6fcd3bbb503ff36b1e262c6a373bce)
+- score: 0.00018030999599257856
+- num_minted: 16
+- num_transactions: 1
+``` json
+[["32","4743"]]
+```
+
+
 ### 0xb6c567a0a1b88293e803f2db1bc9bcd77487c2bf
 - [opensea](https://opensea.io/0xb6c567a0a1b88293e803f2db1bc9bcd77487c2bf)
 - score: 1.670285609663723e-05
@@ -1242,6 +2728,56 @@
 ```
 
 
+### 0x79fb8564a9d7057a9cb0265ae9f4c0fc7c9f64ba
+- [opensea](https://opensea.io/0x79fb8564a9d7057a9cb0265ae9f4c0fc7c9f64ba)
+- score: 0.0003697896236466485
+- num_minted: 16
+- num_transactions: 10
+``` json
+[["3237","52987"],["2813","52988"],["1971","52989"],["3424","52991"],["1283","52993"],["3935","52994"],["3904","52998"],["5167","53000"],["4795","53001"],["2772","53002"]]
+```
+
+
+### 0x73a3e6a31dc87ee9aaa169a7dc1e378069c87e26
+- [opensea](https://opensea.io/0x73a3e6a31dc87ee9aaa169a7dc1e378069c87e26)
+- score: 0.000611318712602478
+- num_minted: 11
+- num_transactions: 11
+``` json
+[["3192","55187"],["852","55190"],["408","55193"],["4451","55312"],["1189","55385"],["659","55387"],["949","55389"],["2876","55391"],["562","55392"],["3851","55395"],["4324","55416"]]
+```
+
+
+### 0x40fbbf39262510ec4051a0a0c86cf41cc64edcf9
+- [opensea](https://opensea.io/0x40fbbf39262510ec4051a0a0c86cf41cc64edcf9)
+- score: 0.0002702963845429765
+- num_minted: 10
+- num_transactions: 8
+``` json
+[["3205","54627"],["2698","54628"],["3930","54631"],["2680","55214"],["3763","55215"],["3297","55216"],["3524","55217"],["2726","55218"]]
+```
+
+
+### 0x710370b3ff1882b748a3d7f1121eaa2c6514af0d
+- [opensea](https://opensea.io/0x710370b3ff1882b748a3d7f1121eaa2c6514af0d)
+- score: 0.0002768698902669677
+- num_minted: 10
+- num_transactions: 8
+``` json
+[["3938","54632"],["3574","54633"],["3486","54634"],["3300","54635"],["2636","54765"],["2358","54766"],["2890","54767"],["3049","54768"]]
+```
+
+
+### 0x61f72c156dad1b8f645707930b6291313b257516
+- [opensea](https://opensea.io/0x61f72c156dad1b8f645707930b6291313b257516)
+- score: 0.00015490863785083036
+- num_minted: 10
+- num_transactions: 9
+``` json
+[["2928","54607"],["2877","54608"],["3718","54609"],["3518","54611"],["3220","54612"],["3170","54613"],["2835","54614"],["3167","54615"],["3360","54616"]]
+```
+
+
 ### 0xadcfe5a8301525809dd9499212a3eeb269b45058
 - [opensea](https://opensea.io/0xadcfe5a8301525809dd9499212a3eeb269b45058)
 - score: 7.008874835298572e-05
@@ -1249,6 +2785,66 @@
 - num_transactions: 8
 ``` json
 [["198","51450"],["1530","51451"],["689","51452"],["536","51453"],["633","51455"],["718","51457"],["1005","51458"],["968","51459"]]
+```
+
+
+### 0xb48f1fc0ea64f6e7aada2a337eeaf059426c8a9a
+- [opensea](https://opensea.io/0xb48f1fc0ea64f6e7aada2a337eeaf059426c8a9a)
+- score: 0.0003204334686962002
+- num_minted: 10
+- num_transactions: 9
+``` json
+[["3852","54617"],["3743","54618"],["2872","54619"],["3987","54620"],["2777","54622"],["3585","54623"],["2978","54624"],["3477","54625"],["2860","54626"]]
+```
+
+
+### 0xb392c2e7489db43c284bfce36a483e8126e638d8
+- [opensea](https://opensea.io/0xb392c2e7489db43c284bfce36a483e8126e638d8)
+- score: 0.0009771143659088781
+- num_minted: 9
+- num_transactions: 9
+``` json
+[["2734","54588"],["1219","54589"],["4115","54590"],["3632","54591"],["1607","54592"],["3230","54593"],["3089","54594"],["2956","54595"],["3425","54596"]]
+```
+
+
+### 0xeeaf0838afefbbb2343d361af73ac4cc0bbc9b12
+- [opensea](https://opensea.io/0xeeaf0838afefbbb2343d361af73ac4cc0bbc9b12)
+- score: 0.00023440606510967947
+- num_minted: 9
+- num_transactions: 7
+``` json
+[["3436","54788"],["3597","54790"],["3330","54792"],["3554","55224"],["2825","55225"],["3149","55227"],["3076","55228"]]
+```
+
+
+### 0xfb8b07ae2486cd3480a7cc8e8875e118ed3343e7
+- [opensea](https://opensea.io/0xfb8b07ae2486cd3480a7cc8e8875e118ed3343e7)
+- score: 0.0007735667571308194
+- num_minted: 8
+- num_transactions: 8
+``` json
+[["914","54379"],["1616","54380"],["3482","54383"],["580","54384"],["3710","54385"],["596","54386"],["1196","54413"],["1579","54414"]]
+```
+
+
+### 0xe14d408443919ce6842a370600ab1e2e2e03712a
+- [opensea](https://opensea.io/0xe14d408443919ce6842a370600ab1e2e2e03712a)
+- score: 0.0005210943319094746
+- num_minted: 8
+- num_transactions: 5
+``` json
+[["1350","54707"],["891","54709"],["2980","54734"],["3326","54736"],["3488","54737"]]
+```
+
+
+### 0x9d83d8f02814af1c3e35d2e0096bc7019dc69637
+- [opensea](https://opensea.io/0x9d83d8f02814af1c3e35d2e0096bc7019dc69637)
+- score: 0.00024226356181641676
+- num_minted: 8
+- num_transactions: 7
+``` json
+[["805","54654"],["1429","54655"],["2010","54656"],["2709","54657"],["2728","54771"],["2850","54773"],["2584","54774"]]
 ```
 
 
@@ -1282,6 +2878,26 @@
 ```
 
 
+### 0xf2fcaaf8c6dd3e3ddc446342f84fa632b8d6d839
+- [opensea](https://opensea.io/0xf2fcaaf8c6dd3e3ddc446342f84fa632b8d6d839)
+- score: 0.0005829320962525997
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["823","53341"],["540","53342"],["483","53343"]]
+```
+
+
+### 0x584dc6c30269c9993c8b1951ce4502f6ea498e56
+- [opensea](https://opensea.io/0x584dc6c30269c9993c8b1951ce4502f6ea498e56)
+- score: 0.0007746010724348386
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["579","55905"],["905","55906"],["593","55907"]]
+```
+
+
 ### 0x06edf0354e361e93d7e1388d59dd34ff9defce5f
 - [opensea](https://opensea.io/0x06edf0354e361e93d7e1388d59dd34ff9defce5f)
 - score: 8.843263115604274e-05
@@ -1304,6 +2920,16 @@
 
 ## CryptoBeasts
 [opensea](https://opensea.io/collection/cryptobeasts-official)
+### 0xd7c318e9f9129239f6ba4e10994137113dcf6244
+- [opensea](https://opensea.io/0xd7c318e9f9129239f6ba4e10994137113dcf6244)
+- score: 0.00010954210202324173
+- num_minted: 140
+- num_transactions: 63
+``` json
+[["9067","4085"],["52","4086"],["432","4087"],["797","4330"],["911","4616"],["2334","4739"],["665","5305"],["6243","5600"],["948","4740"],["9098","5019"],["6244","5601"],["184","4741"],["2773","5307"],["6245","5602"],["8325","5905"],["1309","5306"],["7774","6214"],["7775","6215"],["10","6216"],["8326","5906"],["1919","5603"],["2774","5308"],["638","5022"],["333","5604"],["5709","6533"],["5710","6534"],["5711","6535"],["1532","6537"],["1906","6538"],["7777","6219"],["267","5024"],["2166","6220"],["152","6864"],["1547","6865"],["1937","7197"],["4547","7198"],["1791","7199"],["669","7202"],["780","6540"],["2357","4475"],["1684","4746"],["459","4299"],["3217","5312"],["7837","7201"],["6246","5607"],["367","7539"],["1859","7544"],["5794","7546"],["1549","7203"],["2167","6222"],["3207","4393"],["1813","5608"],["767","5313"],["286","5026"],["9432","9"],["8322","5901"],["8321","5900"],["457","6223"],["8619","8993"],["188","8144"],["321","7691"],["4570","8133"],["4047","100"]]
+```
+
+
 ### 0x90721a8e13cc9352971d5841bee6e3c03108ffb5
 - [opensea](https://opensea.io/0x90721a8e13cc9352971d5841bee6e3c03108ffb5)
 - score: 1.9698221234027796e-36
@@ -1434,6 +3060,16 @@
 ```
 
 
+### 0x837c68f834170eaed28547b0a46ecbb923987127
+- [opensea](https://opensea.io/0x837c68f834170eaed28547b0a46ecbb923987127)
+- score: 0.00014612643785738861
+- num_minted: 12
+- num_transactions: 12
+``` json
+[["5","8597"],["1318","8052"],["5175","8700"],["1508","9986"],["1439","9924"],["264","8283"],["218","8284"],["881","9530"],["39","9926"],["2018","8298"],["1051","9142"],["15","8697"]]
+```
+
+
 ### 0x782f104d98a41ef54d7a930c413b3a9f9da0ea76
 - [opensea](https://opensea.io/0x782f104d98a41ef54d7a930c413b3a9f9da0ea76)
 - score: 1.3997466764216526e-06
@@ -1451,6 +3087,16 @@
 - num_transactions: 3
 ``` json
 [["2459","8162"],["511","8179"],["1319","9005"]]
+```
+
+
+### 0x8035045ed2244b6008ea6c30f0633bd1f5aa86d8
+- [opensea](https://opensea.io/0x8035045ed2244b6008ea6c30f0633bd1f5aa86d8)
+- score: 0.00020756675057456505
+- num_minted: 12
+- num_transactions: 12
+``` json
+[["7491","2286"],["5431","2598"],["1779","2662"],["6078","2663"],["590","2797"],["380","4069"],["1637","3951"],["628","3881"],["1659","4339"],["258","5472"],["535","6170"],["965","5859"]]
 ```
 
 
@@ -1494,6 +3140,26 @@
 ```
 
 
+### 0x8eaf3c4a8105e3865c203d07764fa9badb0c5c08
+- [opensea](https://opensea.io/0x8eaf3c4a8105e3865c203d07764fa9badb0c5c08)
+- score: 0.00041093085346026535
+- num_minted: 11
+- num_transactions: 10
+``` json
+[["1095","2010"],["7433","2222"],["277","2017"],["1283","2382"],["929","4192"],["1662","1655"],["2061","4599"],["1360","4255"],["1526","4932"],["3290","6351"]]
+```
+
+
+### 0x63a21b78ec65118da06216ebf4dafc83115afe63
+- [opensea](https://opensea.io/0x63a21b78ec65118da06216ebf4dafc83115afe63)
+- score: 0.00010831113729832173
+- num_minted: 10
+- num_transactions: 1
+``` json
+[["60","2642"]]
+```
+
+
 ### 0x0752f5a7cf11e4e2cded7822c12989acf0c1ede9
 - [opensea](https://opensea.io/0x0752f5a7cf11e4e2cded7822c12989acf0c1ede9)
 - score: 1.0910234370751883e-05
@@ -1514,6 +3180,16 @@
 ```
 
 
+### 0xedce70709dafae5f7723ea3eb8ab554babbbeb4f
+- [opensea](https://opensea.io/0xedce70709dafae5f7723ea3eb8ab554babbbeb4f)
+- score: 0.0003556002703507653
+- num_minted: 10
+- num_transactions: 1
+``` json
+[["156","6047"]]
+```
+
+
 ### 0xa7d131e6072b9bcc4adea374c79966eca0b50966
 - [opensea](https://opensea.io/0xa7d131e6072b9bcc4adea374c79966eca0b50966)
 - score: 8.774652284909675e-06
@@ -1521,6 +3197,16 @@
 - num_transactions: 10
 ``` json
 [["1177","7160"],["294","8580"],["551","8955"],["69","6987"],["2411","9729"],["1145","8135"],["1618","6476"],["1099","9035"],["1400","7780"],["1289","7320"]]
+```
+
+
+### 0xb104371d5a2680fb0d47ea9a3aa2348392454186
+- [opensea](https://opensea.io/0xb104371d5a2680fb0d47ea9a3aa2348392454186)
+- score: 0.00010722374777309953
+- num_minted: 10
+- num_transactions: 1
+``` json
+[["494","2714"]]
 ```
 
 
@@ -1594,6 +3280,16 @@
 ```
 
 
+### 0xce90504dcd213fb252b5eaabb8c2dadf7ef899a0
+- [opensea](https://opensea.io/0xce90504dcd213fb252b5eaabb8c2dadf7ef899a0)
+- score: 0.00011238572930971608
+- num_minted: 10
+- num_transactions: 1
+``` json
+[["802","8738"]]
+```
+
+
 ### 0xa862eb147c8a23fefc4601df14947023db43d806
 - [opensea](https://opensea.io/0xa862eb147c8a23fefc4601df14947023db43d806)
 - score: 1.3019697497364398e-05
@@ -1611,6 +3307,16 @@
 - num_transactions: 1
 ``` json
 [["148","7832"]]
+```
+
+
+### 0xa458c7ad686589c6bb7239128c15bb124760c173
+- [opensea](https://opensea.io/0xa458c7ad686589c6bb7239128c15bb124760c173)
+- score: 0.000303086657858154
+- num_minted: 10
+- num_transactions: 1
+``` json
+[["324","2650"]]
 ```
 
 
@@ -1634,6 +3340,16 @@
 ```
 
 
+### 0x3b7f8d29402ec71c61d1d420d643753d99304c5b
+- [opensea](https://opensea.io/0x3b7f8d29402ec71c61d1d420d643753d99304c5b)
+- score: 0.00025691545620340267
+- num_minted: 6
+- num_transactions: 6
+``` json
+[["413","4679"],["1645","4681"],["864","6178"],["2366","6497"],["290","9791"],["421","9677"]]
+```
+
+
 ### 0xb1e03d53f6be30c7154fdf5f125e7d713ecf722a
 - [opensea](https://opensea.io/0xb1e03d53f6be30c7154fdf5f125e7d713ecf722a)
 - score: 5.1837936959516916e-05
@@ -1641,6 +3357,66 @@
 - num_transactions: 6
 ``` json
 [["577","9300"],["1832","9299"],["1157","9689"],["393","8151"],["394","9181"],["198","9491"]]
+```
+
+
+### 0xf993d5474cd607e26b57e1de1556bee36de2d0e9
+- [opensea](https://opensea.io/0xf993d5474cd607e26b57e1de1556bee36de2d0e9)
+- score: 0.0006147299775387881
+- num_minted: 5
+- num_transactions: 5
+``` json
+[["2132","996"],["1019","5244"],["119","4799"],["2162","5243"],["1990","4959"]]
+```
+
+
+### 0xa2ecf1c2c26f62fb4156652399a4f8c37763de37
+- [opensea](https://opensea.io/0xa2ecf1c2c26f62fb4156652399a4f8c37763de37)
+- score: 0.0006783014334089989
+- num_minted: 5
+- num_transactions: 5
+``` json
+[["2087","2461"],["2155","1371"],["179","1173"],["605","8647"],["2204","9762"]]
+```
+
+
+### 0x36b7f05efc2d3694e7b8f0f91dd4296dd2656d4a
+- [opensea](https://opensea.io/0x36b7f05efc2d3694e7b8f0f91dd4296dd2656d4a)
+- score: 0.0002635423612407104
+- num_minted: 5
+- num_transactions: 4
+``` json
+[["902","7992"],["217","3061"],["19","7993"],["1826","7994"]]
+```
+
+
+### 0x554b572716ded7d720384b032ef36adcb10c02fe
+- [opensea](https://opensea.io/0x554b572716ded7d720384b032ef36adcb10c02fe)
+- score: 0.0005771882248958754
+- num_minted: 4
+- num_transactions: 3
+``` json
+[["919","7032"],["1471","7033"],["250","7035"]]
+```
+
+
+### 0x069383c54a36be476f53395135e3a5d2864f7870
+- [opensea](https://opensea.io/0x069383c54a36be476f53395135e3a5d2864f7870)
+- score: 0.0004309025510458008
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["716","7007"],["581","6006"],["91","5005"]]
+```
+
+
+### 0x92494992ae72f834c44b8711e6f94286930b9e6b
+- [opensea](https://opensea.io/0x92494992ae72f834c44b8711e6f94286930b9e6b)
+- score: 0.0005674532279292696
+- num_minted: 3
+- num_transactions: 3
+``` json
+[["12","2552"],["372","1865"],["785","1310"]]
 ```
 
 
@@ -1653,6 +3429,48 @@
 - num_transactions: 2
 ``` json
 [["32","56004"],["4","51011"]]
+```
+
+
+### 0xcbbdce7e539916630936453dfbd1cbcb82d414bf
+- [opensea](https://opensea.io/0xcbbdce7e539916630936453dfbd1cbcb82d414bf)
+- score: 0.00013459136116850045
+- num_minted: 3
+- num_transactions: 1
+``` json
+[["31","56014"]]
+```
+
+
+### 0x63b1335b3411c0a010b1029a71eeb21a7d4a05fc
+- [opensea](https://opensea.io/0x63b1335b3411c0a010b1029a71eeb21a7d4a05fc)
+- score: 0.00017208991097262147
+- num_minted: 3
+- num_transactions: 2
+``` json
+[["32","56004"],["86","58004"]]
+```
+
+
+### 0xc68bba423525576c7684e7ea25e7d5f079b1361e
+- [opensea](https://opensea.io/0xc68bba423525576c7684e7ea25e7d5f079b1361e)
+- score: 0.00011583842415563444
+- num_minted: 3
+- num_transactions: 2
+``` json
+[["2","57009"],["74","58023"]]
+```
+
+
+## Borpacasso
+[opensea](https://opensea.io/collection/borpacasso)
+### 0xdebddc4f4ab0c52ac47a15edae728ecec2897027
+- [opensea](https://opensea.io/0xdebddc4f4ab0c52ac47a15edae728ecec2897027)
+- score: 0.00034534151569262216
+- num_minted: 3
+- num_transactions: 1
+``` json
+[["2","1246"]]
 ```
 
 
@@ -1675,6 +3493,16 @@
 - num_transactions: 7
 ``` json
 [["775","118950008"],["15","118950057"],["1239","118950077"],["180","118950110"],["181","118950171"],["752","118950207"],["1556","118950214"]]
+```
+
+
+### 0xcef69854280e6c1eedbe90f077022b1298390550
+- [opensea](https://opensea.io/0xcef69854280e6c1eedbe90f077022b1298390550)
+- score: 0.00031460022727524106
+- num_minted: 151
+- num_transactions: 95
+``` json
+[["7078","110800409"],["3442","110800422"],["4530","110900466"],["1454","110800510"],["3688","110800543"],["436","110750554"],["2892","110750564"],["4893","110900586"],["4806","110900595"],["602","110800593"],["1476","110900627"],["102","110650019"],["279","111150131"],["1148","111150144"],["8877","111150206"],["10583","111150325"],["19","111400004"],["1008","111350044"],["1170","111450041"],["1873","112500020"],["81","112500066"],["1171","111450073"],["233","112500102"],["3863","111500313"],["235","112600013"],["143","112600055"],["677","112600066"],["185","112650061"],["1566","112550229"],["416","112850024"],["815","112850054"],["85","112900059"],["1904","112850115"],["2465","113000066"],["2313","113000145"],["1960","113000154"],["7280","113000163"],["1343","113000168"],["2234","113000174"],["11198","113000178"],["7137","113000179"],["3331","113000186"],["4028","113000187"],["3332","113000196"],["4552","113000205"],["5380","113400101"],["7265","113400151"],["4172","113400179"],["8408","113450188"],["392","113450193"],["623","114000004"],["669","114000012"],["787","114000033"],["12259","114450001"],["138","114050058"],["8076","114050168"],["13761","114050203"],["1811","114700057"],["9423","114700060"],["7337","114750085"],["1144","114700088"],["16543","114750132"],["1300","114900020"],["1367","114900037"],["1299","114650108"],["127","115250028"],["1575","115500077"],["2627","115650098"],["10517","115550084"],["7243","115650127"],["2411","115650165"],["918","115850089"],["732","115850131"],["15630","114400065"],["7733","116050078"],["2621","116100116"],["4152","116000118"],["3114","121350010"],["17849","123350032"],["540","117550064"],["541","117550069"],["1884","116300001"],["6689","117600095"],["5560","116500117"],["200","118250072"],["9255","118650064"],["6584","118650077"],["1856","116550213"],["1278","118650124"],["5935","118300099"],["17481","124350041"],["3689","117950103"],["1692","118550008"],["2212","118100028"],["17529","121350066"]]
 ```
 
 
@@ -1748,6 +3576,16 @@
 ```
 
 
+### 0x43e7e9d490bb8623c61449a8fed46fbe4259256f
+- [opensea](https://opensea.io/0x43e7e9d490bb8623c61449a8fed46fbe4259256f)
+- score: 0.00020042581951157685
+- num_minted: 99
+- num_transactions: 82
+``` json
+[["9","110850004"],["62","110700015"],["147","110750118"],["203","110900160"],["409","110800146"],["210","110750172"],["133","110750231"],["2451","110750261"],["2152","110800320"],["2361","110750516"],["109","111000001"],["726","111150104"],["4157","111150187"],["1715","111150288"],["5906","111150421"],["136","112150016"],["2530","112200017"],["19","111400004"],["391","112500075"],["233","112500102"],["3163","111450095"],["1121","111500242"],["2372","111500290"],["7711","111450238"],["7579","111450243"],["7026","111450244"],["621","111500308"],["4690","111500340"],["2169","112500298"],["8","112600024"],["143","112600055"],["677","112600066"],["1000","112650010"],["862","112700033"],["40","112950005"],["592","113000042"],["1318","112750038"],["2965","112750050"],["753","113300008"],["126","113450033"],["1593","113400066"],["1025","113500036"],["1950","113400204"],["787","114000033"],["229","114050010"],["179","114050039"],["138","114050058"],["388","113600011"],["1287","114750113"],["15114","114200041"],["860","114850013"],["869","114650017"],["1367","114900037"],["15515","114300083"],["393","115250052"],["394","115250053"],["444","115700031"],["1738","115650038"],["2269","115350004"],["6378","115850035"],["2388","115800047"],["467","115850119"],["2225","116150014"],["84","116850014"],["1682","116850070"],["4076","116450058"],["16485","120350036"],["1591","116550156"],["11063","118050050"],["259","118200049"],["512","118350054"],["289","118000003"],["323","118800017"],["10303","118000047"],["223","119100028"],["1154","119250010"],["131","118100005"],["2212","118100028"],["2876","122350062"],["2151","119750009"],["280","119600030"],["2789","119900026"]]
+```
+
+
 ### 0xbc67784d1a9c767b592afc6c03f397f4531c33a2
 - [opensea](https://opensea.io/0xbc67784d1a9c767b592afc6c03f397f4531c33a2)
 - score: 1.6835489751855518e-09
@@ -1755,6 +3593,16 @@
 - num_transactions: 78
 ``` json
 [["754","111350098"],["293","111400007"],["1873","112500020"],["3342","111450186"],["8","112600024"],["143","112600055"],["677","112600066"],["1000","112650010"],["1854","112550236"],["416","112850024"],["815","112850054"],["85","112900059"],["818","112850133"],["10723","112850157"],["1457","113000117"],["177","113300040"],["260","113400039"],["1593","113400066"],["2239","113400084"],["2240","113400111"],["3155","113500011"],["1982","114000084"],["952","114000108"],["12252","114550001"],["6990","113550172"],["644","113950076"],["7881","114050147"],["7882","114050149"],["1286","114750040"],["1287","114750113"],["154","111050021"],["861","114850040"],["1367","114900037"],["166","114650076"],["308","113250021"],["3791","115250047"],["1161","115600017"],["1131","115700022"],["444","115700031"],["1738","115650038"],["2397","115700090"],["1185","115550076"],["217","115850010"],["15156","114200083"],["3451","115800063"],["449","116100009"],["168","116100043"],["2043","116050069"],["2969","116100114"],["1800","124350002"],["420","116850054"],["6748","120350010"],["1093","116850072"],["1557","116850073"],["222","111050037"],["6","114600092"],["725","116400050"],["6191","116400091"],["2529","117600082"],["1884","116300001"],["583","118050016"],["45","118250031"],["160","118250037"],["1591","116550156"],["10625","123350042"],["1206","118650054"],["201","117950047"],["544","118350011"],["9029","118200079"],["289","118000003"],["2569","118800084"],["1154","119250010"],["3914","118150105"],["2876","122350062"],["809","116700010"],["280","119600030"],["2271","119650006"],["2789","119900026"]]
+```
+
+
+### 0x1b67a7f0639f7e9457116fb7136a1225a1fc0382
+- [opensea](https://opensea.io/0x1b67a7f0639f7e9457116fb7136a1225a1fc0382)
+- score: 0.00020475847884582517
+- num_minted: 94
+- num_transactions: 77
+``` json
+[["1363","110900129"],["432","110750140"],["1117","110750243"],["855","110750534"],["4","111000004"],["726","111150104"],["76","111400009"],["1170","111450041"],["1873","112500020"],["3168","111450255"],["8","112600024"],["677","112600066"],["842","112550176"],["815","112850054"],["5283","112850087"],["592","113000042"],["8184","113000090"],["21","113400014"],["2847","113400118"],["1025","113500036"],["11405","114000091"],["179","114050039"],["138","114050058"],["682","112300001"],["10321","113950086"],["707","114700001"],["2128","114700069"],["1675","114750080"],["1367","114900037"],["166","114650076"],["1299","114650108"],["127","115250028"],["11679","113250050"],["443","115700012"],["1131","115700022"],["10820","115650065"],["7257","115700073"],["3148","115500081"],["466","115850005"],["217","115850010"],["750","115850050"],["30","116100005"],["449","116100009"],["10622","116050077"],["10245","116100088"],["1800","124350002"],["5773","116850142"],["3824","116500050"],["3825","116500066"],["2422","117600070"],["1884","116300001"],["6272","117550085"],["5189","117600113"],["219","118650006"],["1591","116550156"],["3756","118450030"],["1196","118650103"],["1679","118500025"],["1362","118500026"],["9871","118700050"],["3691","118700051"],["340","118350001"],["201","117950047"],["289","118000003"],["361","118000020"],["182","118000029"],["10369","118800090"],["223","119100028"],["2507","119250001"],["2212","118100028"],["2352","118100034"],["17498","124350063"],["3019","119700004"],["2151","119750009"],["280","119600030"],["11265","119750020"],["15728","119650019"]]
 ```
 
 
@@ -1828,6 +3676,16 @@
 ```
 
 
+### 0x688aabd6bbccb44554a149b342474c1c40f3911b
+- [opensea](https://opensea.io/0x688aabd6bbccb44554a149b342474c1c40f3911b)
+- score: 0.0005525691529601224
+- num_minted: 79
+- num_transactions: 67
+``` json
+[["855","110750534"],["602","110800593"],["102","110650019"],["1148","111150144"],["5598","111150229"],["136","112150016"],["1882","112200079"],["293","111400007"],["6452","111350372"],["1873","112500020"],["81","112500066"],["391","112500075"],["143","112600055"],["677","112600066"],["199","112650084"],["16","112750002"],["202","112700070"],["40","112950005"],["753","113300008"],["1025","113500036"],["671","113450149"],["923","113400184"],["643","113550047"],["2088","113550116"],["12252","114550001"],["822","113700006"],["229","114050010"],["682","112300001"],["15489","114300057"],["860","114850013"],["1131","115700022"],["1738","115650038"],["5791","115700123"],["6825","115500119"],["2269","115350004"],["174","111050032"],["649","115850097"],["274","116050052"],["2225","116150014"],["1800","124350002"],["1429","116900004"],["84","116850014"],["253","116850033"],["528","117550002"],["527","117550010"],["632","116400026"],["532","117550019"],["1884","116300001"],["659","118650022"],["587","118250057"],["1624","116550189"],["1856","116550213"],["730","118300014"],["15768","117900019"],["766","123350052"],["516","118350005"],["201","117950047"],["544","118350011"],["411","118000022"],["182","118000029"],["325","118000040"],["223","119100028"],["1154","119250010"],["473","118000052"],["3788","119550042"],["280","119600030"],["2789","119900026"]]
+```
+
+
 ### 0xb9efaca34f520a327e813400e9b84129fba6d5f6
 - [opensea](https://opensea.io/0xb9efaca34f520a327e813400e9b84129fba6d5f6)
 - score: 6.379481299613512e-06
@@ -1858,6 +3716,16 @@
 ```
 
 
+### 0x41a9fab9abb3e94a5246664a80fd877c9a627fdf
+- [opensea](https://opensea.io/0x41a9fab9abb3e94a5246664a80fd877c9a627fdf)
+- score: 0.0005724671369185509
+- num_minted: 62
+- num_transactions: 46
+``` json
+[["20","112150063"],["477","112200050"],["12926","111350281"],["8365","112500252"],["1179","112600182"],["7955","112600184"],["199","112650084"],["416","112850024"],["815","112850054"],["16","112750002"],["40","112950005"],["7987","113000070"],["126","113450033"],["260","113400039"],["3155","113500011"],["623","114000004"],["643","113550047"],["2164","113550096"],["12252","114550001"],["6684","114000127"],["369","114050065"],["7062","114050129"],["1243","114050130"],["682","112300001"],["1286","114750040"],["1143","114700044"],["933","114700090"],["15114","114200041"],["869","114650017"],["1367","114900037"],["1299","114650108"],["2415","114650118"],["127","115250028"],["2425","115500042"],["1185","115550076"],["4067","115550077"],["3820","115700096"],["916","115350036"],["466","115850005"],["14255","115800041"],["11408","115850083"],["449","116100009"],["150","116100022"],["168","116100043"],["6","114600092"],["1731","116550117"]]
+```
+
+
 ### 0x48785e51678a97c6f2d736214aafce2e79d0f9bd
 - [opensea](https://opensea.io/0x48785e51678a97c6f2d736214aafce2e79d0f9bd)
 - score: 1.123531953981287e-11
@@ -1885,6 +3753,16 @@
 - num_transactions: 54
 ``` json
 [["410","110800189"],["686","110900465"],["4","111000004"],["1170","111450041"],["143","112600055"],["238","112600084"],["988","112550239"],["815","112850054"],["592","113000042"],["177","113300040"],["21","113400014"],["4540","113450077"],["3155","113500011"],["1025","113500036"],["787","114000033"],["643","113550047"],["179","114050039"],["3394","114050132"],["1286","114750040"],["3134","114700051"],["1300","114900020"],["166","114650076"],["1299","114650108"],["127","115250028"],["443","115700012"],["2102","115650044"],["217","115850010"],["174","111050032"],["150","116100022"],["168","116100043"],["11323","116000080"],["10186","116000127"],["84","116850014"],["14291","116900075"],["6","114600092"],["303","117550006"],["527","117550010"],["532","117550019"],["981","116450086"],["219","118650006"],["583","118050016"],["659","118650022"],["3821","120350044"],["1624","116550189"],["741","118650075"],["730","118300014"],["3814","118700038"],["1024","117950005"],["340","118350001"],["516","118350005"],["4058","118750068"],["323","118800017"],["5310","118400039"],["679","119750037"]]
+```
+
+
+### 0x371c79d6d584abf3a07fc2422114885103228961
+- [opensea](https://opensea.io/0x371c79d6d584abf3a07fc2422114885103228961)
+- score: 0.0005702160240149861
+- num_minted: 58
+- num_transactions: 49
+``` json
+[["199","112650084"],["16","112750002"],["3593","112850104"],["4002","112850164"],["137","112150128"],["1318","112750038"],["1189","113500095"],["952","114000108"],["12252","114550001"],["12576","114000137"],["138","114050058"],["682","112300001"],["718","115500086"],["13970","112750092"],["8438","115700139"],["2652","115600147"],["2269","115350004"],["217","115850010"],["7914","114600073"],["449","116100009"],["168","116100043"],["1911","111050035"],["2225","116150014"],["1647","116000105"],["222","111050037"],["4821","116850152"],["6","114600092"],["528","117550002"],["632","116400026"],["1884","116300001"],["11219","117600099"],["45","118250031"],["160","118250037"],["1624","116550189"],["1105","118650082"],["316","118500002"],["464","118300024"],["766","123350052"],["5646","122350050"],["340","118350001"],["5853","118200092"],["361","118000020"],["182","118000029"],["223","119100028"],["4228","118150113"],["2352","118100034"],["132","118100044"],["2151","119750009"],["280","119600030"]]
 ```
 
 
@@ -1928,6 +3806,16 @@
 ```
 
 
+### 0xe0a0217c34f0f60bee548dac28a2237ecfb92a5b
+- [opensea](https://opensea.io/0xe0a0217c34f0f60bee548dac28a2237ecfb92a5b)
+- score: 0.00045791340657295657
+- num_minted: 53
+- num_transactions: 48
+``` json
+[["940","110750363"],["2888","110750364"],["5893","110800528"],["5838","110800529"],["20","112150063"],["477","112200050"],["1158","112500160"],["1000","112650010"],["6776","112550252"],["416","112850024"],["862","112700033"],["40","112950005"],["753","113300008"],["126","113450033"],["260","113400039"],["623","114000004"],["7","113550129"],["822","113700006"],["179","114050039"],["682","112300001"],["3711","114050194"],["15120","114200047"],["860","114850013"],["869","114650017"],["1367","114900037"],["443","115700012"],["4542","115600061"],["718","115500086"],["8949","115600116"],["916","115350036"],["9240","115850080"],["6418","115850116"],["2225","116150014"],["3359","116900073"],["527","117550010"],["532","117550019"],["1884","116300001"],["583","118050016"],["160","118250037"],["6108","118300078"],["4466","118300079"],["11541","118350018"],["11706","118350026"],["2212","118100028"],["2352","118100034"],["6076","118400032"],["280","119600030"],["1569","119650016"]]
+```
+
+
 ### 0x1f74716e73df03dd4252b9543e10a29ec08afd08
 - [opensea](https://opensea.io/0x1f74716e73df03dd4252b9543e10a29ec08afd08)
 - score: 6.981335967904609e-05
@@ -1935,6 +3823,16 @@
 - num_transactions: 43
 ``` json
 [["42","111400017"],["238","112600084"],["1755","112550141"],["3665","112600169"],["4040","112600173"],["185","112650061"],["2489","112650108"],["1023","112550244"],["83","112700083"],["1415","112700114"],["3407","112850155"],["9745","112850156"],["3429","113000124"],["753","113300008"],["1593","113400066"],["4241","113450140"],["1949","113400175"],["2848","113400178"],["923","113400184"],["15757","113400186"],["787","114000033"],["643","113550047"],["264","113400190"],["822","113700006"],["229","114050010"],["179","114050039"],["2949","114050178"],["1546","114700015"],["860","114850013"],["1367","114900037"],["443","115700012"],["444","115700031"],["5956","115650055"],["2269","115350004"],["323","118800017"],["411","118000022"],["6640","118800116"],["6641","118800117"],["6509","118800126"],["2212","118100028"],["2352","118100034"],["10576","118550056"],["5310","118400039"]]
+```
+
+
+### 0xb034eb136b32e20c0ca368b1463bd705b29763cc
+- [opensea](https://opensea.io/0xb034eb136b32e20c0ca368b1463bd705b29763cc)
+- score: 0.000660921195560442
+- num_minted: 50
+- num_transactions: 46
+``` json
+[["3927","110800519"],["136","112150016"],["2530","112200017"],["785","111350325"],["143","112600055"],["228","112150110"],["1337","112550104"],["1000","112650010"],["185","112650061"],["862","112700033"],["1318","112750038"],["753","113300008"],["3155","113500011"],["669","114000012"],["822","113700006"],["370","114050092"],["10324","113950075"],["682","112300001"],["1546","114700015"],["2071","114600002"],["860","114850013"],["443","115700012"],["1131","115700022"],["2425","115500042"],["12","113100004"],["2269","115350004"],["1027","115850081"],["2225","116150014"],["721","116100112"],["2919","116050134"],["11597","124350009"],["1884","116300001"],["9047","116400125"],["10156","116500110"],["10157","116500118"],["219","118650006"],["160","118250037"],["1813","116550093"],["8155","118450033"],["766","123350052"],["481","116700009"],["10319","118600046"],["387","118600047"],["2172","119250091"],["2151","119750009"],["280","119600030"]]
 ```
 
 
@@ -1978,6 +3876,26 @@
 ```
 
 
+### 0x2c42372785dccfd778d6e52a200a0e59ec783116
+- [opensea](https://opensea.io/0x2c42372785dccfd778d6e52a200a0e59ec783116)
+- score: 0.0002855498414645162
+- num_minted: 44
+- num_transactions: 39
+``` json
+[["815","112850054"],["5297","112900079"],["1415","112700114"],["4853","113000077"],["2965","112750050"],["3724","113400158"],["1189","113500095"],["643","113550047"],["3300","114050180"],["1512","114050184"],["3146","114700053"],["10908","114650142"],["2269","115350004"],["6349","115850095"],["1042","115850098"],["2225","116150014"],["4960","116100132"],["1800","124350002"],["253","116850033"],["6","114600092"],["725","116400050"],["502","117550029"],["8659","117600045"],["9233","117550047"],["1884","116300001"],["426","116800003"],["219","118650006"],["45","118250031"],["1813","116550093"],["1282","118650059"],["6686","118650060"],["766","123350052"],["411","118000022"],["182","118000029"],["223","119100028"],["132","118100044"],["1498","118100063"],["9134","119600049"],["2789","119900026"]]
+```
+
+
+### 0xde4372f6522f20ceb19dd9112bfa41968aec7f1f
+- [opensea](https://opensea.io/0xde4372f6522f20ceb19dd9112bfa41968aec7f1f)
+- score: 0.00031604365610814775
+- num_minted: 43
+- num_transactions: 35
+``` json
+[["203","110900160"],["432","110750140"],["148","110750155"],["210","110750172"],["133","110750231"],["2152","110800320"],["1148","111150144"],["2604","111150182"],["634","111150314"],["293","111400007"],["81","112500066"],["1171","111450073"],["2334","112500117"],["9415","110900400"],["1022","112550080"],["1723","112550090"],["199","112650084"],["416","112850024"],["85","112900059"],["202","112700070"],["4866","113400140"],["1025","113500036"],["4375","113450150"],["952","114000108"],["12252","114550001"],["3267","113550186"],["1286","114750040"],["349","113250072"],["10172","115650067"],["1615","115550060"],["12085","115850147"],["4725","117600055"],["1813","116550093"],["1679","118500025"],["2091","118800068"]]
+```
+
+
 ### 0x1279dba78d8bb9998f9f4c81c786940e165b6d3b
 - [opensea](https://opensea.io/0x1279dba78d8bb9998f9f4c81c786940e165b6d3b)
 - score: 8.504176451027666e-07
@@ -1985,6 +3903,26 @@
 - num_transactions: 32
 ``` json
 [["3469","110900656"],["9074","111150437"],["19","111400004"],["754","111350098"],["89","111500008"],["235","112600013"],["872","112600350"],["204","112850011"],["2266","112900207"],["8561","113000194"],["21","113400014"],["260","113400039"],["669","114000012"],["787","114000033"],["4018","113550177"],["179","114050039"],["3520","114700127"],["869","114650017"],["1300","114900020"],["127","115250028"],["443","115700012"],["1161","115600017"],["528","117550002"],["1856","116550213"],["3369","118050112"],["6213","121350039"],["512","118350054"],["184","111050038"],["289","118000003"],["361","118000020"],["11083","121350060"],["1969","123350083"]]
+```
+
+
+### 0x1276a6a86f2d1dba5d05f44d5ba37f89d9807a59
+- [opensea](https://opensea.io/0x1276a6a86f2d1dba5d05f44d5ba37f89d9807a59)
+- score: 0.00015937090892491937
+- num_minted: 43
+- num_transactions: 41
+``` json
+[["89","111500008"],["1702","111450022"],["143","112600055"],["677","112600066"],["228","112150110"],["555","112550132"],["1086","112550248"],["416","112850024"],["815","112850054"],["177","113300040"],["21","113400014"],["4829","113450183"],["15083","114200010"],["369","114050065"],["1300","114900020"],["1367","114900037"],["2415","114650118"],["1131","115700022"],["718","115500086"],["2968","116100087"],["9199","116000074"],["2407","116100117"],["17834","123350012"],["912","116850087"],["532","117550019"],["206","116500039"],["1319","116400144"],["45","118250031"],["1591","116550156"],["1270","118650095"],["6550","118650102"],["662","118650113"],["464","118300024"],["2409","118500044"],["7054","118500053"],["411","118000022"],["601","118600068"],["2352","118100034"],["1969","123350083"],["280","119600030"],["4909","119750031"]]
+```
+
+
+### 0x380bcd0201289e677af98c843c32d3f48242a445
+- [opensea](https://opensea.io/0x380bcd0201289e677af98c843c32d3f48242a445)
+- score: 0.00042459506141267464
+- num_minted: 42
+- num_transactions: 39
+``` json
+[["2357","110000078"],["3155","113500011"],["5381","113400207"],["669","114000012"],["822","113700006"],["229","114050010"],["179","114050039"],["388","113600011"],["1546","114700015"],["3129","114700110"],["9770","114750140"],["860","114850013"],["869","114650017"],["1300","114900020"],["2415","114650118"],["5720","114650149"],["1131","115700022"],["444","115700031"],["1738","115650038"],["15275","114100072"],["5408","115500115"],["7655","115550106"],["15283","114100080"],["2052","115800060"],["10338","115850151"],["924","115850160"],["8126","116050093"],["10217","116100101"],["10218","116100102"],["5953","116850106"],["2337","116400118"],["219","118650006"],["583","118050016"],["45","118250031"],["1328","118750061"],["184","111050038"],["411","118000022"],["654","118600044"],["1692","118550008"]]
 ```
 
 
@@ -1998,6 +3936,26 @@
 ```
 
 
+### 0xdc6ed9e2496cf848da4b660927e1c99a4833e3fd
+- [opensea](https://opensea.io/0xdc6ed9e2496cf848da4b660927e1c99a4833e3fd)
+- score: 0.0001573316594837422
+- num_minted: 42
+- num_transactions: 35
+``` json
+[["135","111400013"],["227","111450159"],["7808","111450266"],["7809","111450269"],["185","112650061"],["1819","112550314"],["872","112600350"],["10079","112900115"],["83","112700083"],["5286","112850143"],["2965","112750050"],["753","113300008"],["2848","113400178"],["388","113600011"],["15483","114300051"],["3136","114700098"],["1300","114900020"],["2415","114650118"],["443","115700012"],["1131","115700022"],["5141","115800091"],["3218","116900041"],["303","117550006"],["532","117550019"],["8353","116500119"],["7428","118250060"],["9264","118650038"],["6391","118650039"],["1731","116550117"],["5695","118300043"],["340","118350001"],["516","118350005"],["201","117950047"],["1498","118100063"],["14416","119750038"]]
+```
+
+
+### 0xabe27048eecbc324d7dd193db0476fc13ea9ca4e
+- [opensea](https://opensea.io/0xabe27048eecbc324d7dd193db0476fc13ea9ca4e)
+- score: 0.00016120671285519612
+- num_minted: 42
+- num_transactions: 35
+``` json
+[["106","110650016"],["4364","110900654"],["8243","111150352"],["3955","111150359"],["19","111400004"],["754","111350098"],["89","111500008"],["391","112500075"],["1000","112650010"],["1088","112550280"],["862","112700033"],["753","113300008"],["126","113450033"],["260","113400039"],["3155","113500011"],["1025","113500036"],["1229","113400201"],["822","113700006"],["682","112300001"],["2867","114050199"],["1287","114750113"],["861","114850040"],["1367","114900037"],["8198","115650049"],["2269","115350004"],["174","111050032"],["1125","115800103"],["2225","116150014"],["3530","116900045"],["632","116400026"],["725","116400050"],["7603","118250069"],["316","118500002"],["464","118300024"],["3755","118400038"]]
+```
+
+
 ### 0x4d10beac1e5e494724be833ee525c5449e9871c4
 - [opensea](https://opensea.io/0x4d10beac1e5e494724be833ee525c5449e9871c4)
 - score: 7.894491069706592e-05
@@ -2008,6 +3966,46 @@
 ```
 
 
+### 0x64125208d22eb97362ca666771c000d2fd115fa2
+- [opensea](https://opensea.io/0x64125208d22eb97362ca666771c000d2fd115fa2)
+- score: 0.00011215910400267032
+- num_minted: 40
+- num_transactions: 29
+``` json
+[["1412","111350378"],["7598","111450192"],["2764","111450297"],["8463","112600122"],["1598","112550120"],["1262","112550121"],["239","112600189"],["862","112700033"],["3036","112900155"],["4713","112850212"],["1318","112750038"],["753","113300008"],["3155","113500011"],["4440","113550099"],["682","112300001"],["1367","114900037"],["1299","114650108"],["887","115650155"],["174","111050032"],["8784","116100062"],["11104","117600048"],["1884","116300001"],["1591","116550156"],["1246","118700032"],["411","118000022"],["182","118000029"],["3019","119700004"],["2789","119900026"],["2252","119750043"]]
+```
+
+
+### 0x266047f2fd510cad9fcf8973476449dad7f46e39
+- [opensea](https://opensea.io/0x266047f2fd510cad9fcf8973476449dad7f46e39)
+- score: 0.0004863808627209941
+- num_minted: 38
+- num_transactions: 33
+``` json
+[["9","110850004"],["2154","110800504"],["4434","111150285"],["20","112150063"],["1882","112200079"],["19","111400004"],["641","111050012"],["1873","112500020"],["1702","111450022"],["8","112600024"],["604","112550148"],["239","112600189"],["83","112700083"],["623","114000004"],["138","114050058"],["230","114050112"],["388","113600011"],["1286","114750040"],["15484","114300052"],["2935","114650004"],["869","114650017"],["189","115250004"],["30","116100005"],["449","116100009"],["5135","116050122"],["253","116850033"],["303","117550006"],["527","117550010"],["17464","124350018"],["6510","117850001"],["219","118650006"],["1731","116550117"],["5192","118700041"]]
+```
+
+
+### 0x62b32c190f71ef71223824208c11284ab7d9dd43
+- [opensea](https://opensea.io/0x62b32c190f71ef71223824208c11284ab7d9dd43)
+- score: 0.0008344950474100095
+- num_minted: 37
+- num_transactions: 34
+``` json
+[["136","112150016"],["2530","112200017"],["1211","112150097"],["77","111050013"],["228","112150110"],["157","112150125"],["185","112650061"],["932","112550302"],["16","112750002"],["202","112700070"],["9637","113000173"],["3155","113500011"],["370","114050092"],["1546","114700015"],["154","111050021"],["869","114650017"],["37","113100002"],["5809","115700081"],["2269","115350004"],["466","115850005"],["751","115850108"],["30","116100005"],["449","116100009"],["15288","114100085"],["627","116100103"],["4771","116050146"],["303","117550006"],["632","116400026"],["219","118650006"],["1591","116550156"],["289","118000003"],["411","118000022"],["3019","119700004"],["1496","116700011"]]
+```
+
+
+### 0x33047c854e92b9c57644276c497d82bc847454ad
+- [opensea](https://opensea.io/0x33047c854e92b9c57644276c497d82bc847454ad)
+- score: 0.000435008289249668
+- num_minted: 36
+- num_transactions: 23
+``` json
+[["8036","112500292"],["2000","112500318"],["4899","112850170"],["7454","112850173"],["1593","113400066"],["230","114050112"],["1675","114750080"],["11406","114700077"],["2415","114650118"],["7132","115650057"],["916","115350036"],["4073","116850066"],["7995","116850074"],["10063","116900078"],["8903","116450067"],["2327","117600060"],["5902","117600074"],["1139","118650047"],["6663","117850063"],["1278","118650124"],["5568","118300062"],["516","118350005"],["544","118350011"]]
+```
+
+
 ### 0x494934f7fc3b240eae8f1ee471158cb605038520
 - [opensea](https://opensea.io/0x494934f7fc3b240eae8f1ee471158cb605038520)
 - score: 4.941082514425362e-05
@@ -2015,6 +4013,16 @@
 - num_transactions: 30
 ``` json
 [["9145","110750616"],["726","111150104"],["634","111150314"],["76","111400009"],["1009","111350245"],["4367","112500123"],["7187","112500124"],["1422","112600139"],["1598","112550120"],["178","112550130"],["816","112850075"],["40","112950005"],["1893","113550135"],["370","114050092"],["682","112300001"],["2948","114050173"],["10199","114750102"],["8435","115700055"],["150","116100022"],["168","116100043"],["7363","116100074"],["219","118650006"],["1197","116550066"],["2614","117850054"],["289","118000003"],["2367","118800078"],["1154","119250010"],["3289","119250086"],["9137","119550037"],["2151","119750009"]]
+```
+
+
+### 0x75ac5b7dca194e13a2b12d3081b7c831aad0da7d
+- [opensea](https://opensea.io/0x75ac5b7dca194e13a2b12d3081b7c831aad0da7d)
+- score: 0.0005687332317412054
+- num_minted: 34
+- num_transactions: 27
+``` json
+[["2190","111350282"],["7211","111350308"],["185","112650061"],["2115","112600233"],["1630","112550212"],["83","112700083"],["3155","113500011"],["161","113450170"],["2771","114750125"],["1164","114700124"],["861","114850040"],["15246","114100043"],["718","115500086"],["2628","115650128"],["2574","115650134"],["2355","116050124"],["2857","116000120"],["1970","116900069"],["4820","116850140"],["1203","117600073"],["5902","117600074"],["10279","118450062"],["8310","118700069"],["4718","117950100"],["289","118000003"],["1154","119250010"],["1692","118550008"]]
 ```
 
 
@@ -2035,6 +4043,36 @@
 - num_transactions: 25
 ``` json
 [["5344","115650100"],["9448","115650141"],["6050","115600137"],["7096","115800015"],["4161","116050150"],["253","116850033"],["6966","124350005"],["2220","116850069"],["1431","116900097"],["502","117550029"],["206","116500039"],["45","118250031"],["659","118650022"],["587","118250057"],["1222","118650040"],["1197","116550066"],["730","118300014"],["464","118300024"],["3028","121350041"],["544","118350011"],["322","118350019"],["469","118000049"],["473","118000052"],["1692","118550008"],["132","118100044"]]
+```
+
+
+### 0x0b15d7db98562a60fe93ca046fb061d25bd00ab6
+- [opensea](https://opensea.io/0x0b15d7db98562a60fe93ca046fb061d25bd00ab6)
+- score: 0.00011496479219677501
+- num_minted: 33
+- num_transactions: 27
+``` json
+[["799","113950064"],["10260","114700133"],["443","115700012"],["444","115700031"],["1738","115650038"],["7257","115700073"],["2652","115600147"],["2871","115600152"],["6815","116000049"],["7329","116050084"],["1622","116600002"],["3793","116850057"],["9605","116900113"],["6","114600092"],["303","117550006"],["527","117550010"],["632","116400026"],["532","117550019"],["725","116400050"],["1884","116300001"],["583","118050016"],["1591","116550156"],["766","123350052"],["4195","117950073"],["223","119100028"],["474","118000057"],["6712","119750030"]]
+```
+
+
+### 0x57e29d4e3a098a464d85b7e8e21c20d0eceb40ea
+- [opensea](https://opensea.io/0x57e29d4e3a098a464d85b7e8e21c20d0eceb40ea)
+- score: 0.0008181227262829011
+- num_minted: 33
+- num_transactions: 32
+``` json
+[["1008","111350044"],["1905","112500212"],["3560","112600278"],["760","112550288"],["260","113400039"],["1161","115600017"],["1131","115700022"],["3922","115700069"],["217","115850010"],["30","116100005"],["150","116100022"],["15550","114300118"],["4309","116100113"],["303","117550006"],["527","117550010"],["632","116400026"],["532","117550019"],["45","118250031"],["160","118250037"],["1624","116550189"],["464","118300024"],["7731","123350050"],["1732","118500061"],["1024","117950005"],["340","118350001"],["184","111050038"],["361","118000020"],["411","118000022"],["1692","118550008"],["2212","118100028"],["2352","118100034"],["3019","119700004"]]
+```
+
+
+### 0xceed0c0231224bfe83fc3a4dbbcfed6cc5f590cc
+- [opensea](https://opensea.io/0xceed0c0231224bfe83fc3a4dbbcfed6cc5f590cc)
+- score: 0.0004636079239257845
+- num_minted: 32
+- num_transactions: 31
+``` json
+[["136","112150016"],["477","112200050"],["185","112650061"],["202","112700070"],["4799","112900185"],["3569","112900189"],["1318","112750038"],["753","113300008"],["177","113300040"],["195","112750078"],["774","114000067"],["229","114050010"],["6345","116050058"],["6346","116050070"],["628","116100161"],["1800","124350002"],["1429","116900004"],["84","116850014"],["303","117550006"],["527","117550010"],["532","117550019"],["219","118650006"],["583","118050016"],["1024","117950005"],["340","118350001"],["516","118350005"],["512","118350054"],["326","118600037"],["10402","118800087"],["2352","118100034"],["132","118100044"]]
 ```
 
 
@@ -2068,6 +4106,16 @@
 ```
 
 
+### 0x893473455c5ff6c01ed0d2804bf186ea365251e9
+- [opensea](https://opensea.io/0x893473455c5ff6c01ed0d2804bf186ea365251e9)
+- score: 0.0003233483724555636
+- num_minted: 30
+- num_transactions: 28
+``` json
+[["3646","113000197"],["1189","113500095"],["8728","113400197"],["1229","113400201"],["370","114050092"],["3048","114050138"],["3010","114050207"],["861","114850040"],["37","113100002"],["3265","115600093"],["916","115350036"],["217","115850010"],["467","115850119"],["30","116100005"],["2225","116150014"],["8131","116050128"],["1800","124350002"],["528","117550002"],["638","116450094"],["1884","116300001"],["4904","116500127"],["16489","120350041"],["587","118250057"],["1624","116550189"],["766","123350052"],["289","118000003"],["223","119100028"],["2776","118550061"]]
+```
+
+
 ### 0x0583bf9bb96fed82a7a4e0974a7a78945d589809
 - [opensea](https://opensea.io/0x0583bf9bb96fed82a7a4e0974a7a78945d589809)
 - score: 8.776463892255578e-05
@@ -2078,6 +4126,16 @@
 ```
 
 
+### 0xf9db3e0a68dc85f8585c6b0d6a2956f7ed2bba19
+- [opensea](https://opensea.io/0xf9db3e0a68dc85f8585c6b0d6a2956f7ed2bba19)
+- score: 0.00013246200851449588
+- num_minted: 29
+- num_transactions: 20
+``` json
+[["2253","116100089"],["9491","116000146"],["3531","116900046"],["3532","116900050"],["3899","116400087"],["4008","116400089"],["1508","117600058"],["382","117550045"],["336","117550055"],["1591","116550156"],["7603","118250069"],["200","118250072"],["6392","118650074"],["1484","118050097"],["6187","118300054"],["7075","118500027"],["2229","117950075"],["1069","118550077"],["2353","118100100"],["10223","118550109"]]
+```
+
+
 ### 0x4d0f1e88ce8199467fe801995510269d6d8cbcdc
 - [opensea](https://opensea.io/0x4d0f1e88ce8199467fe801995510269d6d8cbcdc)
 - score: 2.8964263072625024e-06
@@ -2085,6 +4143,46 @@
 - num_transactions: 27
 ``` json
 [["2433","111150385"],["2434","111150386"],["619","111500155"],["1158","112500160"],["199","112650084"],["202","112700070"],["1593","113400066"],["3155","113500011"],["787","114000033"],["9304","114000112"],["370","114050092"],["869","114650017"],["308","113250021"],["2073","115700149"],["7459","116400149"],["45","118250031"],["659","118650022"],["1731","116550117"],["4204","118250073"],["544","118350011"],["300","118350016"],["323","118800017"],["326","118600037"],["2352","118100034"],["2602","118100073"],["280","119600030"],["5982","119600061"]]
+```
+
+
+### 0xdc54c78d0f289045aedb8a80572a313f243200d0
+- [opensea](https://opensea.io/0xdc54c78d0f289045aedb8a80572a313f243200d0)
+- score: 0.00011227775838092465
+- num_minted: 29
+- num_transactions: 26
+``` json
+[["2707","110900422"],["726","111150104"],["1714","111150200"],["135","111400013"],["7528","111350375"],["856","111500062"],["391","112500075"],["3989","112500114"],["3185","111450265"],["1083","112550113"],["1424","112600159"],["3436","112600282"],["2239","113400084"],["1841","114000064"],["558","113950104"],["2616","114700062"],["3397","115250046"],["5273","115700064"],["5385","115700121"],["5291","116050063"],["5974","116000079"],["9749","116100129"],["5535","116400103"],["6088","116400124"],["587","118250057"],["1833","117950071"]]
+```
+
+
+### 0x8ac70e0ddef14f3895867756aa504a9de83f7035
+- [opensea](https://opensea.io/0x8ac70e0ddef14f3895867756aa504a9de83f7035)
+- score: 0.0007463133915369817
+- num_minted: 28
+- num_transactions: 26
+``` json
+[["34","110700007"],["56","110700013"],["191","110750054"],["62","110700015"],["1612","110750519"],["726","111150104"],["135","111400013"],["1318","112750038"],["915","112900166"],["1922","112850166"],["1189","113500095"],["10015","113450196"],["4674","113450198"],["11118","113950105"],["860","114850013"],["2269","115350004"],["9097","116000057"],["5973","116000065"],["254","116850044"],["255","116850052"],["3487","116550019"],["3278","117950065"],["483","118000038"],["5252","119250077"],["2173","119250104"],["2789","119900026"]]
+```
+
+
+### 0x4d72ec6910b443a4beaee23c06fa4f37f74db941
+- [opensea](https://opensea.io/0x4d72ec6910b443a4beaee23c06fa4f37f74db941)
+- score: 0.0002937562847845001
+- num_minted: 27
+- num_transactions: 19
+``` json
+[["34","110700007"],["1116","110750233"],["4705","110800576"],["461","111150287"],["76","111400009"],["1181","111450087"],["1921","112850114"],["901","112850161"],["5651","113450098"],["7945","113450100"],["927","113950062"],["6123","114650135"],["5412","115250067"],["351","113250067"],["4265","115250095"],["4273","115650070"],["1764","115600110"],["4254","115700117"],["7472","115500113"]]
+```
+
+
+### 0x618844458bae3df8cda77b4818067f2cff654dd7
+- [opensea](https://opensea.io/0x618844458bae3df8cda77b4818067f2cff654dd7)
+- score: 0.00020574367174910674
+- num_minted: 27
+- num_transactions: 14
+``` json
+[["31","110700009"],["98","110750033"],["191","110750054"],["210","110750172"],["2749","110800213"],["1361","112500244"],["4403","112600247"],["1425","112600249"],["3408","112850185"],["1521","112850187"],["2314","113000170"],["7823","113450177"],["264","113400190"],["15318","114500015"]]
 ```
 
 
@@ -2108,6 +4206,16 @@
 ```
 
 
+### 0x051b5a1682a5a4d7a8291564146bfcf4ea874b8d
+- [opensea](https://opensea.io/0x051b5a1682a5a4d7a8291564146bfcf4ea874b8d)
+- score: 0.0009217199559980172
+- num_minted: 25
+- num_transactions: 13
+``` json
+[["265","110750043"],["62","110700015"],["129","110900121"],["409","110800146"],["26","110850009"],["3770","113450130"],["2075","113450134"],["14155","113550145"],["8462","113550149"],["8207","113550150"],["3298","113550151"],["4117","113550152"],["2811","113550179"]]
+```
+
+
 ### 0xba6677a1f34051cf6a905751913de7577c0f10de
 - [opensea](https://opensea.io/0xba6677a1f34051cf6a905751913de7577c0f10de)
 - score: 6.702580940263901e-06
@@ -2115,6 +4223,16 @@
 - num_transactions: 24
 ``` json
 [["56","110700013"],["35","110700014"],["149","110750216"],["5320","110750556"],["5963","110750567"],["2383","110900588"],["279","111150131"],["1148","111150144"],["89","111500008"],["7806","111450145"],["7807","111450148"],["199","112650084"],["605","112550215"],["4624","112600314"],["3405","112850093"],["1415","112700114"],["818","112850133"],["1318","112750038"],["3155","113500011"],["6388","114000133"],["230","114050112"],["3129","114700110"],["869","114650017"],["1624","116550189"]]
+```
+
+
+### 0xf6e7c5b61fd326bb8a04fad75d5b61164339302b
+- [opensea](https://opensea.io/0xf6e7c5b61fd326bb8a04fad75d5b61164339302b)
+- score: 0.0007617791983701713
+- num_minted: 24
+- num_transactions: 14
+``` json
+[["33","111100006"],["10294","111150291"],["5927","111150292"],["293","111400007"],["10258","111350338"],["1170","111450041"],["8683","111500139"],["8001","111500140"],["7126","112500141"],["859","111500197"],["12317","112550183"],["4505","115550064"],["3797","115500104"],["7414","115700134"]]
 ```
 
 
@@ -2128,6 +4246,76 @@
 ```
 
 
+### 0x977263717b926addcaaa1e533db688ab4d7806f7
+- [opensea](https://opensea.io/0x977263717b926addcaaa1e533db688ab4d7806f7)
+- score: 0.0003940938128703574
+- num_minted: 23
+- num_transactions: 21
+``` json
+[["621","111500308"],["2029","111500310"],["6707","111450253"],["5264","111500315"],["5061","111500360"],["677","112600066"],["238","112600084"],["4482","112600252"],["1537","112550304"],["416","112850024"],["1225","112900201"],["592","113000042"],["126","113450033"],["669","114000012"],["787","114000033"],["1546","114700015"],["449","116100009"],["150","116100022"],["15553","114300121"],["84","116850014"],["632","116400026"]]
+```
+
+
+### 0x301e4b99a929db8482010bf1e46f36611f1b6512
+- [opensea](https://opensea.io/0x301e4b99a929db8482010bf1e46f36611f1b6512)
+- score: 0.00015888617088190353
+- num_minted: 22
+- num_transactions: 20
+``` json
+[["754","111350098"],["1082","112550111"],["40","112950005"],["592","113000042"],["1286","114750040"],["15587","114400022"],["189","115250004"],["15608","114400043"],["1161","115600017"],["1902","115600121"],["15351","114500048"],["217","115850010"],["15633","114400068"],["528","117550002"],["1581","116500070"],["316","118500002"],["464","118300024"],["614","118600055"],["2212","118100028"],["1069","118550077"]]
+```
+
+
+### 0x5db80ec1b4f81423d64f4773df4458bb3bb2711c
+- [opensea](https://opensea.io/0x5db80ec1b4f81423d64f4773df4458bb3bb2711c)
+- score: 0.0001941041559148957
+- num_minted: 22
+- num_transactions: 18
+``` json
+[["2604","111150182"],["6103","111150371"],["293","111400007"],["81","112500066"],["1171","111450073"],["233","112500102"],["8","112600024"],["143","112600055"],["677","112600066"],["238","112600084"],["1000","112650010"],["416","112850024"],["815","112850054"],["85","112900059"],["40","112950005"],["592","113000042"],["4622","113550162"],["2811","113550179"]]
+```
+
+
+### 0xb4ff2ccae177631e12850643e10e5ed0dc6d5a94
+- [opensea](https://opensea.io/0xb4ff2ccae177631e12850643e10e5ed0dc6d5a94)
+- score: 0.0006148866708409162
+- num_minted: 22
+- num_transactions: 20
+``` json
+[["98","110750033"],["191","110750054"],["24","110750076"],["129","110900121"],["49","111150046"],["279","111150131"],["754","111350098"],["76","111400009"],["235","112600013"],["8","112600024"],["677","112600066"],["1022","112550080"],["185","112650061"],["204","112850011"],["862","112700033"],["40","112950005"],["592","113000042"],["753","113300008"],["21","113400014"],["3375","113450137"]]
+```
+
+
+### 0x3fc2787217b77d47fd5cad23655ddb300cb93d2b
+- [opensea](https://opensea.io/0x3fc2787217b77d47fd5cad23655ddb300cb93d2b)
+- score: 0.00048800694284110074
+- num_minted: 22
+- num_transactions: 15
+``` json
+[["9573","110750447"],["2017","110750472"],["3703","110900532"],["2286","110800596"],["1252","111350321"],["126","113450033"],["3855","113400088"],["787","114000033"],["8229","113550158"],["1299","114650108"],["275","115700097"],["3553","116850128"],["2824","116850129"],["3029","116850134"],["5517","118300072"]]
+```
+
+
+### 0x483d7abfa6c1bdf303a735684d61b9b51a1310af
+- [opensea](https://opensea.io/0x483d7abfa6c1bdf303a735684d61b9b51a1310af)
+- score: 0.0009393377891675121
+- num_minted: 20
+- num_transactions: 19
+``` json
+[["1170","111450041"],["391","112500075"],["1171","111450073"],["1603","112550290"],["204","112850011"],["5336","112900175"],["8049","112850192"],["2665","113000087"],["480","111050018"],["264","113400190"],["4065","113550124"],["1288","114750119"],["6031","114650145"],["443","115700012"],["1161","115600017"],["3820","115700096"],["5458","115650103"],["131","118100005"],["5156","118400060"]]
+```
+
+
+### 0x04a26e1240391d59fac8de473eb16af87a881f72
+- [opensea](https://opensea.io/0x04a26e1240391d59fac8de473eb16af87a881f72)
+- score: 0.0001274746437721431
+- num_minted: 19
+- num_transactions: 15
+``` json
+[["5673","111150430"],["233","112500102"],["3378","111450101"],["143","112600055"],["677","112600066"],["238","112600084"],["6799","112550145"],["819","112850220"],["592","113000042"],["4966","113000094"],["8031","113400102"],["669","114000012"],["787","114000033"],["643","113550047"],["9305","114000126"]]
+```
+
+
 ### 0x845e963eb4a3e52b362d0e05f4d58d81f936edef
 - [opensea](https://opensea.io/0x845e963eb4a3e52b362d0e05f4d58d81f936edef)
 - score: 5.293977332828756e-05
@@ -2135,6 +4323,46 @@
 - num_transactions: 19
 ``` json
 [["2959","110900651"],["134","111150346"],["1009","111350245"],["1702","111450022"],["1121","111500242"],["3073","111450179"],["3126","112500200"],["3343","111450216"],["185","112650061"],["10567","112550196"],["399","112600215"],["4877","112600220"],["1536","112550276"],["8759","112900122"],["5143","113000114"],["229","114050010"],["790","111050027"],["4515","115250094"],["3296","115550045"]]
+```
+
+
+### 0x15dd3fd31925e83538b549fb8d7ae1ceb26c45c0
+- [opensea](https://opensea.io/0x15dd3fd31925e83538b549fb8d7ae1ceb26c45c0)
+- score: 0.0006498542466600552
+- num_minted: 17
+- num_transactions: 17
+``` json
+[["98","110750033"],["191","110750054"],["24","110750076"],["62","110700015"],["685","110900257"],["49","111150046"],["754","111350098"],["1585","112550003"],["240","112600264"],["204","112850011"],["4508","113000084"],["1593","113400066"],["138","114050058"],["1143","114700044"],["869","114650017"],["339","113250049"],["493","118000055"]]
+```
+
+
+### 0x371aeee141585b9df0229d9e1e6a85a3d095cf19
+- [opensea](https://opensea.io/0x371aeee141585b9df0229d9e1e6a85a3d095cf19)
+- score: 0.0003338644505125533
+- num_minted: 16
+- num_transactions: 15
+``` json
+[["7108","111350217"],["2742","111350218"],["1619","111500157"],["6091","111500170"],["1660","111450111"],["3309","112500178"],["605","112550215"],["7964","113450097"],["7966","113450105"],["10024","113450171"],["3710","114050134"],["5160","114750122"],["5638","114750127"],["222","111050037"],["2391","118500031"]]
+```
+
+
+### 0xc977d70a5de8cac1b89fb98d6b00f6219d636c3c
+- [opensea](https://opensea.io/0xc977d70a5de8cac1b89fb98d6b00f6219d636c3c)
+- score: 0.0009960715022664412
+- num_minted: 15
+- num_transactions: 15
+``` json
+[["692","110800404"],["136","112150016"],["2530","112200017"],["220","112550163"],["595","112600208"],["221","112550198"],["7028","112900141"],["2351","113000156"],["8922","114750092"],["4029","115600065"],["5357","115700062"],["1514","116500062"],["258","116500069"],["655","118600051"],["1478","118550066"]]
+```
+
+
+### 0x04e1061ddeadce060b4872f2117223e4cde1d476
+- [opensea](https://opensea.io/0x04e1061ddeadce060b4872f2117223e4cde1d476)
+- score: 0.0005438775526111403
+- num_minted: 15
+- num_transactions: 9
+``` json
+[["410","110800189"],["279","111150131"],["1148","111150144"],["1394","111350216"],["1184","111450183"],["2806","111450296"],["9796","111500366"],["3560","112600278"],["1426","112600288"]]
 ```
 
 
@@ -2148,6 +4376,26 @@
 ```
 
 
+### 0x59e14668c4c4a116e44c85a38875f361f7553c9f
+- [opensea](https://opensea.io/0x59e14668c4c4a116e44c85a38875f361f7553c9f)
+- score: 0.0009666762019804175
+- num_minted: 14
+- num_transactions: 14
+``` json
+[["204","112850011"],["669","114000012"],["12566","114000109"],["189","115250004"],["37","113100002"],["3023","116000108"],["84","116850014"],["303","117550006"],["45","118250031"],["1591","116550156"],["289","118000003"],["2507","119250001"],["131","118100005"],["16513","120350076"]]
+```
+
+
+### 0x88ead23e78162bddcb6a9317f75e6e3921f12f88
+- [opensea](https://opensea.io/0x88ead23e78162bddcb6a9317f75e6e3921f12f88)
+- score: 0.00034396456503827885
+- num_minted: 13
+- num_transactions: 11
+``` json
+[["9","110850004"],["31","110700009"],["98","110750033"],["265","110750043"],["24","110750076"],["1363","110900129"],["147","110750118"],["203","110900160"],["432","110750140"],["410","110800189"],["5669","111150255"]]
+```
+
+
 ### 0x62a4cd8e61866e0aa5f147d6b8713645977a7440
 - [opensea](https://opensea.io/0x62a4cd8e61866e0aa5f147d6b8713645977a7440)
 - score: 7.51449230998248e-05
@@ -2155,6 +4403,16 @@
 - num_transactions: 11
 ``` json
 [["34","110700007"],["31","110700009"],["854","110750342"],["4","111000004"],["19","111400004"],["2540","111350361"],["1873","112500020"],["1702","111450022"],["8","112600024"],["2679","112600259"],["416","112850024"]]
+```
+
+
+### 0x01115ed6d8a6dd85cee1c1d0cdc6432a90731595
+- [opensea](https://opensea.io/0x01115ed6d8a6dd85cee1c1d0cdc6432a90731595)
+- score: 0.00032847065731899896
+- num_minted: 8
+- num_transactions: 7
+``` json
+[["492","118350041"],["8560","118750064"],["341","118350050"],["512","118350054"],["327","118600067"],["1110","118800120"],["640","118600076"]]
 ```
 
 
@@ -2170,6 +4428,16 @@
 ```
 
 
+### 0x4fef654560d6ad788f4b35a5cd02ed185c12fbbf
+- [opensea](https://opensea.io/0x4fef654560d6ad788f4b35a5cd02ed185c12fbbf)
+- score: 0.00029580624524854366
+- num_minted: 4
+- num_transactions: 1
+``` json
+[["26","6522"]]
+```
+
+
 ## Jadu Jetpack
 [opensea](https://opensea.io/collection/jadu-jetpack)
 ### 0x85f2d9c49da205c089bb96fd6171064c5f1c02c6
@@ -2179,5 +4447,15 @@
 - num_transactions: 2
 ``` json
 [["55","50"],["35","271"]]
+```
+
+
+### 0x9f3e8979a1d064fdcc900be2061370f69f306cbe
+- [opensea](https://opensea.io/0x9f3e8979a1d064fdcc900be2061370f69f306cbe)
+- score: 0.0007338659484167934
+- num_minted: 6
+- num_transactions: 1
+``` json
+[["2","1001"]]
 ```
 

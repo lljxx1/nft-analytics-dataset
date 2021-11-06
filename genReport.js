@@ -16,8 +16,7 @@ const detailBlock = testReport
         _.min = _.score.split("-")[1];
         _.min = _.min ? parseInt(_.min) : null;
         return _;
-      })
-      .filter((_) => _.min && _.min > 3);
+      });
     return _;
   })
   .filter((_) => _.above.length)
