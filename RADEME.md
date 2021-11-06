@@ -10,6 +10,13 @@ node init custom
 
 # start fetch 
 node fetchAsset.js custom
+
+# generate ks-test
+cd analytics
+python3 ks_test.py custom
+
+# generate markdon report
+node genReport.js custom
 ```
 
 ## config.json
