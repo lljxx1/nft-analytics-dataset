@@ -21,4 +21,24 @@ temp1
       ks_test_result: JSON.stringify(_.ks_test_result),
       opensea: `https://opensea.io/collection/${_.slug}`
     }
-  })
+  }).map(_ => {
+
+    return [
+      `## ${_.name}`,
+      `[opensea](${_.opensea})`,
+      "### Above Accounts",
+      _.above.map(_ => {
+
+        return [
+          `#### ${_.account}`,
+          `- score: ${_.score}`,
+          `- num_minted: ${_.num_minted}`,
+          `- num_transactions: ${_.num_transactions}`,
+          '``` json',
+          JSON.stringify(_.lowest_list, null, 2),
+          '```'
+        ].join("\n");
+      })
+    ].join("\n");
+  }).join("\n")
+
