@@ -145,6 +145,7 @@ collection = open(taskFile)
 topCollections = json.load(collection)
 newCollections = []
 
+print(len(topCollections))
 for COLLECTION in topCollections:
     datasetfile = '../dataset/{}/minting.csv'.format(COLLECTION['slug'])
     if os.path.isfile(datasetfile) :
