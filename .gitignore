@@ -6,3 +6,4 @@ config.json
 eventStatus.json
 status.json
 dataset
+status*.json
