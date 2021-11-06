@@ -6,11 +6,8 @@ const { createObjectCsvWriter: createCsvWriter } = require('csv-writer');
 
 const MINT_ADDRESS = '0x0000000000000000000000000000000000000000';
 
-
 async function saveFile(dataRows, dataFile) {
   const firstRow = dataRows[0];
-
-  // const dataFile = `${datasetbaseDir}/minting.csv`
   const header = Object.keys(firstRow).map(_ => {
     return {
       id: _,
@@ -119,25 +116,7 @@ async function generateTokenData(collection) {
 
 
   if (mintingRows.length) {
-    // const firstRow = mintingRows[0];
-   
     await saveFile(mintingRows, dataFile)
-    // const header = Object.keys(firstRow).map(_ => {
-    //   return {
-    //     id: _,
-    //     title: _
-    //   }
-    // }).filter(_ => _.id != 'TOKEN_ID');
-    // header.unshift({
-    //   id: 'TOKEN_ID',
-    //   title: 'TOKEN_ID'
-    // })
-    // const csvWriter = createCsvWriter({
-    //   path: dataFile,
-    //   header: header
-    // });
-    // console.log('rows', mintingRows.length)
-    // await csvWriter.writeRecords(mintingRows)
   }
 
   if (allSaleEvents.length) {
@@ -177,33 +156,7 @@ async function main() {
 }
 
 
-
 module.exports = {
   main,
   generateTokenData,
 };
-
-// doAna({
-//   slug: 'mekaverse'
-// })
-
-// ;(async () => {
-
-//   for (let index = 0; index < topCollections.length; index++) {
-//     const topCollection = topCollections[index];
-//     if (topCollection.stats.totalSupply > 20000 && ['lostpoets','adam-bomb-squad', 'emblem-vault'].indexOf(topCollection.slug) == -1) {
-//       console.log('skip')
-//       continue;
-//     }
-//     if (['decentraland-wearables', 'cryptokitties', 'decentraland', 'parallelalpha'].indexOf(topCollection.slug) > -1) {
-//       continue;
-//     }
-
-//     await doAna(topCollection);
-//   }
-
-// })();
-
-// console.log(out = kstest(
-//   [ 2.0, 1.0, 5.0, -5.0, 3.0, 0.5, 6.0 ]
-//   , 'normal', 0.0, 1.0, {alternative: 'less'}))
