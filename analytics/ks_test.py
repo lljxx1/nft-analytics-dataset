@@ -11,6 +11,7 @@ import numpy as np
 import pandas as pd
 import json
 import os.path
+import sys
 
 """
 Update Parameters Here
@@ -125,13 +126,22 @@ def find_anomalies(data, threshold = 2,num_replicates = 1):
             accountList.append(accountResult)
         
     return accountList
+
 """
 Generate Report
 """
 
-
 # COLLECTIONS = ["boredapeyachtclub", "meebits", "lootproject", "cool-cats-nft", "veefriends"]
-collection = open('../topCollection200.json')
+collectionName = "topCollection200"
+if len(sys.argv) > 1 :
+    collectionName = sys.argv[1]
+
+print(collectionName)
+
+taskFile = '../{}.json'.format(collectionName)
+testOutputFile = '../{}-withtest.json'.format(collectionName)
+
+collection = open(taskFile)
 topCollections = json.load(collection)
 newCollections = []
 
@@ -146,4 +156,4 @@ for COLLECTION in topCollections:
         testResult = find_anomalies(data_to_analyze)
         COLLECTION['ks_test_result'] = testResult
         newCollections.append(COLLECTION)
-        json.dump(newCollections, open('../topCollection200-withtest.json', 'w'))
+        json.dump(newCollections, open(testOutputFile, 'w'))
