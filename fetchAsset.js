@@ -1,5 +1,6 @@
 const { fetchCollectionTokens } = require("./lib/opensea");
 const { findTokenAndFetch } = require("./fetchEvent");
+const { generateTokenData } = require("./generate");
 
 const { Asset } = require('./db');
 const fs = require('fs');
@@ -134,7 +135,10 @@ async function main() {
   for (let index = 0; index < needFetchCollections.length; index++) {
     const topCollection = needFetchCollections[index];
     const collectionKey = [topCollection.slug, "collection"].join("-");
-    if (status[collectionKey]) continue;
+    if (status[collectionKey]) {
+      await generateTokenData(topCollection);
+      continue;
+    };
     console.log(topCollection.slug);
     await fetchCollection(topCollection);
     await setValue(collectionKey, 1);
