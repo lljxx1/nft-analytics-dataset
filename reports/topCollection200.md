@@ -5,6 +5,7 @@
 ## PUNKS Comic
 [opensea](https://opensea.io/collection/punks-comic)
 ### 0x8c685c44facb8bf246fcb0e383cca4bd46634bf8
+- [opensea](https://opensea.io/0x8c685c44facb8bf246fcb0e383cca4bd46634bf8)
 - score: 5.15225809042871e-156
 - num_minted: 1046
 - num_transactions: 28
@@ -14,6 +15,7 @@
 
 
 ### 0x9293c35d6e1524609b7221a1c9a8d52dc81ba62c
+- [opensea](https://opensea.io/0x9293c35d6e1524609b7221a1c9a8d52dc81ba62c)
 - score: 2.7076867253999387e-20
 - num_minted: 98
 - num_transactions: 5
@@ -23,6 +25,7 @@
 
 
 ### 0x4d93c788b6e9771f1ee2f30242cd3892b631d8ed
+- [opensea](https://opensea.io/0x4d93c788b6e9771f1ee2f30242cd3892b631d8ed)
 - score: 1.0070292960339452e-23
 - num_minted: 91
 - num_transactions: 6
@@ -32,6 +35,7 @@
 
 
 ### 0x550e970e31a45b06df01a00b1c89a478d4d5e00a
+- [opensea](https://opensea.io/0x550e970e31a45b06df01a00b1c89a478d4d5e00a)
 - score: 5.052885163335777e-59
 - num_minted: 47
 - num_transactions: 2
@@ -41,6 +45,7 @@
 
 
 ### 0x4b20ccfa9416da26f70106c9314bff8a5d12f99f
+- [opensea](https://opensea.io/0x4b20ccfa9416da26f70106c9314bff8a5d12f99f)
 - score: 3.2736612529003335e-38
 - num_minted: 45
 - num_transactions: 2
@@ -50,6 +55,7 @@
 
 
 ### 0x162f3a373a8605fd0da52b1b6d44dc8bcc97f0aa
+- [opensea](https://opensea.io/0x162f3a373a8605fd0da52b1b6d44dc8bcc97f0aa)
 - score: 3.1849004858583673e-16
 - num_minted: 18
 - num_transactions: 1
@@ -61,6 +67,7 @@
 ## Somnium Space VR
 [opensea](https://opensea.io/collection/somnium-space)
 ### 0x640f4bb7a5a8ecac6eaf31d63857a4f4a962a62e
+- [opensea](https://opensea.io/0x640f4bb7a5a8ecac6eaf31d63857a4f4a962a62e)
 - score: 4.76747231087621e-91
 - num_minted: 300
 - num_transactions: 297
@@ -72,6 +79,7 @@
 ## Emblem Vault [Ethereum]
 [opensea](https://opensea.io/collection/emblem-vault)
 ### 0x525f40df6d0a9ba86f6893393e9b74a291832644
+- [opensea](https://opensea.io/0x525f40df6d0a9ba86f6893393e9b74a291832644)
 - score: 6.830700201858718e-17
 - num_minted: 840
 - num_transactions: 834
@@ -81,6 +89,7 @@
 
 
 ### 0xda467a5b795aafd564dbb48012007b7ebb8397d4
+- [opensea](https://opensea.io/0xda467a5b795aafd564dbb48012007b7ebb8397d4)
 - score: 1.4696775921352456e-43
 - num_minted: 388
 - num_transactions: 161
@@ -90,6 +99,7 @@
 
 
 ### 0x4b43041e418b16bb7dcf94a09f721cc73574fc04
+- [opensea](https://opensea.io/0x4b43041e418b16bb7dcf94a09f721cc73574fc04)
 - score: 1.3006482823756437e-20
 - num_minted: 164
 - num_transactions: 164
@@ -99,6 +109,7 @@
 
 
 ### 0x65318569ca93117cfdde6a5bb5037f4e81de0f14
+- [opensea](https://opensea.io/0x65318569ca93117cfdde6a5bb5037f4e81de0f14)
 - score: 1.2538298146835372e-22
 - num_minted: 157
 - num_transactions: 154
@@ -108,6 +119,7 @@
 
 
 ### 0xfea4d3fa8f19032ec083b5dedfbc82a21e95dd5d
+- [opensea](https://opensea.io/0xfea4d3fa8f19032ec083b5dedfbc82a21e95dd5d)
 - score: 1.3175527455815933e-21
 - num_minted: 145
 - num_transactions: 145
@@ -117,6 +129,7 @@
 
 
 ### 0x1bda89908db0c7d9f9ca54429f6f0823d8949005
+- [opensea](https://opensea.io/0x1bda89908db0c7d9f9ca54429f6f0823d8949005)
 - score: 6.941386411024997e-16
 - num_minted: 137
 - num_transactions: 136
@@ -126,6 +139,7 @@
 
 
 ### 0x276db42276559999c60cc1983562619c07f643b2
+- [opensea](https://opensea.io/0x276db42276559999c60cc1983562619c07f643b2)
 - score: 1.056097946086024e-17
 - num_minted: 134
 - num_transactions: 128
@@ -135,6 +149,7 @@
 
 
 ### 0xa123f45541e752f6468eb8d17269c65ce34b9b57
+- [opensea](https://opensea.io/0xa123f45541e752f6468eb8d17269c65ce34b9b57)
 - score: 3.1117637391018627e-29
 - num_minted: 81
 - num_transactions: 80
@@ -144,6 +159,7 @@
 
 
 ### 0x5a62bf20a8db973e7f4d2e8aba0e9a3091a0ce4b
+- [opensea](https://opensea.io/0x5a62bf20a8db973e7f4d2e8aba0e9a3091a0ce4b)
 - score: 1.2354604506390471e-23
 - num_minted: 73
 - num_transactions: 73
@@ -153,6 +169,7 @@
 
 
 ### 0x31bad1ec456813d67de338c2e55a23af23f1b163
+- [opensea](https://opensea.io/0x31bad1ec456813d67de338c2e55a23af23f1b163)
 - score: 6.0162042983386524e-18
 - num_minted: 56
 - num_transactions: 56
@@ -162,6 +179,7 @@
 
 
 ### 0xf8d98bd0248f28b6a292b75d86ca2fef3d18722d
+- [opensea](https://opensea.io/0xf8d98bd0248f28b6a292b75d86ca2fef3d18722d)
 - score: 6.466360596277557e-19
 - num_minted: 52
 - num_transactions: 52
@@ -171,6 +189,7 @@
 
 
 ### 0x6a6c58449afd7f0cd2757a2a484b0faa8a124ba3
+- [opensea](https://opensea.io/0x6a6c58449afd7f0cd2757a2a484b0faa8a124ba3)
 - score: 5.177356635848176e-18
 - num_minted: 48
 - num_transactions: 35
@@ -180,6 +199,7 @@
 
 
 ### 0x7895e668bd43c9623af538f274c06cb22cbc74f2
+- [opensea](https://opensea.io/0x7895e668bd43c9623af538f274c06cb22cbc74f2)
 - score: 3.608817294899619e-17
 - num_minted: 48
 - num_transactions: 48
@@ -189,6 +209,7 @@
 
 
 ### 0x1b3a8f96f274c97e02f3b040402d0f2866166574
+- [opensea](https://opensea.io/0x1b3a8f96f274c97e02f3b040402d0f2866166574)
 - score: 8.751796179844828e-20
 - num_minted: 40
 - num_transactions: 40
@@ -200,6 +221,7 @@
 ## Cryptovoxels
 [opensea](https://opensea.io/collection/cryptovoxels)
 ### 0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad
+- [opensea](https://opensea.io/0xa253d7cd38dc2d0b2e65ad42a7e4beb3c60a83ad)
 - score: 3.987646012383176e-19
 - num_minted: 73
 - num_transactions: 33
@@ -211,6 +233,7 @@
 ## MutantCats
 [opensea](https://opensea.io/collection/mutantcats)
 ### 0xb5af12b837aaf602298b3385640f61a0ff0f4e0d
+- [opensea](https://opensea.io/0xb5af12b837aaf602298b3385640f61a0ff0f4e0d)
 - score: 5.680215222400813e-17
 - num_minted: 10
 - num_transactions: 1
@@ -220,6 +243,7 @@
 
 
 ### 0xb2552bccd15ac454a07f88801b345f19c74b89a7
+- [opensea](https://opensea.io/0xb2552bccd15ac454a07f88801b345f19c74b89a7)
 - score: 6.5984016052234835e-16
 - num_minted: 10
 - num_transactions: 1
@@ -229,6 +253,7 @@
 
 
 ### 0xa7ce0800a7869ce5862f5b2c64dbf749dc457c44
+- [opensea](https://opensea.io/0xa7ce0800a7869ce5862f5b2c64dbf749dc457c44)
 - score: 3.838910858575301e-16
 - num_minted: 10
 - num_transactions: 1
@@ -238,6 +263,7 @@
 
 
 ### 0xc8c54d0cea1b68fc63acb2ef4be9fe3d5ea30444
+- [opensea](https://opensea.io/0xc8c54d0cea1b68fc63acb2ef4be9fe3d5ea30444)
 - score: 8.288510797753841e-16
 - num_minted: 10
 - num_transactions: 1
@@ -247,6 +273,7 @@
 
 
 ### 0x9606bf3507dc47f16fb7a3391fa467fdd8c4bf63
+- [opensea](https://opensea.io/0x9606bf3507dc47f16fb7a3391fa467fdd8c4bf63)
 - score: 8.02538347084102e-16
 - num_minted: 10
 - num_transactions: 1
@@ -258,6 +285,7 @@
 ## GEN.ART Membership
 [opensea](https://opensea.io/collection/gen-dot-art)
 ### 0xef764bac8a438e7e498c2e5fccf0f174c3e3f8db
+- [opensea](https://opensea.io/0xef764bac8a438e7e498c2e5fccf0f174c3e3f8db)
 - score: 2.958669876172349e-84
 - num_minted: 162
 - num_transactions: 5
@@ -267,6 +295,7 @@
 
 
 ### 0xbf7a8ec016b1e93396567d08e1d1c3b4e3e9d714
+- [opensea](https://opensea.io/0xbf7a8ec016b1e93396567d08e1d1c3b4e3e9d714)
 - score: 1.2385792534431008e-25
 - num_minted: 50
 - num_transactions: 4
@@ -276,6 +305,7 @@
 
 
 ### 0x70448fa6dd61fb3f94b806d5def4e5e8dbef7ada
+- [opensea](https://opensea.io/0x70448fa6dd61fb3f94b806d5def4e5e8dbef7ada)
 - score: 3.4447879200201277e-18
 - num_minted: 45
 - num_transactions: 3
@@ -285,6 +315,7 @@
 
 
 ### 0x0008d343091ef8bd3efa730f6aae5a26a285c7a2
+- [opensea](https://opensea.io/0x0008d343091ef8bd3efa730f6aae5a26a285c7a2)
 - score: 1.8413286653154268e-28
 - num_minted: 44
 - num_transactions: 4
@@ -294,6 +325,7 @@
 
 
 ### 0x5b049c3bef543a181a720dcc6febc9afdab5d377
+- [opensea](https://opensea.io/0x5b049c3bef543a181a720dcc6febc9afdab5d377)
 - score: 5.682104493642701e-17
 - num_minted: 26
 - num_transactions: 2
@@ -305,6 +337,7 @@
 ## THE SHIBOSHIS
 [opensea](https://opensea.io/collection/theshiboshis)
 ### 0x1514f644746beed84f33e6d3e8c94d3059e6ba41
+- [opensea](https://opensea.io/0x1514f644746beed84f33e6d3e8c94d3059e6ba41)
 - score: 3.707165888012227e-24
 - num_minted: 10
 - num_transactions: 1
@@ -314,6 +347,7 @@
 
 
 ### 0x95de8cdc25af0bc8cdb28f3b3c0b16f3a506b6ae
+- [opensea](https://opensea.io/0x95de8cdc25af0bc8cdb28f3b3c0b16f3a506b6ae)
 - score: 2.9657327104097816e-24
 - num_minted: 10
 - num_transactions: 1
@@ -325,6 +359,7 @@
 ## CryptoArte
 [opensea](https://opensea.io/collection/cryptoarte)
 ### 0x98b4179a5a118cd9da45f0b565ff811002666cac
+- [opensea](https://opensea.io/0x98b4179a5a118cd9da45f0b565ff811002666cac)
 - score: 2.9219887654848596e-23
 - num_minted: 47
 - num_transactions: 2
@@ -336,6 +371,7 @@
 ## Ether Cards Founder
 [opensea](https://opensea.io/collection/ether-cards-founder)
 ### 0x0c71fe11247b19b9f5499031295d961b8ecaa6dd
+- [opensea](https://opensea.io/0x0c71fe11247b19b9f5499031295d961b8ecaa6dd)
 - score: 1.8398985431791274e-21
 - num_minted: 334
 - num_transactions: 13
@@ -347,6 +383,7 @@
 ## Waifusion
 [opensea](https://opensea.io/collection/waifusion)
 ### 0xb291984262259bcfe6aa02b66a06e9769c5c1ef3
+- [opensea](https://opensea.io/0xb291984262259bcfe6aa02b66a06e9769c5c1ef3)
 - score: 7.595066762101297e-41
 - num_minted: 6359
 - num_transactions: 196
@@ -358,6 +395,7 @@
 ## Generativemasks
 [opensea](https://opensea.io/collection/generativemasks)
 ### 0x6a4631279ccce80f7625b0434447f000f5a406cf
+- [opensea](https://opensea.io/0x6a4631279ccce80f7625b0434447f000f5a406cf)
 - score: 1.9191460373830965e-31
 - num_minted: 500
 - num_transactions: 2
@@ -367,6 +405,7 @@
 
 
 ### 0x37b468e1d4616d6aa7f8584407a0981cfa46e99f
+- [opensea](https://opensea.io/0x37b468e1d4616d6aa7f8584407a0981cfa46e99f)
 - score: 1.3005784320995625e-24
 - num_minted: 61
 - num_transactions: 2
@@ -376,6 +415,7 @@
 
 
 ### 0xaa9772d31476e85fedd1099e40dd2ff5dee214ff
+- [opensea](https://opensea.io/0xaa9772d31476e85fedd1099e40dd2ff5dee214ff)
 - score: 2.2693917970640847e-22
 - num_minted: 60
 - num_transactions: 4
@@ -385,6 +425,7 @@
 
 
 ### 0xcb7fa4dd64a5c68931b518670d9e3113f01babf4
+- [opensea](https://opensea.io/0xcb7fa4dd64a5c68931b518670d9e3113f01babf4)
 - score: 1.1710348570771793e-58
 - num_minted: 50
 - num_transactions: 1
@@ -394,6 +435,7 @@
 
 
 ### 0x2eb5e5713a874786af6da95f6e4deacedb5dc246
+- [opensea](https://opensea.io/0x2eb5e5713a874786af6da95f6e4deacedb5dc246)
 - score: 3.54716834116058e-51
 - num_minted: 49
 - num_transactions: 1
@@ -403,6 +445,7 @@
 
 
 ### 0x603136b204592de6bc16d783bfa8ec0f7a526c5f
+- [opensea](https://opensea.io/0x603136b204592de6bc16d783bfa8ec0f7a526c5f)
 - score: 7.427869518119986e-24
 - num_minted: 39
 - num_transactions: 4
@@ -412,6 +455,7 @@
 
 
 ### 0x0820f4612c4f657354ee9b30008ed307a2bceea7
+- [opensea](https://opensea.io/0x0820f4612c4f657354ee9b30008ed307a2bceea7)
 - score: 3.332819395060644e-19
 - num_minted: 32
 - num_transactions: 2
@@ -421,6 +465,7 @@
 
 
 ### 0x6981378e696b0dd0e585d4d519c98b8a2c5bc020
+- [opensea](https://opensea.io/0x6981378e696b0dd0e585d4d519c98b8a2c5bc020)
 - score: 9.339849462920706e-20
 - num_minted: 20
 - num_transactions: 1
@@ -430,6 +475,7 @@
 
 
 ### 0x36ab2c824fcc7e4ec8dc2805bda069d9d8b54c95
+- [opensea](https://opensea.io/0x36ab2c824fcc7e4ec8dc2805bda069d9d8b54c95)
 - score: 3.32082372765974e-24
 - num_minted: 15
 - num_transactions: 1
@@ -439,6 +485,7 @@
 
 
 ### 0x2b5bf359827d89a1af72444241357cee6ebad2cf
+- [opensea](https://opensea.io/0x2b5bf359827d89a1af72444241357cee6ebad2cf)
 - score: 3.599261065573439e-22
 - num_minted: 10
 - num_transactions: 1
@@ -450,6 +497,7 @@
 ## Nifty League DEGENs
 [opensea](https://opensea.io/collection/niftydegen)
 ### 0xa67e46cd523244fac6147f080848b9da271ce126
+- [opensea](https://opensea.io/0xa67e46cd523244fac6147f080848b9da271ce126)
 - score: 3.5662453253451517e-26
 - num_minted: 115
 - num_transactions: 99

@@ -37,6 +37,7 @@ const detailBlock = testReport
         .map((_) => {
           return [
             `### ${_.account}`,
+            `- [opensea](https://opensea.io/${_.account})`,
             `- score: ${_.score}`,
             `- num_minted: ${_.num_minted}`,
             `- num_transactions: ${_.num_transactions}`,
