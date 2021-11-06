@@ -58,6 +58,8 @@ for (let index = 0; index < allTypes.length; index++) {
 
 const md = [];
 
+md.push('# Opensea Collections')
+
 md.push(`|\t${['Logo', 'Collection', 'totalVolume', 'totalSupply', 'numOwners', 'Detail'].join("|\t")}\t|`)
 
 
