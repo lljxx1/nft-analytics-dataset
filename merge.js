@@ -60,22 +60,25 @@ const md = [];
 
 md.push('# Opensea Collections')
 
-md.push(`|\t${['Logo', 'Collection', 'totalVolume', 'totalSupply', 'numOwners', 'Detail'].join("|\t")}\t|`)
+md.push(`|\t${['#', 'Logo', 'Collection', 'totalVolume', 'totalSupply', 'numOwners', 'Detail'].join("|\t")}\t|`)
 
 
 md.push(
-  `|--------------|--------------|-------|-----------------------------------|---------------|-----------|`
+  `|---|--------------|--------------|-------|-----------------------------------|---------------|-----------|`
 );
 
-overview.forEach((row) => {
+overview.forEach((row, index) => {
     md.push(
       `|\t${[
+        index + 1,
         `![](${row.logo}) `,
         `${row.name}`,
         row.totalVolume,
         row.totalSupply,
         row.numOwners,
-        `[Opensea](${row.opensea})${row.hasReport ? `<br>[Ks-test](${row.testResult})` : ''}<br>[Dataset](https://fhirchina.com/dataset.tar.gz)`,
+        `[Opensea](${row.opensea})${
+          row.hasReport ? `<br>[Ks-test](${row.testResult})` : ""
+        }<br>[Dataset](https://fhirchina.com/dataset.tar.gz)`,
       ].join("|\t")}\t|`
     );
 })
