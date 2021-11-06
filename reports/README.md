@@ -1,10 +1,6 @@
-# Honestnft ks_test reports
+# Honestnft ks-test result
 - [Openea Top200 Collection](collections24.md)
 - [Openea Top200-400 Collection](topCollection200.md)
-
-``` 
-analytics/ks_test.py
-```
 
 ## Dataset
 
