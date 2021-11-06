@@ -8,6 +8,8 @@ analytics/ks_test.py
 
 ## Dataset
 
+[Download](https://fhirchina.com/dataset.tar.gz)
+
 ``` shell
 # sales event data
 dataset/fvck-crystal/sales.csv
