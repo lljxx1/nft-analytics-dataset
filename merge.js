@@ -47,7 +47,7 @@ for (let index = 0; index < allTypes.length; index++) {
         totalSupply: _.stats.totalSupply,
         numOwners: _.stats.numOwners,
         marketCap: _.stats.marketCap,
-        hasReport: hasReport != null,
+        hasReport: hasReport && hasReport.ks_test_result.length,
         testResult: `${allType}.md#${_.name
           .toLowerCase()
           .split(" ")
