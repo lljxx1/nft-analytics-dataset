@@ -53,7 +53,7 @@ for (let index = 0; index < allTypes.length; index++) {
 
 const md = [];
 
-md.push(`|\t${['Logo', 'Name', 'totalVolume', 'totalSupply', 'numOwners', 'Detail'].join("|\t")}\t|`)
+md.push(`|\t${['Logo', 'Collection', 'totalVolume', 'totalSupply', 'numOwners', 'Detail'].join("|\t")}\t|`)
 
 
 md.push(
@@ -68,7 +68,7 @@ overview.forEach((row) => {
         row.totalVolume,
         row.totalSupply,
         row.numOwners,
-        `[Opensea](${row.opensea}) \ [Ks-test](${row.opensea}) \ [Dataset](https://fhirchina.com/dataset.tar.gz)`,
+        `[Opensea](${row.opensea}) \\ [Ks-test](${row.opensea}) \\ [Dataset](https://fhirchina.com/dataset.tar.gz)`,
       ].join("|\t")}\t|`
     );
 })
