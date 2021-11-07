@@ -1,7 +1,6 @@
 const { fetchCollectionTokens } = require("./utils/opensea");
 const { findTokenAndFetch } = require("./fetchEvent");
 const { generateTokenData } = require("./generate");
-
 const { Asset } = require('./db');
 const fs = require('fs');
 
@@ -132,7 +131,11 @@ async function fetchCollection(collection) {
 
 async function main() {
   try {
-    const needFetchCollections = collecion ? require(`./${collecion}.json`) : require('./topCollection200.json');
+    const fetchTaksFile = collecion
+      ? `./${collecion}.json`
+      : "./topCollection200.json"
+      
+    const needFetchCollections = JSON.parse(fs.readFileSync(fetchTaksFile, 'utf-8'));
     for (let index = 0; index < needFetchCollections.length; index++) {
       const topCollection = needFetchCollections[index];
       const collectionKey = [topCollection.slug, "collection"].join("-");
@@ -145,6 +148,8 @@ async function main() {
       await setValue(collectionKey, 1);
       await findTokenAndFetch(topCollection);
       await generateTokenData(topCollection);
+      topCollection.done = true
+      fs.writeFileSync(fetchTaksFile, JSON.stringify(needFetchCollections));
     }
   } catch (e) {
     console.log('error', e)
