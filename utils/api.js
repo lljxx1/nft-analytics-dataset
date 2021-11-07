@@ -46,11 +46,14 @@ async function getCollectionData(collection, bucket = '') {
     const datasetbaseDir = __dirname + `/../dataset/${collection.slug}`;
     const dataFile = `${datasetbaseDir}/minting.csv`;
     const salesFile = `${datasetbaseDir}/sales.csv`;
+    const ktestFile = `${datasetbaseDir}/kstest.json`;
     const defaultK = bucket ? bucket : "topCollection200";
     const ktestResultFile = __dirname + `/../${defaultK}-withtest.json`;
     const datasetOfKtest = fs.existsSync(ktestResultFile) ? JSON.parse(fs.readFileSync(ktestResultFile, 'utf-8')) : [];
 
-    const kTestResult = datasetOfKtest.find((_) => _.slug == collection.slug);
+    const kTestResult = fs.existsSync(ktestFile)
+      ? JSON.parse(fs.readFileSync(ktestFile, "utf-8"))
+      : datasetOfKtest.find((_) => _.slug == collection.slug);
 
     console.log(kTestResult);
     if (fs.existsSync(dataFile) && fs.existsSync(salesFile)) {
