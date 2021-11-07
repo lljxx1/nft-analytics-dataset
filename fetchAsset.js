@@ -159,7 +159,7 @@ async function main() {
   }
   setTimeout(() => {
     main();
-  }, 10 * 1000);
+  }, 5 * 1000);
 }
 
 main().catch(e => console.log(e))
