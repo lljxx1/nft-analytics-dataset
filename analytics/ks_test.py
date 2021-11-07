@@ -133,10 +133,14 @@ Generate Report
 
 # COLLECTIONS = ["boredapeyachtclub", "meebits", "lootproject", "cool-cats-nft", "veefriends"]
 collectionName = "topCollection200"
+specifyCollection = 'all'
 if len(sys.argv) > 1 :
     collectionName = sys.argv[1]
+if len(sys.argv) > 2 :
+    specifyCollection = sys.argv[2]
 
 print(collectionName)
+print(specifyCollection)
 
 taskFile = '../{}.json'.format(collectionName)
 testOutputFile = '../{}-withtest.json'.format(collectionName)
@@ -148,6 +152,9 @@ newCollections = []
 print(len(topCollections))
 for COLLECTION in topCollections:
     datasetfile = '../dataset/{}/minting.csv'.format(COLLECTION['slug'])
+    if specifyCollection != "all" :
+        if COLLECTION['slug'] != specifyCollection:
+            continue
     if os.path.isfile(datasetfile) :
         try:
             data_to_analyze = pd.read_csv(datasetfile)
