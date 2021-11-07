@@ -149,12 +149,15 @@ print(len(topCollections))
 for COLLECTION in topCollections:
     datasetfile = '../dataset/{}/minting.csv'.format(COLLECTION['slug'])
     if os.path.isfile(datasetfile) :
-        data_to_analyze = pd.read_csv(datasetfile)
-        print("\n")
-        print(COLLECTION['name'])
-        print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
-        print('Lucky Buyer,p')
-        testResult = find_anomalies(data_to_analyze)
-        COLLECTION['ks_test_result'] = testResult
-        newCollections.append(COLLECTION)
+        try:
+            data_to_analyze = pd.read_csv(datasetfile)
+            print("\n")
+            print(COLLECTION['name'])
+            print('Number of buyers:' + str(len(data_to_analyze['to_account'].unique())))
+            print('Lucky Buyer,p')
+            testResult = find_anomalies(data_to_analyze)
+            COLLECTION['ks_test_result'] = testResult
+            newCollections.append(COLLECTION)
+        except:
+            print('failed')
         json.dump(newCollections, open(testOutputFile, 'w'))
