@@ -1,7 +1,7 @@
 # NFT Analytics
 ![](images/1636262358772.jpg)
 
-## Pull Data from opensea
+## Pull Data from Opensea
 ``` shell
 # put the collections information in custom.json;
 echo '[{"name": "Doodles", slug: "doodles-official"}]' > custom.json;
