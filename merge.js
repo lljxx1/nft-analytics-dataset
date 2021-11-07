@@ -50,6 +50,7 @@ for (let index = 0; index < allTypes.length; index++) {
         hasReport: hasReport && hasReport.ks_test_result.length,
         testResult: `${allType}.md#${_.name
           .toLowerCase()
+          .split(':').join('')
           .split(" ")
           .join("-")}`,
       });
