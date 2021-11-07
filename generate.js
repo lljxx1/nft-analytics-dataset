@@ -26,6 +26,23 @@ async function saveFile(dataRows, dataFile) {
   console.log('rows', dataRows.length, firstRow)
 }
 
+async function runKsTest(slug) {
+  try {
+    var exec = require("child_process").exec;
+    const comand = `python3 ks_test.py custom ${slug}`;
+    console.log("run", comand);
+    exec(
+      comand,
+      {
+        cwd: __dirname + "/analytics/",
+      },
+      function (error, stdout, stderr) {
+        stdout.on("data", (buf) => console.log(buf.toString()));
+      }
+    );
+  } catch (e) {}
+}
+
 async function generateTokenData(collection) {
 
   const datasetbaseDir = `./dataset/${collection.slug}`;
@@ -117,6 +134,7 @@ async function generateTokenData(collection) {
 
   if (mintingRows.length) {
     await saveFile(mintingRows, dataFile)
+    runKsTest(collection.slug);
   }
 
   if (allSaleEvents.length) {
