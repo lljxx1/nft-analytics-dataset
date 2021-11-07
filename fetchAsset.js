@@ -140,6 +140,7 @@ async function main() {
       const collectionKey = [topCollection.slug, "collection"].join("-");
       const startTime = Date.now();
       if (status[collectionKey]) {
+        console.log("skip", collectionKey);
         // await generateTokenData(topCollection);
         continue;
       };
