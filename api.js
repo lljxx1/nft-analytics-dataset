@@ -40,12 +40,18 @@ app.get("/api/addCollection", async (req, res) => {
     const taskFile = "./custom.json";
     const existsTask = JSON.parse(fs.readFileSync(taskFile, "utf-8"));
     const isInf = allCollections.find((_) => _.slug == query.slug);
-    if (isInf) {
-        return res.json({
-            error: 1,
-            msg: 'exists'
-        })
+    if (!query.slug && !query.name) {
+         return res.json({
+           error: 1,
+           msg: "slug, name empty",
+         });
     }
+      if (isInf) {
+        return res.json({
+          error: 1,
+          msg: "exists",
+        });
+      }
     existsTask.push({
         name: query.name,
         slug: query.slug,
