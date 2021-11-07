@@ -9,492 +9,243 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.7.2/dist/antd.min.css">
   <script src="https://cdn.jsdelivr.net/npm/ant-design-vue@1.7.2/dist/antd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
   <!-- Resources -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/v-charts/lib/index.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/v-charts/lib/style.min.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-apexcharts@1.6.2/dist/vue-apexcharts.min.js"></script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <style>
+      body {
+       font-family: 'courier new',courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace
+      }
+
+      h2 {
+          font-size: 1.8rem;
+      }
+  </style>
+</head>
 <body>
   <div id="app">
     <a-layout id="components-layout-demo-top-side">
       <a-layout-header class="header" style="background: black;">
-        <div style="color: white; text-align: center; font-size: 22px;">HonestNFT</div>
+        <router-link to="/">
+            <div style="color: white; text-align: center; font-size: 30px;">HonestNFT</div>
+        </router-link>
       </a-layout-header>
       <a-layout-content style="padding: 0 50px">
-        <a-layout style="padding: 24px 0; width: 1300px; margin: 0 auto; background: #fff">
-          <a-layout-content :style="{ padding: '0 24px', minHeight: '280px' }">
+        <a-layout style="padding: 0px 0; width: 1300px; margin: 30px auto; background: #fff">
+          <a-layout-content :style="{ padding: '40px 40px', minHeight: '680px' }">
             <a-spin :spinning="loading" />
-            <div class="block-item" style="margin-top: 20px">
-              <h2>数据概览</h2>
-              <a-row>
-                <a-col :span="8" v-for="item in overviewCounts">
-                  <div class="overview-item">
-                    <a-statistic :title="item.title" :value="item.count" style="margin-right: 50px" />
-                    <!-- <div class="title">{{ item.title }}</div> -->
-                    <!-- <div class="count">{{ item.count }}</div> -->
-                  </div>
-                </a-col>
-              </a-row>
-            </div>
-
-            <div class="block-item">
-              <h2>趋势数据</h2>
-              <ve-line :data="trendData"></ve-line>
-              <div class="block-item">
-                <h2>提现数据</h2>
-                <ve-line :data="withdrawTrendData"></ve-line>
-              </div>
-
-            </div>
-
-            <div class="block-item">
-              <h2>Buyer数据 </h2>
+            <div class="block-item" v-if="!isDetail">
+              <h2>Collections</h2>
               <a-row :gutter="25">
                 <a-col>
-                  <a-table :columns="buyerTable.columns" :data-source="buyerTable.data" :pagination="false"
-                    size="small" />
+                  <a-table :columns="taskTable.columns" :data-source="taskTable.data" :pagination="false" bordered/>
                 </a-col>
               </a-row>
             </div>
+            <div class="block-item" v-if="isDetail">
+                <div style="border-bottom: 1px solid #eee; margin-bottom: 30px">
+                    <h2 style="margin-bottom: 20px;">
+                        <img :src="currentCollection.logo" height="100" style="margin-right: 10px"> {{ currentCollection.name }}
+                    <h2>
+                </div>
 
-            <div class="block-item">
-              <h2>数据明细 </h2>
-              <a-row :gutter="25">
-                <a-col :span="12" v-for="table in tableRowOne">
-                  <h3>{{ table.title }}</h3>
-                  <a-table :columns="table.columns" :data-source="table.data" :pagination="false" size="small" />
-                </a-col>
-              </a-row>
+                <h2>Raraity Map</h2>
+
+                <apexchart type="scatter" height="350" :options="chartOptions" :series="series"></apexchart>
+                <!-- <a-row :gutter="25">
+                    <a-col>
+                        <a-table :columns="taskTable.columns" :data-source="taskTable.data" :pagination="false" bordered />
+                    </a-col>
+                </a-row> -->
             </div>
-
-            <div class="block-item" id="withdraw">
-              <h2>提现数据 </h2>
-              <a-row :gutter="25" style="margin-bottom: 30px">
-                <a-col :span="6">
-                  <a-card>
-                    <a-statistic title="等待处理" :value="stakingWithdraw.length" />
-                  </a-card>
-                </a-col>
-                <a-col :span="6">
-                  <a-card>
-                    <a-statistic title="今日处理" :value="stakingWithdrawToday.length" />
-                  </a-card>
-                </a-col>
-                <a-col></a-col>
-                <a-col></a-col>
-              </a-row>
-
-              <a-row :gutter="25">
-                <a-col>
-                  <a-tabs default-active-key="1">
-                    <a-tab-pane key="1" tab="待处理">
-                      <a-table :columns="withdrawTable.columns" :data-source="withdrawTable.data" :pagination="false"
-                        size="small" />
-                    </a-tab-pane>
-                    <a-tab-pane key="2" tab="已处理" force-render>
-                      <a-table :columns="withdrawTableToday.columns" :data-source="withdrawTableToday.data"
-                        :pagination="false" size="small" />
-                    </a-tab-pane>
-                  </a-tabs>
-                </a-col>
-              </a-row>
-            </div>
-
-            <div class="block-item">
-              <h2>同步任务 </h2>
-              <a-row :gutter="25">
-                <a-col>
-                  <a-table :columns="taskTable.columns" :data-source="taskTable.data" :pagination="false"
-                    size="small" />
-                </a-col>
-              </a-row>
-            </div>
-
-
-
           </a-layout-content>
         </a-layout>
       </a-layout-content>
       <a-layout-footer style="text-align: center">
-        报告时间：{{ reportData.genTime }}
-        <span
-          :style="delayBlocks > 150 ? 'color: red;' : 'color: green;' + '; display: inline-block; margin-left: 10px'">
-          当前区块：{{ recentBlock }}
-          落后区块：{{ delayBlocks }}
-          延迟任务：{{ delayTasks.length }}
-        </span>
+        Made By <a href="https://twitter.com/lljxx1">fun</a>
       </a-layout-footer>
     </a-layout>
 
   </div>
   <script>
+    Vue.use(VueRouter);
 
-    let assetData = [
-      {
-        "symbol": "FIS",
-        "index": 0
-      },
-      {
-        "symbol": "IF",
-        "index": 1
-      },
-      {
-        "symbol": "POND",
-        "index": 2
-      },
-      {
-        "symbol": "BZRX",
-        "index": 3
-      },
-      {
-        "symbol": "XEND",
-        "index": 4
-      },
-      {
-        "symbol": "EZ",
-        "index": 5
-      },
-      {
-        "symbol": "YFI",
-        "index": 6
-      },
-      {
-        "symbol": "SOLV",
-        "index": 7
-      },
-      {
-        "symbol": "MONOX",
-        "index": 8
-      }
-    ];
+    const routes = [
+        { path: '/' },
+        { path: '/collection/:slug', name: 'Detail'}
+    ]
 
-    function formatBalance(value) {
-      const result = '$' + (+value).toFixed(0);
-      return result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
+    const router = new VueRouter({
+        routes: routes 
+    })
 
     var app = new Vue({
+        router,
       el: '#app',
+       components: {
+            apexchart: VueApexCharts,
+        },
       data: {
         loading: true,
-        stakingWithdraw: [],
-        stakingWithdrawToday: [],
-        allTasks: [],
-        withdrawTrend: [],
-        reportData: null
+        collections: [],
+
+        series: [{
+              name: "SAMPLE A",
+              data: [
+                  [16.4, 5.4], [21.7, 2], [25.4, 3], [19, 2], [10.9, 1], [13.6, 3.2], [10.9, 7.4], [10.9, 0], [10.9, 8.2], [16.4, 0], [16.4, 1.8], [13.6, 0.3], [13.6, 0], [29.9, 0], [27.1, 2.3], [16.4, 0], [13.6, 3.7], [10.9, 5.2], [16.4, 6.5], [10.9, 0], [24.5, 7.1], [10.9, 0], [8.1, 4.7], [19, 0], [21.7, 1.8], [27.1, 0], [24.5, 0], [27.1, 0], [29.9, 1.5], [27.1, 0.8], [22.1, 2]]
+          }, {
+              name: "SAMPLE B",
+              data: [
+                  [36.4, 13.4], [1.7, 11], [5.4, 8], [9, 17], [1.9, 4], [3.6, 12.2], [1.9, 14.4], [1.9, 9], [1.9, 13.2], [1.4, 7], [6.4, 8.8], [3.6, 4.3], [1.6, 10], [9.9, 2], [7.1, 15], [1.4, 0], [3.6, 13.7], [1.9, 15.2], [6.4, 16.5], [0.9, 10], [4.5, 17.1], [10.9, 10], [0.1, 14.7], [9, 10], [12.7, 11.8], [2.1, 10], [2.5, 10], [27.1, 10], [2.9, 11.5], [7.1, 10.8], [2.1, 12]]
+          }, {
+              name: "SAMPLE C",
+              data: [
+                  [21.7, 3], [23.6, 3.5], [24.6, 3], [29.9, 3], [21.7, 20], [23, 2], [10.9, 3], [28, 4], [27.1, 0.3], [16.4, 4], [13.6, 0], [19, 5], [22.4, 3], [24.5, 3], [32.6, 3], [27.1, 4], [29.6, 6], [31.6, 8], [21.6, 5], [20.9, 4], [22.4, 0], [32.6, 10.3], [29.7, 20.8], [24.5, 0.8], [21.4, 0], [21.7, 6.9], [28.6, 7.7], [15.4, 0], [18.1, 0], [33.4, 0], [16.4, 0]]
+          }],
+          chartOptions: {
+              chart: {
+                  height: 350,
+                  type: 'scatter',
+                  zoom: {
+                      enabled: true,
+                      type: 'xy'
+                  }
+              },
+              xaxis: {
+                  tickAmount: 10,
+                  labels: {
+                      formatter: function (val) {
+                          return parseFloat(val).toFixed(1)
+                      }
+                  }
+              },
+              yaxis: {
+                  tickAmount: 7
+              }
+          },
       },
+      
       computed: {
+          currentCollection() {
+              if (!this.isDetail) {
+                return null
+              }
+
+              return this.collections.find(_ => _.slug == this.$route.params.slug)
+          },
+          isDetail() {
+            return this.$route.name == 'Detail'
+          },
         taskTable() {
-          // allTasks
+            const h = this.$createElement
           return {
             columns: [
               {
-                title: 'job',
-                dataIndex: 'job',
-              }
-              ,
-              {
-                title: 'event',
-                dataIndex: 'name',
+                title: 'Name',
+                dataIndex: 'logo',
+                with: '400',
+                customRender: (text, row, index) => {
+                    return h('div',  {
+                            attrs: {
+                                // style: "max-width: 300px"
+                        }
+                    },
+                    [
+                        h('a', {
+                            attrs: {
+                                href: `#/collection/${row.slug}`
+                            }
+                        },
+                        
+                        [
+                            h('img', {
+                                attrs: {
+                                    src: text,
+                                    width: 100,
+                                    style: "margin-right: 10px"
+                                }
+                            }),
+                            h('span', {
+                                attrs: {
+                                    style: "font-weight: bold"
+                                }
+                            },
+                                [row.name])
+                        ])
+                    ]
+                    )
+                },
               },
               {
-                title: 'recentBlock',
-                dataIndex: 'recentBlock',
+                title: 'totalSupply',
+                dataIndex: 'totalSupply',
               },
               {
-                title: 'delayBlocks',
-                dataIndex: 'delayBlocks',
-              }
-            ],
-            data: this.allTasks
-          }
-        },
-        withdrawTableToday() {
-          return {
-            columns: [
-              {
-                title: 'Who',
-                dataIndex: 'who',
+                title: 'totalVolume',
+                dataIndex: 'totalVolume',
               },
-              {
-                title: 'Index',
-                dataIndex: 'index',
-              },
-              {
-                title: 'blockTime',
-                dataIndex: 'blockTime',
-              },
-              {
-                title: 'blockId',
-                dataIndex: 'blockId',
-              }
-            ],
-            data: this.stakingWithdrawToday
-          }
-
-        },
-        withdrawTable() {
-          return {
-            columns: [
-              {
-                title: 'Who',
-                dataIndex: 'who',
-              },
-              {
-                title: 'Index',
-                dataIndex: 'index',
-              },
-              {
-                title: 'blockTime',
-                dataIndex: 'blockTime',
-              },
-              {
-                title: 'blockId',
-                dataIndex: 'blockId',
-              }
-            ],
-            data: this.stakingWithdraw
-          }
-        },
-        buyerTable() {
-          return {
-            columns: [
-              {
-                title: 'Who',
-                dataIndex: 'who',
-              },
-              {
-                title: 'Asset',
-                dataIndex: 'name',
-              },
-              {
-                title: 'currentPremium',
-                dataIndex: 'currentPremium',
-              },
-              {
-                title: 'futurePremium',
-                dataIndex: 'futurePremium',
-              },
-              {
-                title: 'currentSubscription',
-                dataIndex: 'currentSubscription',
-              },
-              {
-                title: 'futureSubscription',
-                dataIndex: 'futureSubscription',
-              },
-              {
-                title: 'Balance',
-                dataIndex: 'balance',
-              },
-            ],
-            data: this.reportData ? this.reportData.buyerInfos.map(_ => {
-              const name = assetData.find(c => c.index == _.assetIndex);
-              _.name = name ? name.symbol : '';
-              _.currentPremium = formatBalance(_.currentPremium)
-              _.futurePremium = formatBalance(_.futurePremium)
-              _.currentSubscription = formatBalance(_.currentSubscription)
-              _.futureSubscription = formatBalance(_.futureSubscription)
-              _.balance = formatBalance(_.balance)
-              console.log('', name)
-              return _;
-            }) : []
-          }
-        },
-        tableRowOne() {
-          const tableRows = [];
-          const columns = [
             {
-              title: 'Type',
-              dataIndex: 'type',
-            },
-            {
-              title: '用户数',
-              dataIndex: 'total_accounts',
-            },
-            {
-              title: 'Amount',
-              dataIndex: 'total_amount',
-            },
-          ]
-
-          tableRows.push({
-            title: "交易数据 - 今日",
-            columns: columns,
-            data: this.reportData ? this.reportData.trx.today : []
-          })
-
-          tableRows.push({
-            title: "交易数据 - 所有",
-            columns: columns,
-            data: this.reportData ? this.reportData.trx.all : []
-          })
-          return tableRows
-        },
-
-        withdrawTrendData() {
-          const columns = ["日期", "Locked Withdraw", 'New Withdaw', 'Total Withdraw'];
-          return {
-            columns: columns,
-            rows: this.withdrawTrend.map(_ => {
-              return {
-                '日期': _.date,
-                "Locked Withdraw": _.locked,
-                "New Withdaw": _.total,
-                'Total Withdraw': parseInt(_.locked) + parseInt(_.total)
-              }
-            })
+                title: 'Detail',
+                customRender: (text, row, index) => {
+                    return h('div', {
+                              attrs: {
+                                  // style: "max-width: 300px"
+                              }
+                          },
+                        [
+                            h('a', {
+                                attrs: {
+                                    href: row.opensea,
+                                    target: "_blank",
+                                    style: "margin-right: 10px"
+                                }
+                            }, 
+                            [
+                                'Opensea'
+                            ]),
+                        ])
+                  },
+                }
+            ],
+            data: this.collections
           }
         },
-
-        trendData() {
-          const columns = ["日期", "Deposit", "ReduceDeposit",
-            // "Withdraw", 
-            "用户"];
-          if (this.reportData == null) {
-            return {
-              columns: columns,
-              rows: []
-            }
-
-          }
-
-          const mappingNames = {
-            account: '用户'
-          }
-
-          const trendData = this.reportData.trend;
-          const dataRows = this.reportData.trend.account.map(_ => {
-            const Item = {};
-            Item['日期'] = _.date;
-            ["Deposit", "ReduceDeposit", "Withdraw", 'account'].forEach(c => {
-              const matchEl = trendData[c].filter(k => k.date == _.date)[0]
-              const setName = mappingNames[c] ? mappingNames[c] : c;
-              Item[setName] = matchEl ? c == 'account' ? matchEl.count : matchEl.total_amount : 0;
-            })
-            return Item;
-          });
-          console.log(dataRows)
-          return {
-            columns: columns,
-            rows: dataRows
-          }
-        },
-        overviewCounts() {
-          const counts = []
-          if (this.reportData == null) return counts;
-
-          counts.push({
-            title: '所有交易数',
-            count: this.reportData.summary.all.totalTrx,
-          });
-
-          counts.push({
-            title: '今日交易数',
-            count: this.reportData.summary.today.totalTrx,
-          });
-
-          counts.push({
-            title: '三天内交易数',
-            count: this.reportData.summary.last3day.totalTrx,
-          });
-
-          counts.push({
-            title: '所有用户数',
-            count: this.reportData.summary.all.totalAccount,
-          });
-
-          counts.push({
-            title: '今日用户数',
-            count: this.reportData.summary.today.totalAccount,
-          });
-
-          counts.push({
-            title: '三天内用户数',
-            count: this.reportData.summary.last3day.totalAccount,
-          });
-
-          return counts
-        },
-        recentBlock() {
-          return this.allTasks.length && this.allTasks[0].recentBlock;
-        },
-        delayBlocks() {
-          return this.allTasks.length && this.allTasks[0].delayBlocks;
-        },
-        delayTasks() {
-          return this.allTasks.filter(_ => _.isDelay);
+     },
+     watch: {
+        $route() {
+            this.loadCollection()
+        }
+     },
+      mounted() {
+        console.log(this.$router)
+        this.loadData();
+        if (this.isDetail) {
+            this.loadCollection()
         }
       },
-      mounted() {
-        this.loadStatus();
-        this.loadTrendWithdraw();
-        // this.timer = setInterval(() => {
-        //   this.loadStatus();
-        // }, 15 * 1000);
-      },
       methods: {
-        async loadTrendWithdraw() {
-          const { data } = await axios.get('https://tidal-data.postxiami.space/api/getWithdrawSumByDay')
-          this.withdrawTrend = data.list.map(_ => {
-            _.date = moment.unix(_.endTime).format("YYYY-MM-DD")
-            return {
-              date: _.date,
-              total: (_.total / 1e6).toFixed(0),
-              locked: (_.locked / 1e6).toFixed(0),
-            }
-          })
-
-        },
-        async loadStatus() {
-          try {
-            this.loadData()
-            this.loadTask()
-            this.loadWithdraw()
-          } catch (e) {
-            this.$message.error(e.toString());
-          }
-        },
-        async loadWithdraw() {
-          const { data } = await axios.get('https://tidal-data.postxiami.space/api/stakingWithdraw?needCall=1')
-          this.stakingWithdraw = data.map(_ => {
-            _.blockTime = moment.unix(_.blockTime).format("YYYY-MM-DD HH:mm")
-            return _
-          })
-
-          const today = await axios.get('https://tidal-data.postxiami.space/api/stakingWithdraw?todayCall=1')
-          this.stakingWithdrawToday = today.data.map(_ => {
-            _.blockTime = moment.unix(_.blockTime).format("YYYY-MM-DD HH:mm")
-            return _
-          })
-        },
-        async loadTask() {
-          const { data } = await axios.get('https://tidal-data.postxiami.space/api/task')
-          // this.reportData = data
-          const allTasks = [];
-          data.forEach(_ => {
-            _.value.forEach(task => {
-              task.job = _.key;
-              task.recentBlock = task.state.fromBlock
-              task.delayBlocks = task.delayBlocks
-              task.event = task.state.name
-              allTasks.push(task)
+          async loadCollection() {
+            const slug = this.$route.params.slug
+            const { data } = await axios.get('https://honestnftapi.mywallet.tools/api/getCollection', {
+                params: {
+                    slug
+                }
             })
-          })
-          console.log(allTasks);
-          this.allTasks = allTasks
-          // this.delayTasks = allTasks.filter(_ => _.isDelay);
-          // const task = 
-          // this.loading = false;
-
-        },
+            console.log('loadCollection', slug, data)
+          },
         async loadData() {
-          const { data } = await axios.get('https://tidal-data.postxiami.space/api/getReport')
-          this.reportData = data
+          const { data } = await axios.get('https://honestnftapi.mywallet.tools/api/getAllCollection')
+          this.collections = data.collections
           this.loading = false;
+          console.log(this.collections)
         }
       },
     })
