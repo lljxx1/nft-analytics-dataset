@@ -47,8 +47,8 @@
 <body>
     <div id="app">
         <a-modal v-model="showCreate" title="Add Collection"  @ok="handleAdd">
-            <p><a-input  v-model="create.name" placeholder="Collection Name" /></p>
-            <p><a-input v-model="create.link"  placeholder="Opensea link eg.(https://opensea.io/collection/derace-horses)" /></p>
+            <!-- <p><a-input  v-model="create.name" placeholder="Collection Name" /></p> -->
+            <p><a-input v-model="create.link"  placeholder="Opensea link eg.(https://opensea.io/collection/wilderworld)" /></p>
         </a-modal>
         <a-layout id="components-layout-demo-top-side">
             <a-layout-header class="header" style="background: black; height: 80px; line-height: 80px;">
@@ -509,7 +509,7 @@
                     }
                     const slug = link.split('https://opensea.io/collection/')[1].trim()
                     const colecction = {
-                        name,
+                        // name,
                         slug
                     }
 
@@ -543,7 +543,7 @@
                 },
                 async loadData() {
                     const { data } = await axios.get('https://honestnftapi.mywallet.tools/api/getAllCollection')
-                    this.collections = data.collections
+                    this.collections = data.collections.reverse()
                     this.loading = false;
                     console.log(this.collections)
                     if (this.isDetail) {

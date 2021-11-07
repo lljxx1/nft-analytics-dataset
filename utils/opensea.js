@@ -141,7 +141,7 @@ async function fetchCollection(slug) {
           "X-API-KEY": apiKey,
         }
       );
-      return collection;
+      return data.collection;
     } catch (e) {
       console.log(e.response ? e.response.data.detail : e);
       console.log("wait");
