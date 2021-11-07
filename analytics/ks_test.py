@@ -169,4 +169,5 @@ for COLLECTION in topCollections:
             json.dump(COLLECTION, open(kstestFile, 'w'))
         except:
             print('failed')
-        json.dump(newCollections, open(testOutputFile, 'w'))
+        if specifyCollection == 'all':
+            json.dump(newCollections, open(testOutputFile, 'w'))
