@@ -11,14 +11,19 @@ app.use(compression());
 
 app.get("/api/getCollection", async (req, res) => {
   try {
-      const { query } = req;
+    const { query } = req;
+    const startTime = Date.now();
     const data = await getCollectionData(
       {
         slug: query.slug,
       },
       query.bucket
     );
-    res.json(data);
+    const spendTime = Date.now() - startTime;
+    res.json({
+      spendTime,
+      result: data,
+    });
   } catch (e) {
     res.json({
       error: 1,
