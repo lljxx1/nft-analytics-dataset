@@ -3,6 +3,11 @@
 
 ![](images/1636262621390.jpg)
 
+## Install
+``` shell
+yarn 
+```
+
 ## Pull Data from Opensea
 ``` shell
 # put the collections information in custom.json;
