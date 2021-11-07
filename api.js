@@ -100,6 +100,7 @@ function getAllCollections() {
       const hasReport = testReport.find((c) => _.slug == c.slug);
        const datasetbaseDir = `./dataset/${_.slug}`;
        const dataFile = `${datasetbaseDir}/minting.csv`;
+        const ksTest = `${datasetbaseDir}/kstest.json`;
       if (hasReport || allType == "custom")
         overview.push({
           name: _.name,
@@ -114,7 +115,7 @@ function getAllCollections() {
           numOwners: _.stats && _.stats.numOwners,
           marketCap: _.stats && _.stats.marketCap,
           hasReport: hasReport && hasReport.ks_test_result.length,
-          isDone: hasReport ? true : fs.existsSync(dataFile),
+          isDone: hasReport ? true : fs.existsSync(ksTest),
           testResult: `${allType}.md#${_.name
             .toLowerCase()
             .split(":")
