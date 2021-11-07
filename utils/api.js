@@ -46,7 +46,8 @@ async function getCollectionData(collection, bucket = '') {
     const datasetbaseDir = __dirname + `/../dataset/${collection.slug}`;
     const dataFile = `${datasetbaseDir}/minting.csv`;
     const salesFile = `${datasetbaseDir}/sales.csv`;
-    const ktestResultFile = __dirname + `/../${bucket}-withtest.json`;
+    const defaultK = bucket ? bucket : "topCollection200";
+    const ktestResultFile = __dirname + `/../${defaultK}-withtest.json`;
     const datasetOfKtest = fs.existsSync(ktestResultFile) ? JSON.parse(fs.readFileSync(ktestResultFile, 'utf-8')) : [];
 
     const kTestResult = datasetOfKtest.find((_) => _.slug == collection.slug);
