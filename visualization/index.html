@@ -463,7 +463,10 @@
                             },
                             {
                                 title: 'Fetched',
-                                dataIndex: 'isDone'
+                                dataIndex: 'isDone',
+                                customRender: (text, row, index) => {
+                                    return text ? 'true' : 'false'
+                                }
                             },
                             {
                                 title: 'Detail',
@@ -546,7 +549,7 @@
                 },
                 async loadData() {
                     const { data } = await axios.get('https://honestnftapi.mywallet.tools/api/getAllCollection')
-                    this.collections = data.collections.reverse()
+                    this.collections = data.collections
                     this.loading = false;
                     console.log(this.collections)
                     if (this.isDetail) {
