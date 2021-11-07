@@ -65,7 +65,7 @@ function getAllCollections() {
      for (let index = 0; index < allTypes.length; index++) {
        const allType = allTypes[index];
        const task = require(`./${allType}.json`);
-       const testReport = require(`./${allType}-withtest.json`);
+       const testReport = fs.existsSync(`./${allType}-withtest.json`) ? require(`./${allType}-withtest.json`) : [];
        task.forEach((_) => {
          const hasReport = testReport.find((c) => _.slug == c.slug);
          if (hasReport || allType == "custom")
