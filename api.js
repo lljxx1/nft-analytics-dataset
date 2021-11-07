@@ -86,10 +86,10 @@ function getAllCollections() {
              createdDate: _.createdDate,
              opensea: `https://opensea.io/collection/${_.slug}`,
              floorPrice: _.floorPrice,
-             totalVolume: _.stats.totalVolume.toFixed(0),
-             totalSupply: _.stats.totalSupply,
-             numOwners: _.stats.numOwners,
-             marketCap: _.stats.marketCap,
+             totalVolume: _.stats && _.stats.totalVolume.toFixed(0),
+             totalSupply: _.stats && _.stats.totalSupply,
+             numOwners: _.stats && _.stats.numOwners,
+             marketCap: _.stats && _.stats.marketCap,
              hasReport: hasReport && hasReport.ks_test_result.length,
              testResult: `${allType}.md#${_.name
                .toLowerCase()
