@@ -19,7 +19,7 @@ node genReport.js custom
 
 ## Start Server
 ``` shell
-# will http://127.0.0.1:8082
+# will running on http://127.0.0.1:8082
 node api.js
 ```
 ## Visualization
