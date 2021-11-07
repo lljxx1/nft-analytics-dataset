@@ -42,7 +42,7 @@ async function savePageResult(contract, pageResults) {
         ignoreDuplicates: true,
       });
 
-      await setValue(pageKey, 1);
+     
       // console.log(results);
     } catch (e) {
       console.log(e);
@@ -139,8 +139,9 @@ async function main() {
     for (let index = 0; index < needFetchCollections.length; index++) {
       const topCollection = needFetchCollections[index];
       const collectionKey = [topCollection.slug, "collection"].join("-");
+      const startTime = Date.now();
       if (status[collectionKey]) {
-        await generateTokenData(topCollection);
+        // await generateTokenData(topCollection);
         continue;
       };
       console.log(topCollection.slug);
@@ -148,7 +149,11 @@ async function main() {
       await setValue(collectionKey, 1);
       await findTokenAndFetch(topCollection);
       await generateTokenData(topCollection);
+      await setValue(pageKey, 1);
       topCollection.done = true
+      const spendTime = Date.now() - startTime;
+      topCollection.spendTime = spendTime;
+      console.log("spendTime", spendTime);
       fs.writeFileSync(fetchTaksFile, JSON.stringify(needFetchCollections));
     }
   } catch (e) {
