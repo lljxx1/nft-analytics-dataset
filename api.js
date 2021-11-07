@@ -11,11 +11,12 @@ app.use(compression());
 
 app.get("/api/getCollection", async (req, res) => {
   try {
+      const { query } = req;
     const data = await getCollectionData(
       {
-        slug: req.slug,
+        slug: query.slug,
       },
-      req.bucket
+      query.bucket
     );
     res.json(data);
   } catch (e) {
