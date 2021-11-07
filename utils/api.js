@@ -46,9 +46,13 @@ async function getCollectionData(collection, bucket = '') {
     const datasetbaseDir = __dirname + `/../dataset/${collection.slug}`;
     const dataFile = `${datasetbaseDir}/minting.csv`;
     const salesFile = `${datasetbaseDir}/sales.csv`;
+    const ktestResultFile = __dirname + `/../${bucket}-withtest.json`;
+    const datasetOfKtest = fs.existsSync(ktestResultFile) ? JSON.parse(fs.readFileSync(ktestResultFile, 'utf-8')) : [];
 
+    const kTestResult = datasetOfKtest.find((_) => _.slug == collection.slug);
     if (fs.existsSync(dataFile) && fs.existsSync(salesFile)) {
         return {
+          kTestResult,
           mintingRows: await readData(dataFile),
           saleWithRarity: await readData(salesFile),
         };
@@ -99,6 +103,7 @@ async function getCollectionData(collection, bucket = '') {
   );
 
   const rersult = {
+    kTestResult,
     mintingRows: [],
     saleWithRarity: []
   };
