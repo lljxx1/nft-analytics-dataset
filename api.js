@@ -41,8 +41,6 @@ app.get("/api/getAllCollection", async (req, res) => {
       const allType = allTypes[index];
       const task = require(`./${allType}.json`);
       const testReport = require(`./${allType}-withtest.json`);
-      console.log(task);
-
       task.forEach((_) => {
         const hasReport = testReport.find((c) => _.slug == c.slug);
         if (hasReport)
