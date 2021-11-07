@@ -32,6 +32,55 @@ app.get("/api/getCollection", async (req, res) => {
   }
 });
 
+app.get("/api/getAllCollection", async (req, res) => {
+  try {
+    const startTime = Date.now();
+    const allTypes = ["topCollection200", "collections24"];
+    const overview = [];
+    for (let index = 0; index < allTypes.length; index++) {
+      const allType = allTypes[index];
+      const task = require(`./${allType}.json`);
+      const testReport = require(`./${allType}-withtest.json`);
+      console.log(task);
+
+      task.forEach((_) => {
+        const hasReport = testReport.find((c) => _.slug == c.slug);
+        if (hasReport)
+          overview.push({
+            name: _.name,
+            logo: _.logo,
+            slug: _.slug,
+            createdDate: _.createdDate,
+            opensea: `https://opensea.io/collection/${_.slug}`,
+            floorPrice: _.floorPrice,
+            totalVolume: _.stats.totalVolume.toFixed(0),
+            totalSupply: _.stats.totalSupply,
+            numOwners: _.stats.numOwners,
+            marketCap: _.stats.marketCap,
+            hasReport: hasReport && hasReport.ks_test_result.length,
+            testResult: `${allType}.md#${_.name
+              .toLowerCase()
+              .split(":")
+              .join("")
+              .split(" ")
+              .join("-")}`,
+          });
+      });
+    }
+
+    const spendTime = Date.now() - startTime;
+    res.json({
+      spendTime,
+      collections: overview,
+    });
+  } catch (e) {
+    res.json({
+      error: 1,
+      msg: e.toString(),
+    });
+  }
+});
+
 // report page
 app.use("/report", express.static("visualization"));
 
