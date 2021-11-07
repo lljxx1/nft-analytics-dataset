@@ -10,6 +10,7 @@ const fs = require("fs");
 app.use(cors());
 app.use(compression());
 
+
 app.get("/api/getCollection", async (req, res) => {
   try {
     const { query } = req;
