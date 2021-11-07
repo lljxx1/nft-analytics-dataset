@@ -32,6 +32,8 @@ app.get("/api/getCollection", async (req, res) => {
   }
 });
 
+app.use(require("morgan")("dev"));
+
 app.get("/api/getAllCollection", async (req, res) => {
   try {
     const startTime = Date.now();
