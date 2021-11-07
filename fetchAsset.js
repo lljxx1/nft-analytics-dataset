@@ -131,21 +131,27 @@ async function fetchCollection(collection) {
 }
 
 async function main() {
-  const needFetchCollections = collecion ? require(`./${collecion}.json`) : require('./topCollection200.json');
-  for (let index = 0; index < needFetchCollections.length; index++) {
-    const topCollection = needFetchCollections[index];
-    const collectionKey = [topCollection.slug, "collection"].join("-");
-    if (status[collectionKey]) {
+  try {
+    const needFetchCollections = collecion ? require(`./${collecion}.json`) : require('./topCollection200.json');
+    for (let index = 0; index < needFetchCollections.length; index++) {
+      const topCollection = needFetchCollections[index];
+      const collectionKey = [topCollection.slug, "collection"].join("-");
+      if (status[collectionKey]) {
+        await generateTokenData(topCollection);
+        continue;
+      };
+      console.log(topCollection.slug);
+      await fetchCollection(topCollection);
+      await setValue(collectionKey, 1);
+      await findTokenAndFetch(topCollection);
       await generateTokenData(topCollection);
-      continue;
-    };
-    console.log(topCollection.slug);
-    await fetchCollection(topCollection);
-    await setValue(collectionKey, 1);
-    await findTokenAndFetch(topCollection);
-    await generateTokenData(topCollection);
+    }
+  } catch (e) {
+    console.log('error', e)
   }
+  setTimeout(() => {
+    main();
+  }, 10 * 1000);
 }
-
 
 main().catch(e => console.log(e))

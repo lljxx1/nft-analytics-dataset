@@ -4,6 +4,7 @@ const cors = require("cors");
 const app = express();
 const { createModel } = require("./db");
 const { getCollectionData } = require("./utils/api");
+const fs = require('fs');
 
 app.use(cors());
 app.use(compression());
@@ -33,10 +34,26 @@ app.get("/api/getCollection", async (req, res) => {
 
 app.use(require("morgan")("dev"));
 
+app.get("/api/addCollection", async (req, res) => {
+    const { query } = req;
+    const taskFile = "./custom.json";
+    const existsTask = JSON.parse(fs.readFileSync(taskFile, "utf-8"));
+    existsTask.push({
+      name: query.name,
+      slug: query.slug,
+      bucket: "custom",
+      done: false
+    });
+    fs.writeFileSync(taskFile, JSON.stringify(existsTask));
+    res.json({
+      tasks: existsTask.length
+    });
+})
+
 app.get("/api/getAllCollection", async (req, res) => {
   try {
     const startTime = Date.now();
-    const allTypes = ["topCollection200", "collections24"];
+    const allTypes = ["topCollection200", "collections24", "custom"];
     const overview = [];
     for (let index = 0; index < allTypes.length; index++) {
       const allType = allTypes[index];
@@ -44,7 +61,7 @@ app.get("/api/getAllCollection", async (req, res) => {
       const testReport = require(`./${allType}-withtest.json`);
       task.forEach((_) => {
         const hasReport = testReport.find((c) => _.slug == c.slug);
-        if (hasReport)
+        if (hasReport || allType == "custom")
           overview.push({
             name: _.name,
             logo: _.logo,
