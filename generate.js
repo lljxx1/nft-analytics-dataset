@@ -1,6 +1,6 @@
 const { Asset, Event } = require('./db');
 const topCollections = require("./topCollection200.json");
-const { getTokenWithRarity } = require('./lib/rarity');
+const { getTokenWithRarity } = require('./utils/rarity');
 const fs = require('fs');
 const { createObjectCsvWriter: createCsvWriter } = require('csv-writer');
 

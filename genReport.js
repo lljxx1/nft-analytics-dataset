@@ -1,5 +1,4 @@
 const fs = require('fs');
-
 const args = process.argv.slice(2);
 const collecion = args[0] ? args[0] : "topCollection200";
 const testReport = require(`./${collecion}-withtest.json`);

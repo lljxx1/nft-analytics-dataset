@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HonestNFT Data Visualization</title>
+<meta content="width=device-width,initial-scale=1" name="viewport" />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue-lazyload/vue-lazyload.js"></script>
@@ -51,9 +52,9 @@
                     <div style="color: white; text-align: center; font-size: 30px;">HonestNFT Analytics</div>
                 </router-link>
             </a-layout-header>
-            <a-layout-content style="padding: 0 50px">
-                <a-layout style="padding: 0px 0; width: 1300px; margin: 30px auto; background: #fff">
-                    <a-layout-content :style="{ padding: '40px 40px', minHeight: '680px' }">
+            <a-layout-content style="padding: 0 20px">
+                <a-layout :style="isMobile ? `padding: 0px 0; margin: 30px auto; background: #fff` : `padding: 0px; width: 1300px; margin: 30px auto; background: rgb(255, 255, 255);`">
+                    <a-layout-content :style="isMobile ?  { padding: '15px 15px', minHeight: '500px' } : { padding: '40px 40px', minHeight: '680px' }">
                         <a-spin :spinning="loading" />
                         <div class="block-item" v-if="!isDetail">
                             <h2>Collections</h2>
@@ -73,7 +74,7 @@
                             <p style="text-align: center;">
                                 <a-spin v-if="!current" style="margin-top: 100px" />
                             </p>
-                            <h2 v-if="current">Raraity Map</h2>
+                            <h2 v-if="current">Rarity Map</h2>
                             <div id="my_dataviz"></div>
 
 
@@ -189,6 +190,7 @@
                 apexchart: VueApexCharts,
             },
             data: {
+                isMobile: window.innerWidth < 800,
                 loading: true,
                 collections: [],
                 current: null,

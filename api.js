@@ -3,8 +3,7 @@ const compression = require("compression");
 const cors = require("cors");
 const app = express();
 const { createModel } = require("./db");
-
-const { getCollectionData } = require("./lib/api");
+const { getCollectionData } = require("./utils/api");
 
 app.use(cors());
 app.use(compression());

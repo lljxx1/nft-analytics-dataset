@@ -1,4 +1,4 @@
-const { fetchCollectionTokens } = require("./lib/opensea");
+const { fetchCollectionTokens } = require("./utils/opensea");
 const { findTokenAndFetch } = require("./fetchEvent");
 const { generateTokenData } = require("./generate");
 
@@ -12,8 +12,8 @@ const statusFile = collecion ? `./status${collecion}.json` : `./status.json`;
 const status = require(statusFile);
 
 async function setValue(key, value) {
-    status[key] = value;
-    fs.writeFileSync(statusFile, JSON.stringify(status, null, 2));
+  status[key] = value;
+  fs.writeFileSync(statusFile, JSON.stringify(status, null, 2));
 }
 
 async function savePageResult(contract, pageResults) {

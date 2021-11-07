@@ -1,8 +1,5 @@
-const { fetchEventsWithRetry } = require("./lib/opensea");
-// const topCollections = require("./topCollection200.json");
+const { fetchEventsWithRetry } = require("./utils/opensea");
 const { Asset, Event } = require("./db");
-const status = require("./status.json");
-const fs = require("fs");
 
 async function saveEvents(events) {
   const parsed = events.map((_) => {
