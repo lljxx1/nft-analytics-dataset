@@ -1,5 +1,5 @@
 # NFT Analytics
-![](images/1636262358772.png)
+![](images/1636262358772.jpg)
 
 ## Pull Data from opensea
 ``` shell
