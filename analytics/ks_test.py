@@ -152,6 +152,7 @@ newCollections = []
 print(len(topCollections))
 for COLLECTION in topCollections:
     datasetfile = '../dataset/{}/minting.csv'.format(COLLECTION['slug'])
+    kstestFile = '../dataset/{}/kstest.json'.format(COLLECTION['slug'])
     if specifyCollection != "all" :
         if COLLECTION['slug'] != specifyCollection:
             continue
@@ -165,6 +166,7 @@ for COLLECTION in topCollections:
             testResult = find_anomalies(data_to_analyze)
             COLLECTION['ks_test_result'] = testResult
             newCollections.append(COLLECTION)
+            json.dump(COLLECTION, open(kstestFile, 'w'))
         except:
             print('failed')
         json.dump(newCollections, open(testOutputFile, 'w'))
