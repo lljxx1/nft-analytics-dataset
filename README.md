@@ -1,3 +1,6 @@
+# NFT Analytics
+![](images/1636262358772.png)
+
 ## Pull Data from opensea
 ``` shell
 # put the collections information in custom.json;
@@ -17,12 +20,14 @@ python3 ks_test.py custom
 node genReport.js custom
 ```
 
-## Start Server
+## Visualization
+
+### Start Server
 ``` shell
 # will running on http://127.0.0.1:8082
 node api.js
 ```
-## Visualization
+### Visualization
 http://127.0.0.1:8082/visualization/
 
 
