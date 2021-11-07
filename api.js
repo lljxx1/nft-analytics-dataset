@@ -70,8 +70,11 @@ function getAllCollections() {
      const overview = [];
      for (let index = 0; index < allTypes.length; index++) {
        const allType = allTypes[index];
-       const task = require(`./${allType}.json`);
-       const testReport = fs.existsSync(`./${allType}-withtest.json`) ? require(`./${allType}-withtest.json`) : [];
+       
+       const task = JSON.parse(fs.readFileSync(`./${allType}.json`, "utf-8"));
+       const testReport = fs.existsSync(`./${allType}-withtest.json`)
+         ? JSON.parse(fs.readFileSync(`./${allType}-withtest.json`, "utf-8"))
+         : [];
        task.forEach((_) => {
          const hasReport = testReport.find((c) => _.slug == c.slug);
          if (hasReport || allType == "custom")

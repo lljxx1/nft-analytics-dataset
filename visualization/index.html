@@ -46,6 +46,10 @@
 
 <body>
     <div id="app">
+        <a-modal v-model="showCreate" title="Add Collection"  @ok="handleAdd">
+            <p><a-input  v-model="create.name" placeholder="Collection Name" /></p>
+            <p><a-input v-model="create.link"  placeholder="Opensea link eg.(https://opensea.io/collection/derace-horses)" /></p>
+        </a-modal>
         <a-layout id="components-layout-demo-top-side">
             <a-layout-header class="header" style="background: black; height: 80px; line-height: 80px;">
                 <router-link to="/">
@@ -57,6 +61,9 @@
                     <a-layout-content :style="isMobile ?  { padding: '15px 15px', minHeight: '500px' } : { padding: '40px 40px', minHeight: '680px' }">
                         <a-spin :spinning="loading" />
                         <div class="block-item" v-if="!isDetail">
+                            <div  style="text-align: right">
+                                <a-button @click="showCreate = true">Add Collection</a-button>
+                            </div>
                             <h2>Collections</h2>
                             <a-row :gutter="25">
                                 <a-col>
@@ -190,6 +197,11 @@
                 apexchart: VueApexCharts,
             },
             data: {
+                create: {
+                    name: null,
+                    link: null
+                },
+                showCreate: false,
                 isMobile: window.innerWidth < 800,
                 loading: true,
                 collections: [],
@@ -488,6 +500,30 @@
                 
             },
             methods: {
+
+                async handleAdd() {
+                    const { name, link } = this.create 
+                    if (link.indexOf('https://opensea.io/collection/') == -1) {
+                        this.$message.error('It\'s not opensea collection link');
+                        return
+                    }
+                    const slug = link.split('https://opensea.io/collection/')[1].trim()
+                    const colecction = {
+                        name,
+                        slug
+                    }
+
+                    const { data } = await axios.get('https://honestnftapi.mywallet.tools/api/addCollection', {
+                        params: colecction
+                    })
+                    if (data.error) {
+                        this.$message.error(data.msg);
+                        return
+                    }
+
+                    this.$message.success('Collection submitted,');
+                    this.showCreate = false;
+                },
                 async loadCollection() {
                     const slug = this.$route.params.slug
                     const collection = this.currentCollection
