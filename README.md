@@ -1,5 +1,4 @@
-## Usage
-
+## Pull Data from opensea
 ``` shell
 # put the collections information in custom.json;
 echo '[{"name": "Doodles", slug: "doodles-official"}]' > custom.json;
@@ -18,17 +17,20 @@ python3 ks_test.py custom
 node genReport.js custom
 ```
 
-## Sample 
-- [topCollection200](reports/topCollection200.md)
+## Start Server
+``` shell
+# will http://127.0.0.1:8082
+node api.js
+```
+## Visualization
+http://127.0.0.1:8082/visualization/
+
 
 ## config.json
 ``` json
 {
     "OPENSEA_API_KEYS": [
-        "7c94683799a34c61b89051a5e58ad676",
-        "fd19e5cba6e243719640f90f9f1f1d1e",
-        "6a7ceb45f3c44c84be65779ad2907046",
-        "acee0e72b69142dfaa445fe5310d9d70",
+        "7c94683799a34c61b89051a5e58ad676"
     ]
 }
 ```
