@@ -22,7 +22,6 @@ app.get("/api/getCollection", async (req, res) => {
       query.bucket
     );
     const spendTime = Date.now() - startTime;
-    console.log(data);
     res.json({
       spendTime,
       result: data,

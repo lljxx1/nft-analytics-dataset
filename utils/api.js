@@ -50,9 +50,11 @@ async function getCollectionData(collection, bucket = '') {
     const datasetOfKtest = fs.existsSync(ktestResultFile) ? JSON.parse(fs.readFileSync(ktestResultFile, 'utf-8')) : [];
 
     const kTestResult = datasetOfKtest.find((_) => _.slug == collection.slug);
+
+    console.log(kTestResult);
     if (fs.existsSync(dataFile) && fs.existsSync(salesFile)) {
         return {
-          kTestResult,
+          kTestResult: kTestResult,
           mintingRows: await readData(dataFile),
           saleWithRarity: await readData(salesFile),
         };
