@@ -596,7 +596,7 @@
                 },
                 async loadData() {
                     const { data } = await axios.get('https://honestnftapi.mywallet.tools/api/getAllCollection')
-                    this.collections = data.collections
+                    this.collections = data.collections.reverse()
                     this.loading = false;
                     console.log(this.collections)
                     if (this.isDetail) {
