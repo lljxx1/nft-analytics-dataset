@@ -2,9 +2,10 @@ const Sequelize = require("sequelize");
 const path = require("path");
 
 const args = process.argv.slice(2);
-const collecion = args[0] ? "-" + args[0] : "";
+const collecion = args[0] ? args[0] : "";
 
-function createModel(collecion) {
+function createModel(collecionD) {
+  const collecion = `-${collecionD}`;
   const mergedDatabse = path.resolve("./data/", `dataset${collecion}.db`);
   const eventsDatabse = path.resolve("./data/", `events${collecion}.db`);
   console.log({

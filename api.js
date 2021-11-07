@@ -50,6 +50,7 @@ app.get("/api/getAllCollection", async (req, res) => {
             name: _.name,
             logo: _.logo,
             slug: _.slug,
+            bucket: allType == "topCollection200" ? "" : allType,
             createdDate: _.createdDate,
             opensea: `https://opensea.io/collection/${_.slug}`,
             floorPrice: _.floorPrice,
