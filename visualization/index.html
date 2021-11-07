@@ -81,25 +81,28 @@
                             <p style="text-align: center;">
                                 <a-spin v-if="!current" style="margin-top: 100px" />
                             </p>
-                            <h2 v-if="current">Rarity Map</h2>
+                           <div v-if="current">
+                            <h2>Rarity Map</h2>
                             <div id="my_dataviz"></div>
-
-                            <h2 v-if="current" style="margin-top: 30px">Mint histogram</h2>
-                            <apexchart type="line" v-if="current" height="500" :options="mintHistory.chartOptions"
-                                :series="mintHistory.series"></apexchart>
-
-                            <h2 v-if="current" style="margin-top: 30px">Sale histogram</h2>
-                            <apexchart type="line" v-if="current" height="500" :options="saleHistory.chartOptions"
-                                :series="mintHistory.series">
+                            
+                            <h2 style="margin-top: 30px">Mint histogram</h2>
+                            <apexchart type="line" height="500" :options="mintHistory.chartOptions" :series="mintHistory.series"></apexchart>
+                            
+                            <h2 style="margin-top: 30px">Sale histogram</h2>
+                            <apexchart type="line" height="500" :options="saleHistory.chartOptions" :series="mintHistory.series">
                             </apexchart>
 
-                            <h2 v-if="current" style="margin-top: 30px">K-test </h2>
-                            <a-table v-if="current" :columns="ktestTable.columns" :data-source="ktestTable.data" :pagination="false" bordered size="medium" />
-
-
-                            <h2 v-if="current" style="margin-top: 30px">Top Buyers(order by total sold price)</h2>
-                            <a-table v-if="current" :columns="topBuyerTable.columns" :data-source="topBuyerTable.data"
-                                :pagination="false" bordered size="medium"/>
+                            <h2 style="margin-top: 30px">K-S test </h2>
+                            <a-table :columns="kstest.columns" :data-source="kstest.data" :pagination="false" bordered size="small">
+                            </a-table>
+                            
+                            <h2 style="margin-top: 30px">Top Buyers(order by total sold price)</h2>
+                            <a-table :columns="topBuyerTable.columns" :data-source="topBuyerTable.data" :pagination="false" bordered
+                                size="medium">
+                            </a-table>
+                            
+                           
+                           </div>
 
                         </div>
                     </a-layout-content>
@@ -113,7 +116,6 @@
     </div>
     <script>
         Vue.use(VueRouter);
-
 
         function getBuyerInfo(mintings, sales) {
             // group by tokenId
@@ -372,9 +374,10 @@
                 isDetail() {
                     return this.$route.name == 'Detail'
                 },
-                 ktestTable() {
+                 kstest() {
                     const h = this.$createElement
-                    return {
+                  
+                    const opt= {
                         columns: [
                             {
                                 title: 'Address',
@@ -407,6 +410,9 @@
                         ],
                         data: this.current ? this.current.kTestResult ? this.current.kTestResult.ks_test_result : [] : []
                     }
+
+                      console.log('kTestResult', opt)
+                    return opt
                 },
                 topBuyerTable() {
                     const h = this.$createElement
@@ -585,6 +591,7 @@
                     this.$nextTick(() => {
                         this.renderMap()
                     })
+                    this.$forceUpdate();
                     console.log('loadCollection', slug, data, this.buyerInfo)
                 },
                 async loadData() {
