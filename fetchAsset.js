@@ -41,8 +41,7 @@ async function savePageResult(contract, pageResults) {
       const results = await Asset.bulkCreate(parsed, {
         ignoreDuplicates: true,
       });
-
-     
+      await setValue(pageKey, 1);
       // console.log(results);
     } catch (e) {
       console.log(e);
@@ -146,10 +145,9 @@ async function main() {
       };
       console.log(topCollection.slug);
       await fetchCollection(topCollection);
-      await setValue(collectionKey, 1);
       await findTokenAndFetch(topCollection);
+      await setValue(collectionKey, 1);
       await generateTokenData(topCollection);
-      await setValue(pageKey, 1);
       topCollection.done = true
       const spendTime = Date.now() - startTime;
       topCollection.spendTime = spendTime;
