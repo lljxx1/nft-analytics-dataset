@@ -483,16 +483,17 @@
             mounted() {
                 console.log(this.$router)
                 this.loadData();
-                if (this.isDetail) {
-                    this.loadCollection()
-                }
+                
             },
             methods: {
                 async loadCollection() {
                     const slug = this.$route.params.slug
+                    const collection = this.currentCollection
+                    console.log('collection', collection)
                     const { data } = await axios.get('https://honestnftapi.mywallet.tools/api/getCollection', {
                         params: {
-                            slug
+                            slug,
+                            bucket: collection ? collection.bucket : '',
                         }
                     })
                     this.current = data.result;
@@ -507,6 +508,9 @@
                     this.collections = data.collections
                     this.loading = false;
                     console.log(this.collections)
+                    if (this.isDetail) {
+                        this.loadCollection()
+                    }
                 },
                 renderMap() {
                     // set the dimensions and margins of the graph

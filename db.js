@@ -5,7 +5,7 @@ const args = process.argv.slice(2);
 const collecion = args[0] ? args[0] : "";
 
 function createModel(collecionD) {
-  const collecion = `-${collecionD}`;
+  const collecion = collecionD ? `-${collecionD}` : '';
   const mergedDatabse = path.resolve("./data/", `dataset${collecion}.db`);
   const eventsDatabse = path.resolve("./data/", `events${collecion}.db`);
   console.log({
