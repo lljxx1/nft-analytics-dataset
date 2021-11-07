@@ -149,11 +149,8 @@ async function main() {
       await findTokenAndFetch(topCollection);
       await setValue(collectionKey, 1);
       await generateTokenData(topCollection);
-      topCollection.done = true
       const spendTime = Date.now() - startTime;
-      topCollection.spendTime = spendTime;
       console.log("spendTime", spendTime);
-      fs.writeFileSync(fetchTaksFile, JSON.stringify(needFetchCollections));
     }
   } catch (e) {
     console.log('error', e)
