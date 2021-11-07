@@ -78,6 +78,7 @@ app.get("/api/addCollection", async (req, res) => {
   });
   fs.writeFileSync(taskFile, JSON.stringify(existsTask));
   res.json({
+      collectionDetail,
     tasks: existsTask.length,
   });
 });
