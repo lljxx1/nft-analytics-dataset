@@ -4,7 +4,8 @@ const cors = require("cors");
 const app = express();
 const { createModel } = require("./db");
 const { getCollectionData } = require("./utils/api");
-const fs = require('fs');
+const { fetchCollection } = require("./utils/opensea");
+const fs = require("fs");
 
 app.use(cors());
 app.use(compression());
@@ -35,73 +36,89 @@ app.get("/api/getCollection", async (req, res) => {
 app.use(require("morgan")("dev"));
 
 app.get("/api/addCollection", async (req, res) => {
-    const { query } = req;
-    const allCollections = getAllCollections();
-    const taskFile = "./custom.json";
-    const existsTask = JSON.parse(fs.readFileSync(taskFile, "utf-8"));
-    const isInf = allCollections.find((_) => _.slug == query.slug);
-    if (!query.slug && !query.name) {
-         return res.json({
-           error: 1,
-           msg: "slug, name empty",
-         });
-    }
-      if (isInf) {
-        return res.json({
-          error: 1,
-          msg: "exists",
-        });
-      }
-    existsTask.push({
-        name: query.name,
-        slug: query.slug,
-        bucket: "custom",
-        done: false,
-    });
-    fs.writeFileSync(taskFile, JSON.stringify(existsTask));
-    res.json({
-      tasks: existsTask.length
-    });
-})
+  const { query } = req;
 
+  if (!query.slug) {
+    return res.json({
+      error: 1,
+      msg: "link empty",
+    });
+  }
+
+  const collectionDetail = await fetchCollection(query.slug);
+  if (!collectionDetail) {
+    return res.json({
+      error: 1,
+      msg: "fetch meta from opensea failed",
+    });
+  }
+
+  const allCollections = getAllCollections();
+  const taskFile = "./custom.json";
+  const existsTask = JSON.parse(fs.readFileSync(taskFile, "utf-8"));
+  const isInf = allCollections.find((_) => _.slug == query.slug);
+
+  if (isInf) {
+    return res.json({
+      error: 1,
+      msg: "exists",
+    });
+  }
+  existsTask.push({
+    name: collectionDetail.name,
+    slug: query.slug,
+    logo: collectionDetail.image_url,
+    bucket: "custom",
+    done: false,
+    stats: {
+      totalSupply: collectionDetail.stats.total_supply,
+      totalVolume: collectionDetail.stats.total_volume,
+      ...collectionDetail.stats,
+    },
+  });
+  fs.writeFileSync(taskFile, JSON.stringify(existsTask));
+  res.json({
+    tasks: existsTask.length,
+  });
+});
 
 function getAllCollections() {
-     const allTypes = ["topCollection200", "collections24", "custom"];
-     const overview = [];
-     for (let index = 0; index < allTypes.length; index++) {
-       const allType = allTypes[index];
-       
-       const task = JSON.parse(fs.readFileSync(`./${allType}.json`, "utf-8"));
-       const testReport = fs.existsSync(`./${allType}-withtest.json`)
-         ? JSON.parse(fs.readFileSync(`./${allType}-withtest.json`, "utf-8"))
-         : [];
-       task.forEach((_) => {
-         const hasReport = testReport.find((c) => _.slug == c.slug);
-         if (hasReport || allType == "custom")
-           overview.push({
-             name: _.name,
-             logo: _.logo,
-             slug: _.slug,
-             bucket: allType == "topCollection200" ? "" : allType,
-             createdDate: _.createdDate,
-             opensea: `https://opensea.io/collection/${_.slug}`,
-             floorPrice: _.floorPrice,
-             totalVolume: _.stats && _.stats.totalVolume.toFixed(0),
-             totalSupply: _.stats && _.stats.totalSupply,
-             numOwners: _.stats && _.stats.numOwners,
-             marketCap: _.stats && _.stats.marketCap,
-             hasReport: hasReport && hasReport.ks_test_result.length,
-             testResult: `${allType}.md#${_.name
-               .toLowerCase()
-               .split(":")
-               .join("")
-               .split(" ")
-               .join("-")}`,
-           });
-       });
-     }
+  const allTypes = ["topCollection200", "collections24", "custom"];
+  const overview = [];
+  for (let index = 0; index < allTypes.length; index++) {
+    const allType = allTypes[index];
 
-     return overview;
+    const task = JSON.parse(fs.readFileSync(`./${allType}.json`, "utf-8"));
+    const testReport = fs.existsSync(`./${allType}-withtest.json`)
+      ? JSON.parse(fs.readFileSync(`./${allType}-withtest.json`, "utf-8"))
+      : [];
+    task.forEach((_) => {
+      const hasReport = testReport.find((c) => _.slug == c.slug);
+      if (hasReport || allType == "custom")
+        overview.push({
+          name: _.name,
+          logo: _.logo,
+          slug: _.slug,
+          bucket: allType == "topCollection200" ? "" : allType,
+          createdDate: _.createdDate,
+          opensea: `https://opensea.io/collection/${_.slug}`,
+          floorPrice: _.floorPrice,
+          totalVolume: _.stats && _.stats.totalVolume.toFixed(0),
+          totalSupply: _.stats && _.stats.totalSupply,
+          numOwners: _.stats && _.stats.numOwners,
+          marketCap: _.stats && _.stats.marketCap,
+          hasReport: hasReport && hasReport.ks_test_result.length,
+          testResult: `${allType}.md#${_.name
+            .toLowerCase()
+            .split(":")
+            .join("")
+            .split(" ")
+            .join("-")}`,
+        });
+    });
+  }
+
+  return overview;
 }
 
 app.get("/api/getAllCollection", async (req, res) => {

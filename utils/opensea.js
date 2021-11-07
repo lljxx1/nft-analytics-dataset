@@ -126,6 +126,34 @@ function wait(ms) {
 }
 
 
+async function fetchCollection(slug) {
+  let apiKey = await getApiKey();
+  let retry = 10;
+  for (let index = 0; index < retry; index++) {
+    try {
+      const { data } = await getUrl(
+        `https://api.opensea.io/api/v1/collection/${slug}`,
+        {
+          params: {
+          },
+        },
+        {
+          "X-API-KEY": apiKey,
+        }
+      );
+      return collection;
+    } catch (e) {
+      console.log(e.response ? e.response.data.detail : e);
+      console.log("wait");
+      await wait(10 * 1000);
+      apiKey = await getApiKey();
+    }
+    console.log("retry", index);
+  }
+  return null;
+}
+
+
 
 async function test() {
   const events = await fetchEvents({
@@ -140,6 +168,7 @@ async function test() {
 // test();
 
 module.exports = {
+  fetchCollection,
   fetchEventsWithRetry,
   fetchCollectionTokens,
   fetchEvents,
