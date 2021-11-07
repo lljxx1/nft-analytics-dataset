@@ -109,6 +109,7 @@ function getAllCollections() {
           numOwners: _.stats && _.stats.numOwners,
           marketCap: _.stats && _.stats.marketCap,
           hasReport: hasReport && hasReport.ks_test_result.length,
+          isDone: hasReport ? true : _.done,
           testResult: `${allType}.md#${_.name
             .toLowerCase()
             .split(":")

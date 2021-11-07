@@ -84,7 +84,6 @@
                             <h2 v-if="current">Rarity Map</h2>
                             <div id="my_dataviz"></div>
 
-
                             <h2 v-if="current" style="margin-top: 30px">Mint histogram</h2>
                             <apexchart type="line" v-if="current" height="500" :options="mintHistory.chartOptions"
                                 :series="mintHistory.series"></apexchart>
@@ -567,6 +566,8 @@
 
                     const { mintingRows } = this.current;
                     const data = mintingRows
+
+                    console.log('mintingRows', mintingRows)
 
                     // Add X axis
                     var x = d3.scaleLinear()
