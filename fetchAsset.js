@@ -8,7 +8,7 @@ const args = process.argv.slice(2);
 const collecion = args[0] ? args[0] : "";
 
 const statusFile = collecion ? `./status${collecion}.json` : `./status.json`;
-const status = require(statusFile);
+const status = fs.existsSync(statusFile) ? require(statusFile) : {};
 
 async function setValue(key, value) {
   status[key] = value;
