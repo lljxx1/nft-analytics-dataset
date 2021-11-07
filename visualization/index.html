@@ -93,6 +93,10 @@
                                 :series="mintHistory.series">
                             </apexchart>
 
+                            <h2 v-if="current" style="margin-top: 30px">K-test </h2>
+                            <a-table v-if="current" :columns="ktestTable.columns" :data-source="ktestTable.data" :pagination="false" bordered size="medium" />
+
+
                             <h2 v-if="current" style="margin-top: 30px">Top Buyers(order by total sold price)</h2>
                             <a-table v-if="current" :columns="topBuyerTable.columns" :data-source="topBuyerTable.data"
                                 :pagination="false" bordered size="medium"/>
@@ -367,6 +371,42 @@
                 },
                 isDetail() {
                     return this.$route.name == 'Detail'
+                },
+                 ktestTable() {
+                    const h = this.$createElement
+                    return {
+                        columns: [
+                            {
+                                title: 'Address',
+                                dataIndex: 'account',
+                            },
+                            {
+                                title: 'Score',
+                                dataIndex: 'score'
+                            },
+                            {
+                                title: 'Num Minted',
+                                dataIndex: 'num_minted',
+                            }, {
+                                title: 'Sample Token',
+                                customRender: (text, row, index) => {
+                                    return h('div', {
+                                        attrs: {
+                                            // style: "max-width: 300px"
+                                        }
+                                    },
+                                        [
+                                            h('pre', {
+                                            },
+                                                [
+                                                    JSON.stringify(row.lowest_list, null, 2)
+                                                ]),
+                                        ])
+                                },
+                            }
+                        ],
+                        data: this.current ? this.current.kTestResult ? this.current.kTestResult.ks_test_result : [] : []
+                    }
                 },
                 topBuyerTable() {
                     const h = this.$createElement
