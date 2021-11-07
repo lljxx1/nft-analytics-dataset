@@ -59,7 +59,7 @@ async function fetchEventsWithRetry(args, pageNo, maxRetry = 5) {
       break;
     } catch (e) {
       console.log(e, args);
-      await wait(5 * 1000);
+      await wait(15 * 1000);
     }
   }
   return result;
@@ -111,7 +111,7 @@ async function fetchCollectionTokens(slug, page = 1) {
     } catch (e) {
       console.log(e.response ? e.response.data.detail : e);
       console.log('wait')
-      await wait(10 * 1000);
+      await wait(20 * 1000);
       apiKey = await getApiKey();
     }
     console.log("retry", index);
