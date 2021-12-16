@@ -29,7 +29,7 @@ async function fetchEvents(params, pageNo) {
     );
     return data.asset_events;
   } catch (e) {
-    console.log(e, apiKey);
+    console.log(apiKey);
     throw new Error(e.response.data.detail);
   }
   return [];
@@ -58,7 +58,6 @@ async function fetchEventsWithRetry(args, pageNo, maxRetry = 5) {
       result = await fetchEvents(args, pageNo);
       break;
     } catch (e) {
-      console.log(e, args);
       await wait(15 * 1000);
     }
   }
@@ -143,7 +142,7 @@ async function fetchCollection(slug) {
       );
       return data.collection;
     } catch (e) {
-      console.log(e.response ? e.response.data.detail : e);
+      console.log(e.response ? e.response.data.detail : e.toString());
       console.log("wait");
       await wait(2 * 1000);
       apiKey = await getApiKey();
