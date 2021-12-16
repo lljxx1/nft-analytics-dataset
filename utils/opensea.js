@@ -58,7 +58,7 @@ async function fetchEventsWithRetry(args, pageNo, maxRetry = 5) {
       result = await fetchEvents(args, pageNo);
       break;
     } catch (e) {
-      await wait(60 * 1000);
+      await wait(10 * 1000);
     }
   }
   return result;
