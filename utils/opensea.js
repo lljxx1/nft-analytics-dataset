@@ -19,13 +19,15 @@ async function fetchEvents(params, pageNo) {
   let apiKey = await getApiKey();
   try {
     const { data } = await getUrl(
-      "https://api.opensea.io/api/v1/events",
+      "https://try.readme.io/https://api.opensea.io/api/v1/events",
       {
         params: params,
       },
       {
         "X-API-KEY": apiKey,
-      },
+        "User-Agent":
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+      }
     );
     return data.asset_events;
   } catch (e) {
@@ -38,7 +40,7 @@ async function fetchEvents(params, pageNo) {
 async function fetchOrders(params) {
   try {
     const { data } = await axios.get(
-      "https://api.opensea.io/wyvern/v1/orders",
+      "https://try.readme.io/https://api.opensea.io/wyvern/v1/orders",
       {
         params: params,
       }
@@ -90,18 +92,20 @@ async function fetchCollectionTokens(slug, page = 1) {
   for (let index = 0; index < retry; index++) {
     try {
       const { data } = await getUrl(
-        "https://api.opensea.io/api/v1/assets",
+        "https://try.readme.io/https://api.opensea.io/api/v1/assets",
         {
           params: {
             collection: slug,
             offset: offset,
             limit: pageSize,
-            order_direction
+            order_direction,
           },
         },
         {
           "X-API-KEY": apiKey,
-        },
+          "User-Agent":
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+        }
       );
       return {
         page,
@@ -131,13 +135,14 @@ async function fetchCollection(slug) {
   for (let index = 0; index < retry; index++) {
     try {
       const { data } = await getUrl(
-        `https://api.opensea.io/api/v1/collection/${slug}`,
+        `https://try.readme.io/https://api.opensea.io/api/v1/collection/${slug}`,
         {
-          params: {
-          },
+          params: {},
         },
         {
           "X-API-KEY": apiKey,
+          "User-Agent":
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
         }
       );
       return data.collection;
