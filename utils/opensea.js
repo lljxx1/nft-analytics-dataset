@@ -19,7 +19,7 @@ async function fetchEvents(params, pageNo) {
   let apiKey = await getApiKey();
   try {
     const { data } = await getUrl(
-      "https://try.readme.io/https://api.opensea.io/api/v1/events",
+      "https://api.opensea.io/api/v1/events",
       {
         params: params,
       },
@@ -40,7 +40,7 @@ async function fetchEvents(params, pageNo) {
 async function fetchOrders(params) {
   try {
     const { data } = await axios.get(
-      "https://try.readme.io/https://api.opensea.io/wyvern/v1/orders",
+      "https://api.opensea.io/wyvern/v1/orders",
       {
         params: params,
       }
@@ -92,7 +92,7 @@ async function fetchCollectionTokens(slug, page = 1) {
   for (let index = 0; index < retry; index++) {
     try {
       const { data } = await getUrl(
-        "https://try.readme.io/https://api.opensea.io/api/v1/assets",
+        "https://api.opensea.io/api/v1/assets",
         {
           params: {
             collection: slug,
@@ -135,7 +135,7 @@ async function fetchCollection(slug) {
   for (let index = 0; index < retry; index++) {
     try {
       const { data } = await getUrl(
-        `https://try.readme.io/https://api.opensea.io/api/v1/collection/${slug}`,
+        `https://api.opensea.io/api/v1/collection/${slug}`,
         {
           params: {},
         },
