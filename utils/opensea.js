@@ -29,7 +29,7 @@ async function fetchEvents(params, pageNo) {
     );
     return data.asset_events;
   } catch (e) {
-    console.log(apiKey);
+    console.log("fetchEvents", e.toString(), apiKey);
     throw new Error(e.response.data.detail);
   }
   return [];
@@ -58,7 +58,7 @@ async function fetchEventsWithRetry(args, pageNo, maxRetry = 5) {
       result = await fetchEvents(args, pageNo);
       break;
     } catch (e) {
-      await wait(15 * 1000);
+      await wait(60 * 1000);
     }
   }
   return result;
