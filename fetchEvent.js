@@ -54,18 +54,23 @@ async function findTokenAndFetch(collection) {
     let pendingTasks = []
     for (let index = 0; index < unfetchedTokens.length; index++) {
       const unfetchedToken = unfetchedTokens[index];
-
-      pendingTasks.push(fetchEventsWithRetry({
-        event_type: "transfer",
-        asset_contract_address: unfetchedToken.asset_contract,
-        token_id: unfetchedToken.token_id,
-        limit: 200,
-      }))
+      pendingTasks.push(
+        fetchEventsWithRetry({
+          event_type: "transfer",
+          asset_contract_address: unfetchedToken.asset_contract,
+          token_id: unfetchedToken.token_id,
+          only_opensea: false,
+          offset: 0,
+          limit: 200,
+        })
+      );
 
       pendingTasks.push(fetchEventsWithRetry({
         event_type: "successful",
         asset_contract_address: unfetchedToken.asset_contract,
         token_id: unfetchedToken.token_id,
+        only_opensea: false,
+        offset: 0,
         limit: 200,
       }))
     }
