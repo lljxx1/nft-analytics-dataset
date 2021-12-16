@@ -29,8 +29,8 @@ async function fetchEvents(params, pageNo) {
     );
     return data.asset_events;
   } catch (e) {
-    console.log("fetchEvents", e, params, apiKey);
-    throw new Error(e.response.data.detail);
+    console.log("fetchEvents", e.response.data, params, apiKey);
+    throw new Error(e.response.data);
   }
   return [];
 }
