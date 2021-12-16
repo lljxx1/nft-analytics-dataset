@@ -15,17 +15,16 @@ async function getApiKey() {
 }
 
 async function fetchEvents(params, pageNo) {
-  // const offset = (page - 1) * pageSize;
   let apiKey = await getApiKey();
   try {
     const { data } = await getUrl(
       "https://api.opensea.io/api/v1/events",
       {
         params: params,
-      },
-      {
-        "X-API-KEY": apiKey,
-        "User-Agent": "curl/1.4.3",
+        headers: {
+          "X-API-KEY": apiKey,
+          "User-Agent": "curl/1.4.3",
+        },
       }
     );
     return data.asset_events;
@@ -99,11 +98,10 @@ async function fetchCollectionTokens(slug, page = 1) {
             limit: pageSize,
             order_direction,
           },
-        },
-        {
-          "X-API-KEY": apiKey,
-          "User-Agent": "curl/1.4.3",
-        
+          headers: {
+            "X-API-KEY": apiKey,
+            "User-Agent": "curl/1.4.3",
+          },
         }
       );
       return {
@@ -137,10 +135,10 @@ async function fetchCollection(slug) {
         `https://api.opensea.io/api/v1/collection/${slug}`,
         {
           params: {},
-        },
-        {
-          "User-Agent": "curl/1.4.3",
-          "X-API-KEY": apiKey
+          headers: {
+            "X-API-KEY": apiKey,
+            "User-Agent": "curl/1.4.3",
+          },
         }
       );
       return data.collection;

@@ -10,10 +10,7 @@ https.Agent.defaultMaxSockets = Infinity;
 
 async function getUrl(url, args, headers) {
   // conf.proxy = null;
-  const res = await axios.get(url, args, {
-    // proxy: PROXY,
-    headers,
-  });
+  const res = await axios.get(url, args);
   return res;
 }
 
