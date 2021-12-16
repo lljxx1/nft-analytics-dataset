@@ -25,13 +25,12 @@ async function fetchEvents(params, pageNo) {
       },
       {
         "X-API-KEY": apiKey,
-        "User-Agent":
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+        "User-Agent": "curl/1.4.3",
       }
     );
     return data.asset_events;
   } catch (e) {
-    console.log("fetchEvents", e.toString(), params, apiKey);
+    console.log("fetchEvents", e, params, apiKey);
     throw new Error(e.response.data.detail);
   }
   return [];
@@ -103,8 +102,8 @@ async function fetchCollectionTokens(slug, page = 1) {
         },
         {
           "X-API-KEY": apiKey,
-          "User-Agent":
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+          "User-Agent": "curl/1.4.3",
+        
         }
       );
       return {
@@ -140,9 +139,8 @@ async function fetchCollection(slug) {
           params: {},
         },
         {
-          "X-API-KEY": apiKey,
-          "User-Agent":
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+          "User-Agent": "curl/1.4.3",
+          "X-API-KEY": apiKey
         }
       );
       return data.collection;
